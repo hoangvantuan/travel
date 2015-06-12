@@ -40,11 +40,7 @@
         </li>
         <!-- Du lich Xe-->
         <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Du lịch Thuê Xe</a>
-          <ul class="dropdown-menu" role="menu">
-            <li><a href="#">Du lịch trong nước</a></li>
-            <li><a href="#">Du lịch nước ngoài</a></li>
-          </ul>
+          <a href="#" >Du lịch Thuê Xe</a>
         </li>
         <!-- Tu van du hoc-->
         <li class="dropdown">
