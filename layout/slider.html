@@ -1,0 +1,30 @@
+<style>
+.slider{
+	position:relative;
+	height:450px;
+}
+.slider img{
+	position:absolute;
+}
+</style>
+<script>
+	$(function() {
+    $('.slider img:gt(0)').hide();
+    setInterval(function(){
+      $('.slider :first-child').fadeOut()    // hieu ung fade don gian
+         .next('img').fadeIn()
+         .end().appendTo('.slider');},
+      3000); // 3 giay chuyen slider 1 lan
+})
+</script>
+<script type=”text/javascript” src=”http://code.jquery.com/jquery-2.0.3.min.js”></script>
+<div class="slider">
+	<img src="../asset/image/slides/slider1.jpg" /> 
+	<img src="../asset/image/slides/slider2.jpg" />
+	<img src="../asset/image/slides/slider3.jpg" />
+	<img src="../asset/image/slides/slider4.jpg" />
+	<img src="../asset/image/slides/slider5.jpg" />
+	<img src="../asset/image/slides/slider6.jpg" />
+	<img src="../asset/image/slides/slider7.jpg" />
+	<img src="../asset/image/slides/slider8.jpg" />
+</div>
