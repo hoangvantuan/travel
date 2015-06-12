@@ -3,5 +3,6 @@
 	require('layout/head.html');
 	require('layout/header.html');
 	require('layout/navigation.html');
+	require('layout/slider.html');
 	require('layout/footer.html');
  ?>

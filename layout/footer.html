@@ -27,15 +27,6 @@
                         data-header="false" data-stream="false" data-show-border="false">
 						<iframe class="facebook" src="http://www.facebook.com/plugins/likebox.php?href=https://www.facebook.com/vndesignerbybkteam&amp;width=245&amp;colorscheme=light&amp;show_faces=true&amp;connections=9&amp;stream=false&amp;header=false&amp;height=270" scrolling="no" frameborder="0" scrolling="no" style="border: medium none; overflow: hidden; height: 193px;background:#fff;"></iframe>
                      </div>
-                     <script>
-                        (function (d, s, id) {
-                            var js, fjs = d.getElementsByTagName(s)[0];
-                            if (d.getElementById(id)) return;
-                            js = d.createElement(s); js.id = id;
-                            js.src = "../connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v2.0";
-                            fjs.parentNode.insertBefore(js, fjs);
-                        }(document, 'script', 'facebook-jssdk'));
-                     </script>
 			</div>
 			<div class="col-md-4 footer-right">
 				<H4 class="footer-title-right">CÔNG TY CP ĐT - TV - TM - DV - DU LỊCH AD., TRAVEL</H4>
@@ -64,8 +55,19 @@
 	</div>
 </footer>
 <!--END: Footer -->
+    <!-- Include JS file -->
+	<script type="text/javascript" src="asset/js/jquery-1.11.3.min.js"></script>
+	<script type="text/javascript" src="asset/js/jquery.flexslider.js"></script>
+	<script type="text/javascript" src="asset/js/bootstrap.min.js"></script>
 
-<!-- Include JS file -->
-<script type="text/javascript" src="asset/js/jquery-1.11.3.min.js"></script>
-<script type="text/javascript" src="asset/js/bootstrap.min.js"></script>
+		<script type="text/javascript">
+		$(window).load(function() {
+ 		$('.flexslider').flexslider({
+    	animation: "fade",
+    	directionNav: true,
+    	animationLoop: true,
+  			});
+		});
+	</script>
+
 </body>
