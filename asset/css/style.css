@@ -7,7 +7,6 @@
 }
 .top-bar{
 	background-color: #8dc63f;
-	box-shadow: 0px 2px 1px gray;
 }
 .row{
 	margin-right: 0px;
@@ -23,7 +22,7 @@
 	color: white;
 }
 .top-bar-text span{
-	color: red;
+
 }
 .logo{
 	margin-left: 80px;
