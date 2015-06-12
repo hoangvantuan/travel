@@ -88,8 +88,8 @@
 
 </div>
 <div class="col-md-3 tour">
-    <div class="thumbnail class="overimg" tour_detail">
-    	<a  href="#"><img  src='asset/image/tour/du-lich-da-nang.jpg' width="235" alt="" class="responsive-img" /></a>
+    <div class="thumbnail  tour_detail">
+    	<a  href="#"><img  class="overimg" src='asset/image/tour/du-lich-da-nang.jpg' width="235" alt="" class="responsive-img" /></a>
             <div class="caption">
                		<h4 class="text-center tour_title">
                   		<a href="#">Singapore - Indonesia - Malaysia</a>
