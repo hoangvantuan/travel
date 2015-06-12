@@ -25,7 +25,7 @@
                      <div class="fb-like-box"
                         data-height="250" data-colorscheme="light" data-show-faces="true"
                         data-header="false" data-stream="false" data-show-border="false">
-						<iframe class="facebook" src="http://www.facebook.com/plugins/likebox.php?href=https://www.facebook.com/vndesignerbybkteam&amp;width=245&amp;colorscheme=light&amp;show_faces=true&amp;connections=9&amp;stream=false&amp;header=false&amp;height=270" scrolling="no" frameborder="0" scrolling="no" style="border: medium none; overflow: hidden; height: 193px;background:#fff;"></iframe>
+						<iframe class="facebook" src="http://www.facebook.com/plugins/likebox.php?href=https://www.facebook.com/vndesignerbybkteam&amp;width=245&amp;colorscheme=light&amp;show_faces=true&amp;connections=9&amp;stream=false&amp;header=false&amp;height=270" scrolling="no" frameborder="0" scrolling="no" style="border: medium none; overflow: hidden; height: 250px;background:#fff;"></iframe>
                      </div>
 			</div>
 			<div class="col-md-4 footer-right">
