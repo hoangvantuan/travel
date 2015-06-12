@@ -16,6 +16,9 @@
                  	</a>
                  </div>
 			</div>
+			<div class="col-md-9">
+				<img class="img-responsive" src="asset/image/common/banner.png" alt="banner" />
+			</div>
 		</div>
 	</div>
 </header>

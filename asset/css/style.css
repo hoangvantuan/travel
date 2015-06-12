@@ -6,7 +6,7 @@
 	padding-left:  0px !important;
 }
 .top-bar{
-	background-color: #f4f4f4;
+	background-color: #8dc63f;
 	box-shadow: 0px 2px 1px gray;
 }
 .row{
@@ -18,8 +18,9 @@
 
 .top-bar-text{
 	font-size: 13px;
-	margin-top: 20px !important;
+	margin-top: 0px !important;
 	padding: 8px 0px 8px 100px;
+	color: white;
 }
 .top-bar-text span{
 	color: red;
@@ -84,8 +85,8 @@ nav{
 	color: white;
 }
 .navbar-default {
-  background-color: #6bab44;
-  border-color: #e7e7e7;
+  background-color: #8dc63f;
+  border-color: #8dc63f;
   }
 
 .navbar-default .navbar-nav > li > a:hover{
@@ -93,7 +94,7 @@ nav{
 }
 .navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:focus, .navbar-default .navbar-nav > .open > a:hover{
 	color: #FFF;
-	background-color: #16631A;
+	background-color: #8dc63f;
 }
 .navbar-default .navbar-nav .open .dropdown-menu>li>a:focus, .navbar-default .navbar-nav .open .dropdown-menu>li>a:hover{
 	color: white !important;
@@ -176,7 +177,7 @@ footer{
 	font-size: 30px;
 }
 .show_tour{
-	background-color: #ff6600;
+	background-color: #8dc63f;
 	box-shadow:  0 40px 132px 70px rgba(0,0,0,.5) inset;
 	-webkit-box-shadow:0 40px 132px 70px rgba(0,0,0,.5) inset;
 	padding-right: 40px;
