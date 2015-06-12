@@ -162,3 +162,44 @@ footer{
 .slider{
 	padding-left: 15px;
 }
+
+
+/* show tour */
+.tour_title{
+	font-size: 20px;
+}
+.tour_time{
+	color: red;
+}
+.tour_cost{
+	color: orange;
+	font-size: 30px;
+}
+.show_tour{
+	background-color: #ff6600;
+	box-shadow:  0 40px 132px 70px rgba(0,0,0,.5) inset;
+	-webkit-box-shadow:0 40px 132px 70px rgba(0,0,0,.5) inset;
+	padding-right: 40px;
+	padding-left: 40px;
+}
+.thumbnail{
+	border-radius: 0px;
+}
+.tour{
+	padding-top: 20px;
+
+}
+.tour_detail{
+	padding-top: 10px;
+	margin-left: 5px;
+	margin-right: 5px;
+}
+.tour_detail::after{
+  content: " ";
+  background: url("../image/common/label.png") top center no-repeat;
+  width: 35px;
+  height: 44px;
+  position: absolute;
+  top: 11px;
+  right: 25px;
+}

@@ -31,7 +31,7 @@
 			<div class="col-md-4 footer-right">
 				<H4 class="footer-title-right">CÔNG TY CP ĐT - TV - TM - DV - DU LỊCH AD., TRAVEL</H4>
            		<p><i class="fa fa-map-marker fa-fw"></i> Số 87 ngõ 12 Quang Trung, Văn Khê, Hà Đông, Hà Nội</p>
-                <p><i class="fa fa-phone fa-fw"></i> ĐT: (08) 987647504 <i class="fa fa-fax"></i>Fax : </p>
+                <p><i class="fa fa-phone fa-fw"></i> ĐT: (08) 987647504</p>
                 <p><i class="fa fa-home fa-fw"></i> Hotline: 0987647504  </p>
                 <p><i class="fa fa-skype fa-fw"></i>adtravel &nbsp;&nbsp; <i class="fa fa-yahoo"></i>tuyethanh</p>
                 <p><i class="fa fa-envelope fa-fw"></i><a href="mailto:buituyethanh@gmail.com ">buituyethanh@gmail.com </a></p>
@@ -40,7 +40,7 @@
 		</div>
 		<div class="row footer-left">
 			<div class="col-md-8">
-				<p class="copyright">© 2015 Du Lịch AD Travil CopyRight - All rights reserved. Template by <span>VNDesigner.</span></p>
+				<p class="copyright">© 2015 Du Lịch AD Travel CopyRight - All rights reserved. Template by <span>VNDesigner.</span></p>
 			</div>
 			<div class="col-md-4">
 				<div class="pull-right soical">
@@ -59,6 +59,7 @@
 	<script type="text/javascript" src="asset/js/jquery-1.11.3.min.js"></script>
 	<script type="text/javascript" src="asset/js/jquery.flexslider.js"></script>
 	<script type="text/javascript" src="asset/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="asset/js/customer.js"></script>
 
 		<script type="text/javascript">
 		$(window).load(function() {
