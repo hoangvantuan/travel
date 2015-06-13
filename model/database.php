@@ -29,7 +29,7 @@ function get_a_record($table, $colum, $value, $select = '*'){
 
 //incase $colum isn't primary key
 function get_all_record($table, $colum, $value, $select = '*'){
-	$sql = "SELECT '*' FROM $table WHERE $colum = '$value'";
+	$sql = "SELECT $select FROM $table WHERE $colum = '$value'";
 	$query = mysql_query($sql) or die(mysql_error());
 
 	$data = array();
