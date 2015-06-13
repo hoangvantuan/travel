@@ -30,7 +30,7 @@
 
         <!-- dich vu visa, ho chieu -->
         <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Visa - hộ chiếu</a>
+          <a href="index.php?controller=visa&action=servicevisa" class="dropdown-toggle disabled" data-toggle="dropdown" role="button" aria-expanded="false">Visa - hộ chiếu</a>
           <ul class="dropdown-menu" role="menu">
             <li><a href="#">Dịch vụ làm thẻ visa hộ chiếu</a></li>
             <li><a href="#">Dịch vụ làm thẻ tạm trú - Cư trú</a></li>
