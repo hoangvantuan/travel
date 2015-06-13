@@ -61,16 +61,23 @@
 	<script type="text/javascript" src="asset/js/bootstrap.min.js"></script>
 	<script type="text/javascript" src="asset/js/customer.js"></script>
 	<script type="text/javascript" src="asset/js/scrolltotop.js"></script>
+	<script type="text/javascript">
+   	$(document).ready(function () {
+       $('.incountry').click(function () {
+           $('.incountry-list').toggleClass('hidden-xs');
+           $('.incountry b').toggleClass('glyphicon-plus-sign').toggleClass('glyphicon-minus-sign');
+           });
+           $('.outcountry').click(function () {
+           $('.outcountry-list').toggleClass('hidden-xs');
+           $('.outcountry b').toggleClass('glyphicon-plus-sign').toggleClass('glyphicon-minus-sign');
+           });
 
-		<script type="text/javascript">
-		$(window).load(function() {
- 		$('.flexslider').flexslider({
+		$('.flexslider').flexslider({
     	animation: "fade",
     	directionNav: true,
     	animationLoop: true,
   			});
 		});
-	</script>
-	
+    	</script>
 
 </body>

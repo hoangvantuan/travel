@@ -188,7 +188,7 @@ footer{
 	padding-top: 20px;
 
 }
-.tour_detail{
+.tour_detail .tour_detail2{
 	padding-top: 10px;
 	margin-left: 5px;
 	margin-right: 5px;
@@ -201,6 +201,15 @@ footer{
   position: absolute;
   top: 11px;
   right: 25px;
+}
+.tour_detail2::after{
+  content: " ";
+  background: url("../image/common/label.png") top center no-repeat;
+  width: 35px;
+  height: 44px;
+  position: absolute;
+  top: -8px;
+  right: 15px;
 }
 
 /* Visa news*/

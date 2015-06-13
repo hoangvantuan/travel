@@ -1,10 +1,13 @@
 <?php
 	$title = "AD Tourist,..";
-	$country = get_all('tour_country');
-	$region = get_all('tour_region');
+	$tour_region = get_all('tour_region');
 	if(isset($_GET['tour_country_code'])){
 		$tour_country_code = $_GET['tour_country_code'];
+		$tour_country_name = get_a_record('tour_country','tour_country_code',$tour_country_code);
+		$tour_country_name = $tour_country_name['tour_country_name'];
 		$data = get_all_record('tour_content','tour_country_code',$tour_country_code);
+		$link = 'index.php?controller=tour&amp;action=country&amp;tour_country_code='.$tour_country_code;
+		$current_possition = array(array('name'=>$tour_country_name,'link' => $link));
 		require_once(BASEPATH.'view/tour/show_tour.php');
 	}
 	else

@@ -1,8 +1,8 @@
 <?php 
 
 // Get all data from table 
-function get_all($table){
-	$sql = "SELECT '*' FROM $table";
+function get_all($table,$select = '*'){
+	$sql = "SELECT $select FROM $table";
 	$query = mysql_query($sql) or die(mysql_error());
 
 	$data = array();
@@ -16,8 +16,8 @@ function get_all($table){
 }
 
 // incase $colum is primary key
-function get_a_record($table, $colum, $value){
-	$sql = "SELECT '*' FROM $table WHERE $colum = '$value'";
+function get_a_record($table, $colum, $value, $select = '*'){
+	$sql = "SELECT $select FROM $table WHERE $colum = '$value'";
 	$query = mysql_query($sql) or die(mysql_error());
 	$data = NULL;
 	if(mysql_num_rows($query) > 0 )
@@ -28,7 +28,7 @@ function get_a_record($table, $colum, $value){
 }
 
 //incase $colum isn't primary key
-function get_all_record($table, $colum, $value){
+function get_all_record($table, $colum, $value, $select = '*'){
 	$sql = "SELECT '*' FROM $table WHERE $colum = '$value'";
 	$query = mysql_query($sql) or die(mysql_error());
 
