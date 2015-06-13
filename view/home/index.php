@@ -6,7 +6,7 @@
 <!--BEGIN: Content - Home -->
 <div class="container-fluid tour-visa-new">
 	<div class="row show_tour">
-		<?php require_once(BASEPATH.'view/home/show_tour.php'); ?>
+				<?php require_once(BASEPATH.'view/home/show_tour.php'); ?>
 	</div>
 	<div class="row show_visa_news">
 		<?php require_once(BASEPATH.'view/home/show_visa_news.php'); ?>

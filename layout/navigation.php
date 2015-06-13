@@ -17,14 +17,14 @@
 
       	<!-- Trang chu -->
         <li>
-  			<a href="#">Trang chủ</a>
+  			<a href="index.php">Trang chủ</a>
         </li>
         <!-- Du lich gia tot-->
         <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Du lịch giá tốt</a>
+          <a href="index.php?controller=tour" class="dropdown-toggle disabled" data-toggle="dropdown" role="button" aria-expanded="false">Du lịch giá tốt</a>
           <ul class="dropdown-menu" role="menu">
-            <li><a href="#">Du lịch trong nước</a></li>
-            <li><a href="#">Du lịch nước ngoài</a></li>
+            <li><a href="index.php?controller=tour&amp;action=country&amp;tour_country_code=1">Du lịch trong nước</a></li>
+            <li><a href="index.php?controller=tour&amp;action=country&amp;tour_country_code=2">Du lịch nước ngoài</a></li>
           </ul>
         </li>
 

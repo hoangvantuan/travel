@@ -1,4 +1,5 @@
 <?php require_once('config.php'); ?>
+<?php require_once('model/database.php'); ?>
 
 <?php
 //Nhận request từ trình duyệt gửi đến controller và action tương ứng
