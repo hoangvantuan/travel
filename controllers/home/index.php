@@ -1,4 +1,4 @@
 <?php 
-	$title = "AD travel - Trang chủ - Du lịch tour";
+	$title = "AD Tourist - Trang chủ - Du lịch tour";
 	require_once(BASEPATH.'view/home/index.php');
  ?>

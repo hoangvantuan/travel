@@ -39,9 +39,13 @@
           </ul>
         </li>
         <!-- Du lich Xe-->
-        <li class="dropdown">
-          <a href="#" >Du lịch Thuê Xe</a>
+        <li>
+          <a href="#" >Dịch vụ Xe</a>
         </li>
+        <!-- Dich vi xuat khau lao dong -->
+        <li>
+          <a href="#" >Dịch vụ xuất khẩu lao động</a>
+        </li>          
         <!-- Tu van du hoc-->
         <li class="dropdown">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Tư vấn du học</a>
@@ -77,12 +81,6 @@
             <li><a href="#">Địa danh</a></li>
           </ul>
         </li>
-
-        <!-- gioi thieu -->
-        <li>
-  			<a href="#">Giới thiệu</a>
-        </li>
-
         <!-- Lien he -->
         <li>
   			<a href="#">Liên hệ</a>

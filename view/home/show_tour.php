@@ -1,6 +1,7 @@
 <!-- BEGIN: Show All Tour -->
 
 <div class="col-md-3 tour">
+
     <div class="thumbnail tour_detail">
     	<a  href="#"><img class="overimg"  src='asset/image/tour/du-lich-da-nang.jpg' width="235" alt="" class="responsive-img" /></a>
             <div class="caption">
