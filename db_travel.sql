@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: 127.0.0.1
--- Generation Time: Jun 12, 2015 at 06:50 PM
+-- Generation Time: Jun 13, 2015 at 08:02 PM
 -- Server version: 5.6.16
 -- PHP Version: 5.5.11
 
@@ -144,6 +144,7 @@ CREATE TABLE IF NOT EXISTS `tour_content` (
   `image` varchar(100) COLLATE utf8_unicode_ci DEFAULT NULL,
   `update_at` datetime NOT NULL,
   `create_at` datetime NOT NULL,
+  `tour_country_code` int(11) NOT NULL,
   PRIMARY KEY (`tour_content_code`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci AUTO_INCREMENT=1 ;
 
@@ -157,7 +158,15 @@ CREATE TABLE IF NOT EXISTS `tour_country` (
   `tour_country_code` int(11) NOT NULL AUTO_INCREMENT,
   `tour_country_name` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
   PRIMARY KEY (`tour_country_code`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci AUTO_INCREMENT=1 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci AUTO_INCREMENT=5 ;
+
+--
+-- Dumping data for table `tour_country`
+--
+
+INSERT INTO `tour_country` (`tour_country_code`, `tour_country_name`) VALUES
+(1, 'Du lịch trong nước'),
+(2, 'Du lịch nước ngoài');
 
 -- --------------------------------------------------------
 
@@ -168,8 +177,24 @@ CREATE TABLE IF NOT EXISTS `tour_country` (
 CREATE TABLE IF NOT EXISTS `tour_region` (
   `tour_region_code` int(11) NOT NULL AUTO_INCREMENT,
   `tour_region_name` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
+  `tour_country_code` int(11) NOT NULL,
   PRIMARY KEY (`tour_region_code`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci AUTO_INCREMENT=1 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci AUTO_INCREMENT=11 ;
+
+--
+-- Dumping data for table `tour_region`
+--
+
+INSERT INTO `tour_region` (`tour_region_code`, `tour_region_name`, `tour_country_code`) VALUES
+(1, 'Tour miền bắc', 1),
+(3, 'Du lịch miền trung', 1),
+(4, 'Du lịch miền tây', 1),
+(5, 'Du lịch miền đông', 1),
+(6, 'Du lịch châu á', 2),
+(7, 'Du lịch châu âu', 2),
+(8, 'Du lịch châu phi', 2),
+(9, 'Di lịch châu mỹ', 2),
+(10, 'Du lịch châu úc', 2);
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;

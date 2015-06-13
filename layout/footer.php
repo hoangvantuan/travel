@@ -74,10 +74,6 @@
 
 		$('.flexslider').flexslider({
     	animation: "fade",
-    	directionNav: true,
-    	animationLoop: true,
   			});
 		});
-    	</script>
-
 </body>
