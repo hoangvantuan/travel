@@ -61,6 +61,9 @@
 	<script type="text/javascript" src="asset/js/bootstrap.min.js"></script>
 	<script type="text/javascript" src="asset/js/customer.js"></script>
 	<script type="text/javascript" src="asset/js/scrolltotop.js"></script>
+	<script type="text/javascript" src="asset/js/jquery.carouFredSel-6.2.1.js"></script>
+
+	<!-- toggle du lich -->
 	<script type="text/javascript">
    	$(document).ready(function () {
        $('.incountry').click(function () {
@@ -71,9 +74,10 @@
            $('.outcountry-list').toggleClass('hidden-xs');
            $('.outcountry b').toggleClass('glyphicon-plus-sign').toggleClass('glyphicon-minus-sign');
            });
-
-		$('.flexslider').flexslider({
+    //home slide 
+	$('.flexslider').flexslider({
     	animation: "fade",
   			});
 		});
+   	</script>
 </body>

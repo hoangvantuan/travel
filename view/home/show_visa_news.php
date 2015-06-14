@@ -4,54 +4,16 @@
 		<h2><i class="fa fa-cc-visa"></i>Visa - Hộ Chiếu</h2>
 	</div>
 	<div class="row visa_content">
-		<div class="col-md-4 visa-col">
-			<div class="thumbnail visa-wrap">
-				<a href="#"><img src="asset/image/visa/giay_phep_lao_dong.jpg" class="responsive-img overimg"></a>
-				<div class="caption">
-					<h3><a href="#">Thủ tục gia hạn giấy phép lao động cho người nước ngoài tại Việt Nam</a></h3>
+		<?php foreach ($visa as $value):?>
+			<div class="col-md-4 col-sm-4 col-xs-6 visa-col">
+				<div class="thumbnail visa-wrap">
+					<a href="index.php?controller=visa&amp;action=servicevisa&amp;passport_visa_code=<?php echo $value['passport_visa_code']; ?>&amp;pass_offer=<?php echo $value['passport_visa_offer_code'] ?>"><img src=<?php echo $value['image'] ?> class="responsive-img overimg"></a>
+					<div class="caption">
+					<h3><a href="#"><?php echo $value['title'] ?></a></h3>
 				</div>
 			</div>
 		</div>
-		<div class="col-md-4 visa-col">
-			<div class="thumbnail visa-wrap">
-				<a href="#"><img src="asset/image/visa/giay_phep_lao_dong.jpg" class="responsive-img overimg"></a>
-				<div class="caption">
-					<h3><a href="#">Thủ tục gia hạn giấy phép lao động cho người nước ngoài tại Việt Nam</a></h3>
-				</div>
-			</div>
-		</div>
-		<div class="col-md-4 visa-col">
-			<div class="thumbnail visa-wrap">
-				<a href="#"><img src="asset/image/visa/giay_phep_lao_dong.jpg" class="responsive-img overimg"></a>
-				<div class="caption">
-					<h3><a href="#">Thủ tục gia hạn giấy phép lao động cho người nước ngoài tại Việt Nam</a></h3>
-				</div>
-			</div>
-		</div>
-		<div class="col-md-4 visa-col">
-			<div class="thumbnail visa-wrap">
-				<a href="#"><img src="asset/image/visa/giay_phep_lao_dong.jpg" class="responsive-img overimg"></a>
-				<div class="caption">
-					<h3><a href="#">Thủ tục gia hạn giấy phép lao động cho người nước ngoài tại Việt Nam</a></h3>
-				</div>
-			</div>
-		</div>
-		<div class="col-md-4 visa-col">
-			<div class="thumbnail visa-wrap">
-				<a href="#"><img src="asset/image/visa/giay_phep_lao_dong.jpg" class="responsive-img overimg"></a>
-				<div class="caption">
-					<h3><a href="#">Thủ tục gia hạn giấy phép lao động cho người nước ngoài tại Việt Nam</a></h3>
-				</div>
-			</div>
-		</div>
-		<div class="col-md-4 visa-col">
-			<div class="thumbnail visa-wrap">
-				<a href="#"><img src="asset/image/visa/giay_phep_lao_dong.jpg" class="responsive-img overimg"></a>
-				<div class="caption">
-					<h3><a href="#">Thủ tục gia hạn giấy phép lao động cho người nước ngoài tại Việt Nam</a></h3>
-				</div>
-			</div>
-		</div>
+		<?php endforeach ?>
 	</div>
 </div>
 <div class="col-md-4 news-wrap">

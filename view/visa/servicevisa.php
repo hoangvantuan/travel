@@ -17,12 +17,17 @@
             <span >
             	<?php
             		echo '<a itemprop="url" href="index.php?controller=visa&action=servicevisa&passport_visa_code='.$passport_visa_code.'"><i class="fa fa-hacker-news"></i><span itemprop="title"> '.$id['passport_visa_name'].'</span></a>';
-
             	?>
             </span>
         </li>
 
     </ol>
+
+
+
+
+
+
     <div class="clearfix" style="height:500px;">
     	<?php if (!isset($pass_offer)): ?>
 	    	<div class="col-md-8">
@@ -76,3 +81,5 @@
 <!--END Contain - Visa --> 
 
 <?php require_once('layout/footer.php'); ?>
+
+

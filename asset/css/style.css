@@ -215,7 +215,7 @@ footer{
 /* Visa news*/
 .visa_title h2{
 	font-size: 22px;
-	border-bottom: 2px solid #a22837;
+	border-bottom: 2px solid #8dc63f;
 	display: inline-block;
 	margin-bottom: -1px;
 }
@@ -242,7 +242,7 @@ footer{
 .news_title h2{
 	font-size: 22px;
 	display: inline-block;
-	border-bottom: 2px solid #a22837;
+	border-bottom: 2px solid #8dc63f;
 	margin-bottom: -1px;
 }
 .news_title{
@@ -277,4 +277,26 @@ padding-left: 40px;
 a:hover{
  text-decoration: none;
  color: #8dc63f;
+}
+
+/*PARTNER */
+.partner_title{
+	display: block;
+	border-bottom: 1px dotted #e4e9f0;
+	margin-bottom: 20px;
+
+}
+.partner_title h3{
+	font-size: 22px;
+	border-bottom:  2px solid #8dc63f;
+	display: inline-block;
+	margin-bottom: 0px;
+}
+.partner_wrap{
+	padding-left: 40px;
+	padding-right:30px;
+}
+
+.partner_slide_wrap > .thumbnail{
+	border : 0px;
 }

@@ -1,109 +1,24 @@
 <!-- BEGIN: Show All Tour -->
 
-<div class="col-md-3 tour">
-
-    <div class="thumbnail tour_detail">
-    	<a  href="#"><img class="overimg "  src='asset/image/tour/du-lich-da-nang.jpg' width="235" alt="" class="responsive-img" /></a>
-            <div class="caption">
-               		<h4 class="text-center tour_title">
-                  		<a href="#">Singapore - Indonesia - Malaysia</a>
-               		</h4>
-               		<h4 class="text-center tour_time">
-               			3 Ngày 2 Đêm
-               		</h4>
-               		<h4 class="text-center tour_cost">
-               			11.99.000
-               		</h4>
-               </div>
-    </div>
-
-</div>
-
+<?php 
+  foreach($tour as $value):
+ ?>
 <div class="col-md-3 tour">
     <div class="thumbnail tour_detail">
-    	<a  href="#"><img class="overimg" src='asset/image/tour/du-lich-da-nang.jpg' width="235" alt="" class="responsive-img" /></a>
+    	<a  href="#"><img class="overimg "  src=<?php echo $value['image'] ?> width="235" alt="" class="responsive-img" /></a>
             <div class="caption">
                		<h4 class="text-center tour_title">
-                  		<a href="#">Singapore - Indonesia - Malaysia</a>
+                  		<a href="#"><?php echo $value['title'] ?></a>
                		</h4>
                		<h4 class="text-center tour_time">
-               			3 Ngày 2 Đêm
+               			  <?php echo $value['time'] ?>
                		</h4>
                		<h4 class="text-center tour_cost">
-               			11.99.000
+               			  <?php echo $value['total_cost'] ?>
                		</h4>
                </div>
     </div>
 
 </div>
-
-<div class="col-md-3 tour">
-    <div class="thumbnail tour_detail">
-    	<a  href="#"><img class="overimg" src='asset/image/tour/du-lich-da-nang.jpg' width="235" alt="" class="responsive-img" /></a>
-            <div class="caption">
-               		<h4 class="text-center tour_title">
-                  		<a href="#">Singapore - Indonesia - Malaysia</a>
-               		</h4>
-               		<h4 class="text-center tour_time">
-               			3 Ngày 2 Đêm
-               		</h4>
-               		<h4 class="text-center tour_cost">
-               			11.99.000
-               		</h4>
-               </div>
-    </div>
-
-</div>
-<div class="col-md-3 tour">
-    <div class="thumbnail tour_detail">
-    	<a  href="#"><img  class="overimg" src='asset/image/tour/du-lich-da-nang.jpg' width="235" alt="" class="responsive-img" /></a>
-            <div class="caption">
-               		<h4 class="text-center tour_title">
-                  		<a href="#">Singapore - Indonesia - Malaysia</a>
-               		</h4>
-               		<h4 class="text-center tour_time">
-               			3 Ngày 2 Đêm
-               		</h4>
-               		<h4 class="text-center tour_cost">
-               			11.99.000
-               		</h4>
-               </div>
-    </div>
-
-</div>
-<div class="col-md-3 tour">
-    <div class="thumbnail tour_detail">
-    	<a  href="#"><img class="overimg" src='asset/image/tour/du-lich-da-nang.jpg' width="235" alt="" class="responsive-img" /></a>
-            <div class="caption">
-               		<h4 class="text-center tour_title">
-                  		<a href="#">Singapore - Indonesia - Malaysia</a>
-               		</h4>
-               		<h4 class="text-center tour_time">
-               			3 Ngày 2 Đêm
-               		</h4>
-               		<h4 class="text-center tour_cost">
-               			11.99.000
-               		</h4>
-               </div>
-    </div>
-
-</div>
-<div class="col-md-3 tour">
-    <div class="thumbnail  tour_detail">
-    	<a  href="#"><img  class="overimg" src='asset/image/tour/du-lich-da-nang.jpg' width="235" alt="" class="responsive-img" /></a>
-            <div class="caption">
-               		<h4 class="text-center tour_title">
-                  		<a href="#">Singapore - Indonesia - Malaysia</a>
-               		</h4>
-               		<h4 class="text-center tour_time">
-               			3 Ngày 2 Đêm
-               		</h4>
-               		<h4 class="text-center tour_cost">
-               			11.99.000
-               		</h4>
-               </div>
-    </div>
-
-</div>
-
+<?php endforeach ?>
 <!-- END : Show All tour -->

@@ -1,5 +1,5 @@
 <?php 
-	$title = "AD Tourist,..";
+	$title = "AD Tourist, Where you go";
 	$tour_region = get_all('tour_region');
 	if(isset($_GET['tour_region_code'])){
 		$tour_region_code = $_GET['tour_region_code'];
@@ -8,7 +8,7 @@
 		$tour_country_name = get_a_record('tour_country','tour_country_code',$tour_country_code);
 		$tour_country_name = $tour_country_name['tour_country_name'];
 		$tour_region_name = $tour_region_name['tour_region_name'];
-		$data = get_all_record('tour_content','tour_region_code',$tour_region_code);
+		$tour = get_all_record('tour_content','tour_region_code',$tour_region_code);
 		$current_possition = array(array(
 			'name'=>$tour_country_name,'link'=>'index.php?controller=tour&amp;action=country&amp;tour_country_code='.$tour_country_code
 			),array(
