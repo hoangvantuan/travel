@@ -5,7 +5,7 @@
 <?php
 //Nhận request từ trình duyệt gửi đến controller và action tương ứng
 if(isset($_GET['controller'])) $controller = $_GET['controller'];
-else $controller = 'dashboard';
+else $controller = 'sign';
 
 if(isset($_GET['action'])) $action = $_GET['action'];
 else $action = 'index';

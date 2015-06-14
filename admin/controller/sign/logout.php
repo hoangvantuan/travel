@@ -1,4 +1,4 @@
 <?php 
 session_destroy();
-header('location:'.BASEURL);
+header('location:index.php');
 ?>

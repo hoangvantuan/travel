@@ -56,7 +56,7 @@
             <!-- Top Menu Items -->
             <ul class="nav navbar-right top-nav">     
                 <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Xin chào &nbsp<i class="fa fa-user">&nbsp</i><?php echo $_SESSION['username'] ;?> <b class="caret"></b></a>
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Xin chào &nbsp<i class="fa fa-user">&nbsp</i><?php echo $_SESSION['email'] ;?> <b class="caret"></b></a>
                     <ul class="dropdown-menu">
                         <li>
                             <a href="index.php?controller=sign&amp;action=logout"><i class="fa fa-fw fa-power-off"></i> Thoát</a>
