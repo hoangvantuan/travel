@@ -5,10 +5,10 @@
  ?>
 <div class="col-md-3 tour">
     <div class="thumbnail tour_detail">
-    	<a  href="#"><img class="overimg "  src=<?php echo $value['image'] ?> width="235" alt="" class="responsive-img" /></a>
+    	<a  href='index.php?controller=tour&amp;action=tour_detail&amp;tour_content_code=<?php echo $value["tour_content_code"] ?>'><img class="overimg "  src=<?php echo $value['image'] ?> width="235" alt="" class="responsive-img" /></a>
             <div class="caption">
                		<h4 class="text-center tour_title">
-                  		<a href="#"><?php echo $value['title'] ?></a>
+                  		<a href='index.php?controller=tour&amp;action=tour_detail&amp;tour_content_code=<?php echo $value["tour_content_code"] ?>'><?php echo $value['title'] ?></a>
                		</h4>
                		<h4 class="text-center tour_time">
                			  <?php echo $value['time'] ?>

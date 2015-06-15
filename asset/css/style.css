@@ -300,3 +300,7 @@ a:hover{
 .partner_slide_wrap > .thumbnail{
 	border : 0px;
 }
+/*content- detail*/
+#tourist_detail{
+	margin-bottom: 20px;
+}
