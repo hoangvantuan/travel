@@ -83,7 +83,7 @@
         </li>
         <!-- Lien he -->
         <li>
-  			<a href="#">Liên hệ</a>
+  			<a href="index.php?controller=contact">Liên hệ</a>
         </li>
 
 
