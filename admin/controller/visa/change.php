@@ -3,7 +3,7 @@
 if (isset($_POST['submit'])) {
 	$noidung=$_POST['noidung'];
 	$masp=$_GET['masp'];
-	$getData_model->update('lienhe','noidung',$noidung,'id',$masp);
+	update('lienhe','noidung',$noidung,'id',$masp);
 	$success= 'Thay đổi thành công';
 }
 
