@@ -8,7 +8,7 @@
 
 body {
     margin-top: 100px;
-    background-color: #222;
+    background-color: #8dc63f;
 }
 
 @media(min-width:768px) {
@@ -57,7 +57,7 @@ body {
     padding-top: 15px;
     padding-bottom: 15px;
     line-height: 20px;
-    color: #999;
+    color: white;
 }
 
 .top-nav>li>a:hover,
@@ -66,7 +66,7 @@ body {
 .top-nav>.open>a:hover,
 .top-nav>.open>a:focus {
     color: #fff;
-    background-color: #000;
+    background-color: #53A239;
 }
 
 .top-nav>.open>.dropdown-menu {
@@ -76,15 +76,18 @@ body {
     border: 1px solid rgba(0,0,0,.15);
     border-top-left-radius: 0;
     border-top-right-radius: 0;
-    background-color: #fff;
+    background-color: #53A239;
     -webkit-box-shadow: 0 6px 12px rgba(0,0,0,.175);
     box-shadow: 0 6px 12px rgba(0,0,0,.175);
 }
 
 .top-nav>.open>.dropdown-menu>li>a {
     white-space: normal;
+    color: white;
 }
-
+.top-nav>.open>.dropdown-menu>li>a:hover{
+    background-color: #53A235;
+}
 ul.message-dropdown {
     padding: 0;
     max-height: 250px;
@@ -122,7 +125,7 @@ ul.alert-dropdown {
         border: none;
         border-radius: 0;
         overflow-y: auto;
-        background-color: #222;
+        background-color: #8dc63f;
     }
 
     .side-nav>li>a {
@@ -132,7 +135,7 @@ ul.alert-dropdown {
     .side-nav li a:hover,
     .side-nav li a:focus {
         outline: none;
-        background-color: #000 !important;
+        background-color: #53A239!important;
     }
 }
 
@@ -148,7 +151,7 @@ ul.alert-dropdown {
 }
 
 .side-nav>li>ul>li>a:hover {
-    color: #fff;
+    color: white;
 }
 
 /* Flot Chart Containers */

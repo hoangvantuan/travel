@@ -25,11 +25,11 @@
                                 </div>
                                 <div class="col-xs-9 text-right">
                                     <div class="huge"><?php echo '1'; ?></div>
-                                    <div>Quản lí itiem1!</div>
+                                    <div>Tour</div>
                                 </div>
                             </div>
                         </div>
-                        <a href="#">
+                        <a href="">
                             <div class="panel-footer">
                                 <span class="pull-left">Xem chi tiết</span>
                                 <span class="pull-right"><i class="fa fa-arrow-circle-right"></i></span>
@@ -47,7 +47,7 @@
                                 </div>
                                 <div class="col-xs-9 text-right">
                                     <div class="huge"><?php echo '2'; ?></div>
-                                    <div>Quản lí itiem2!</div>
+                                    <div>Visa-Hộ chiếu</div>
                                 </div>
                             </div>
                         </div>
@@ -69,7 +69,7 @@
                                 </div>
                                 <div class="col-xs-9 text-right">
                                     <div class="huge"><?php echo '3'; ?></div>
-                                    <div>Quản lí itiem3!</div>
+                                    <div>Dịch vụ xe</div>
                                 </div>
                             </div>
                         </div>
@@ -95,7 +95,7 @@
                                 </div>
                                 <div class="col-xs-9 text-right">
                                     <div class="huge"><?php echo '4'; ?></div>
-                                    <div>Quản lí itiem4!</div>
+                                    <div>Xuất khẩu lao động</div>
                                 </div>
                             </div>
                         </div>
@@ -117,7 +117,7 @@
                                 </div>
                                 <div class="col-xs-9 text-right">
                                     <div class="huge"><?php echo '5'; ?></div>
-                                    <div>Quản lí itiem5!</div>
+                                    <div>Tin tức - Sự kiện</div>
                                 </div>
                             </div>
                         </div>
@@ -139,7 +139,7 @@
                                 </div>
                                 <div class="col-xs-9 text-right">
                                     <div class="huge"><?php echo '6'; ?></div>
-                                    <div>Quản lí itiem6!</div>
+                                    <div>Liên hệ</div>
                                 </div>
                             </div>
                         </div>

@@ -16,7 +16,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
     <meta name="author" content="">
-    <link rel="shortcut icon" href="asset/img/icon/favicon.ico"/>
+    <link rel="shortcut icon" href=<?php echo BASEPATH.'asset/image/common/favicon.png' ?>/>    
     <title>Quản lí - AD tourist</title>
 
     <!-- Bootstrap Core CSS -->
@@ -51,7 +51,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="index.php"><i class="fa fa-heart">&nbsp</i>Quản lý AD tourist</a>
+                <a class="navbar-brand" href="index.php?controller=dashboard"><i class="fa fa-heart">&nbsp;</i>Quản lý AD tourist</a>
             </div>
             <!-- Top Menu Items -->
             <ul class="nav navbar-right top-nav">     
@@ -68,22 +68,25 @@
             <div class="collapse navbar-collapse navbar-ex1-collapse">
                 <ul class="nav navbar-nav side-nav">
                     <li <?php if($active=='Dashboard') echo 'class="active"';?>>
-                        <a href="index.php"><i class="fa fa-fw fa-dashboard"></i> Bảng điều khiển</a>
+                        <a href="index.php?controller=dashboard"><i class="fa fa-fw fa-dashboard"></i> Bảng điều khiển</a>
                     </li>
-                    <li  <?php if ($active=='Itiem1') {echo 'class="active"';}?> >
-                        <a href="#"><i class="fa fa-fw fa-reddit"></i> Itiem1</a>
+                    <li  <?php if ($active=='tour') {echo 'class="active"';}?> >
+                        <a href="#"><i class="fa fa-fw fa-reddit"></i> Tour</a>
                     </li>
-                    <li <?php if ($active=='Itiem2') {echo 'class="active"';}?>>
-                        <a href="#"><i class="fa fa-fw fa-list-ol"></i> Itiem2</a>
+                    <li <?php if ($active=='visa') {echo 'class="active"';}?>>
+                        <a href="#"><i class="fa fa-fw fa-list-ol"></i> Visa - Hộ chiếu</a>
                     </li>
-                    <li <?php if ($active=='Itiem3') {echo 'class="active"';}?>>
-                        <a href="#"><i class="fa fa-fw fa-shopping-cart"></i> Itiem3</a>
+                    <li <?php if ($active=='car') {echo 'class="active"';}?>>
+                        <a href="#"><i class="fa fa-fw fa-shopping-cart"></i> Dịch vụ xe</a>
                     </li>
-                    <li <?php if ($active=='Itiem4') {echo 'class="active"';}?>>
-                        <a href="#"><i class="glyphicon glyphicon-refresh"></i> Itiem4</a>
+                    <li <?php if ($active=='labor') {echo 'class="active"';}?>>
+                        <a href="#"><i class="glyphicon glyphicon-refresh"></i> Lao động</a>
                     </li>
-                    <li <?php if ($active=='Itiem5') {echo 'class="active"';}?>>
-                        <a href="#"><i class="glyphicon glyphicon-star"></i> Itiem5</a>
+                    <li <?php if ($active=='news') {echo 'class="active"';}?>>
+                        <a href="#"><i class="glyphicon glyphicon-star"></i> Tin tức - sự kiện</a>
+                    </li>
+                    <li <?php if ($active=='contact') {echo 'class="active"';}?>>
+                        <a href="#"><i class="glyphicon glyphicon-star"></i> Liên hệ</a>
                     </li>
                 </ul>
             </div>
