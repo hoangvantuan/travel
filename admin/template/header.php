@@ -71,10 +71,10 @@
                         <a href="index.php?controller=dashboard"><i class="fa fa-fw fa-dashboard"></i> Bảng điều khiển</a>
                     </li>
                     <li  <?php if ($active=='tour') {echo 'class="active"';}?> >
-                        <a href="#"><i class="fa fa-fw fa-reddit"></i> Tour</a>
+                        <a href="index.php?controller=tour"><i class="fa fa-fw fa-reddit"></i> Tour</a>
                     </li>
                     <li <?php if ($active=='visa') {echo 'class="active"';}?>>
-                        <a href="#"><i class="fa fa-fw fa-list-ol"></i> Visa - Hộ chiếu</a>
+                        <a href="index.php?controller=visa"><i class="fa fa-fw fa-list-ol"></i> Visa - Hộ chiếu</a>
                     </li>
                     <li <?php if ($active=='car') {echo 'class="active"';}?>>
                         <a href="#"><i class="fa fa-fw fa-shopping-cart"></i> Dịch vụ xe</a>
