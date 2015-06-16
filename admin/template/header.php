@@ -1,10 +1,9 @@
     <!-- jQuery -->
     <script src="asset/js/jquery.js"></script>
-    <script type="text/javascript" src="asset/js/nicEdit.js"></script> <script type="text/javascript">
-//<![CDATA[
-        bkLib.onDomLoaded(function() { nicEditors.allTextAreas() });
-  //]]>
-  </script>
+    <script type="text/javascript" src="asset/js/nicEdit.js"></script>
+<script type="text/javascript">
+    bkLib.onDomLoaded(function() { nicEditors.allTextAreas() });
+</script>
 
     <!-- Bootstrap Core JavaScript -->
     <script src="asset/js/bootstrap.min.js"></script>

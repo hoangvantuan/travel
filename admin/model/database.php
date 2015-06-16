@@ -82,7 +82,9 @@ function delete($table,$colum,$value){
 
 }
 
-
+function escape($str) {
+return mysql_real_escape_string($str);
+}
 function get_a_record_x($table, $colum, $value ,$colum1,$value1,$colum2,$value2, $select = '*') {
     //truy vấn
     $sql = "SELECT $select FROM `$table` WHERE $colum='$value' AND $colum1='$value1'AND $colum2='$value2'";

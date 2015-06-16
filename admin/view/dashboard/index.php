@@ -46,12 +46,12 @@
                                     <i class="fa fa-list-ol fa-5x"></i>
                                 </div>
                                 <div class="col-xs-9 text-right">
-                                    <div class="huge"><?php echo '2'; ?></div>
+                                    <div class="huge"><?php echo $visa; ?></div>
                                     <div>Visa-Hộ chiếu</div>
                                 </div>
                             </div>
                         </div>
-                        <a href="#">
+                        <a href="index.php?controller=visa">
                             <div class="panel-footer">
                                 <span class="pull-left">Xem chi tiết</span>
                                 <span class="pull-right"><i class="fa fa-arrow-circle-right"></i></span>

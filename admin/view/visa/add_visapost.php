@@ -48,45 +48,39 @@ function img_find(id) {
 
 			<div class="row">
 				<div class="col-lg-8">
-					<form enctype="multipart/form-data" role="form" action="index.php?controller=visa&amp;action=change&amp;passport_visa_offer_code=<?php echo $visa['passport_visa_offer_code'];?>" method="post">
-						<div class="form-group">
-                            <label>1/STT : </label>
-                <?php echo $visa['passport_visa_offer_code'];?>
-            </div>
+					<form enctype="multipart/form-data" role="form" action="index.php?controller=visa&amp;action=add_visapost" method="post">
             <div class="form-group">
                 <label>2/Danh mục các dịch vụ Visa : </label>
                 <select name="passport_visa_name">
                         <?php foreach ($visa_name as $key => $value):?>
-                        <option value="<?php echo $value['passport_visa_name'];?>"<?php if ($value['passport_visa_code']==$visa['passport_visa_code']) {
-                            echo 'selected';
-                        }?>><?php echo $value['passport_visa_name'];?></option>
+                        <option value="<?php echo $value['passport_visa_name'];?>"><?php echo $value['passport_visa_name'];?></option>
                         <?php endforeach?>
                 </select>
             </div>
             <div class="form-group">
                 <label>3/Title : </label>
-                <input name="title" type="text" value="<?php echo $visa['title'];?>">
+                <input name="title" type="text" value="" required>
             </div>
             <div class="form-group">
                 <label>4/Description : </label>
-                <input name="description" type="text" value="<?php echo $visa['description'];?>">
+                <input name="description" type="text" value="" required>
             </div>
             <div class="form-group">
                 <label>5/Content : </label>
-                <textarea id="contents" name="noidung" cols="100" rows="20"><?php echo $visa['content'];?><script>img_find('contents');</script></textarea><br />
+                <textarea id="contents" name="noidung" cols="100" rows="20" ><script>img_find('contents');</script></textarea><br />
             </div>
             <div class="form-group">
-                <label>6/Image : </label><input type="file" name="fileToUpload" id="fileToUpload" value ="<?php echo $visa['image'];?>"><img src="../<?php echo $visa['image'];?>" alt="" width="50" height="50"/>
+                <label>6/Image : </label><input type="file" name="fileToUpload" id="fileToUpload" required>
             </div>
             <div class="form-group">
                 <label>7/Create at : </label>
-                <input type="datetime" name="create_at" value="<?php echo $visa['create_at'];?>">
+                <input type="datetime" name="create_at" >
             </div>
             <div class="form-group">
                 <label>8/Update at : </label>
-                <input type="datetime" name="update_at" value="<?php echo $visa['update_at'];?>">
+                <input type="datetime" name="update_at" >
             </div>
-                <button type="submit" name="submit" class="btn btn-default">Sửa </button>
+                <button type="submit" name="submit" class="btn btn-default">Thêm </button>
                 <button type="reset" class="btn btn-default">Làm mới </button>
 					</form>
 				</div>
