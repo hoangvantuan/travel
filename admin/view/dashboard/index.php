@@ -23,7 +23,7 @@
                                     <i class="fa fa-reddit fa-5x"></i>
                                 </div>
                                 <div class="col-xs-9 text-right">
-                                    <div class="huge"><?php echo '1'; ?></div>
+                                    <div class="huge"><?php echo $tour; ?></div>
                                     <div>Tour</div>
                                 </div>
                             </div>
