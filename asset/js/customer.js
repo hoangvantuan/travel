@@ -26,3 +26,25 @@ $(function() {
 		}
 	);
 });
+
+
+
+   	$(document).ready(function () {
+       $('.incountry').click(function () {
+           $('.incountry-list').toggleClass('hidden-xs');
+           $('.incountry b').toggleClass('glyphicon-plus-sign').toggleClass('glyphicon-minus-sign');
+           });
+           $('.outcountry').click(function () {
+           $('.outcountry-list').toggleClass('hidden-xs');
+           $('.outcountry b').toggleClass('glyphicon-plus-sign').toggleClass('glyphicon-minus-sign');
+           });
+    //home slide 
+	$('.flexslider').flexslider({
+    	animation: "fade",
+  			});
+		});
+   	//Tour details menu tab
+   	$('#tourist_detail a').click(function (e) {
+  		e.preventDefault()
+  		$(this).tab('show');
+});
