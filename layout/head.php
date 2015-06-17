@@ -12,8 +12,6 @@
 	<link rel="stylesheet" type="text/css" href="asset/css/font-awesome.min.css">
 	<link rel="stylesheet" type="text/css" href="asset/css/flexslider.css">
 	<link rel="stylesheet" type="text/css" href="asset/css/style.css" />
-	<link rel="stylesheet" type="text/css" href="asset/css/contact.css" />
-	<link rel="stylesheet" type="text/css" href="asset/css/footer.css" />
 
 </head>
 <body>

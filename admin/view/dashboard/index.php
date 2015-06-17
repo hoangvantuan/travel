@@ -14,7 +14,6 @@
                 </div>
             </div>
             <!-- Page Heading -->
-
             <div class="row">
                 <div class="col-lg-3 col-md-6">
                     <div class="panel panel-primary">
@@ -83,8 +82,7 @@
                     </div>
                 </div>
             </div>
-                <!-- /.row -->
-
+            <!-- /.row -->
             <div class="row">
                 <div class="col-lg-3 col-md-6">
                     <div class="panel panel-red">
@@ -153,13 +151,10 @@
                     </div>
                 </div>
             </div>
-                <!-- /.row -->
-
+            <!-- /.row -->
         </div>
-            <!-- /.container-fluid -->
-
+        <!-- /.container-fluid -->
     </div>
-        <!-- /#page-wrapper -->
-
+    <!-- /#page-wrapper -->
 </div>
-    <!-- /#wrapper -->
+<!-- /#wrapper -->
