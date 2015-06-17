@@ -1,0 +1,21 @@
+div.contact{
+	background-color:#ffffff; 
+	padding-top:40px; 
+	padding-bottom:40px;
+}
+div.contact span{
+	border-radius :0px;
+	background-color:#8DC63F;
+	color:#FFFFFF;
+}
+div.contact input{
+	border-radius:0px;
+}
+div.contact textarea{
+	border-radius: 0px;
+	height: 200px;
+}
+div.contact input#contact-submit{
+	background-color:#8DC63F;
+	
+}
