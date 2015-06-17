@@ -1,5 +1,5 @@
 <div class="row">
-	<div class="col-md-12"><label><i class="fa fa-upload"></i> <a href="index.php?controller=tour&amp;action=add">Thêm Tour</a></label></div>
+	<div class="col-md-12"><label><i class="fa fa-upload"></i> <a href="index.php?controller=tour&amp;action=add&amp;lang=<?php echo $lang ?>">Thêm Tour</a></label></div>
 	<div class="col-md-12"><h3 text-center bg-info><?php if(isset($success)) echo $success; ?></h3></div>
 	<div class="col-md-12">
 		<h2>Bảng danh sách các tour</h2>
@@ -28,8 +28,8 @@
 						<td><img src=<?php echo ROOTPATH.$value['image'] ?> width="50"></td>
 						<td><?php echo $value['create_at'] ?></td>
 						<td><?php echo $value['update_at'] ?></td>
-						<td><a href="index.php?controller=tour&amp;action=edit&amp;tour_content_code=<?php echo $value['tour_content_code'] ?>">Sửa</a></td>
-						<td><a href="index.php?controller=tour&amp;action=delete&amp;tour_content_code=<?php echo $value['tour_content_code'] ?>"><i class="glyphicon glyphicon-trash"></i></a></td>
+						<td><a href="index.php?controller=tour&amp;action=edit&amp;tour_content_code=<?php echo $value['tour_content_code'] ?>&amp;lang=<?php echo $lang ?>">Sửa</a></td>
+						<td><a href="index.php?controller=tour&amp;action=delete&amp;tour_content_code=<?php echo $value['tour_content_code'] ?>&amp;lang=<?php echo $lang ?>"><i class="glyphicon glyphicon-trash"></i></a></td>
 					</tr>
 				<?php endforeach ?>
 				</tbody>

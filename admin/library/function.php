@@ -27,4 +27,11 @@ $l = strlen($str) - $i;
 $ext = substr($str,$i+1,$l);
 return $ext;
 }
+//get language of page
+function get_lang(){
+	if(isset($_GET['lang']) &&  $_GET['lang'] == 'en'){
+		return 'en';
+	}
+	else return 'vi';
+}
  ?>

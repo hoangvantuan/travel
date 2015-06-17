@@ -1,6 +1,6 @@
 <div class="col-md-12 partner_wrap">
 	<div class="partner_title row">
-		<h3>Đồng hành cùng chúng tôi</h3>
+		<h3><?php echo $lang =='en'? 'Accompanying us': 'Đồng hành cùng chúng tôi'  ?></h3>
 	</div>
 	<div class="partner_slide row">
 		<div class="partner_slide_wrap">

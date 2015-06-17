@@ -9,8 +9,8 @@
             </div>
             <div class="row"><h4  class="bg-info text-center"><?php if(isset($success)) echo $success ?></h4></div>
             <div class="row"><h4  class="bg-info text-center"><?php if(isset($image_error)) echo $image_error ?></h4></div>
-            <div class="col-md-2"><label><i class="fa fa-upload"></i> <a href="index.php?controller=tour&amp;action=edit&amp;tour_content_code=<?php echo $tour['tour_content_code'] ?>">Sửa</a></label></div>
-            <div class="col-md-2"><label><i class="glyphicon glyphicon-trash"></i></i> <a href="index.php?controller=tour&amp;action=delete&amp;tour_content_code=<?php echo $tour['tour_content_code'] ?>">Xóa</a></label></div>
+            <div class="col-md-2"><label><i class="fa fa-upload"></i> <a href="index.php?controller=tour&amp;action=edit&amp;tour_content_code=<?php echo $tour['tour_content_code'] ?>&amp;lang=<?php echo $lang ?>">Sửa</a></label></div>
+            <div class="col-md-2"><label><i class="glyphicon glyphicon-trash"></i></i> <a href="index.php?controller=tour&amp;action=delete&amp;tour_content_code=<?php echo $tour['tour_content_code'] ?>&amp;lang=<?php echo $lang ?>">Xóa</a></label></div>
             <div class="row">
                 <div class="col-md-12">
                     <!-- BEGIN: Show All Tour -->

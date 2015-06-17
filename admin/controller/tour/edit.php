@@ -1,20 +1,20 @@
 <?php 
 
 	$active = 'tour';
+	$lang = get_lang();
 	$title = "Sửa Nội Dung";
-	require_once('template/header.php');
 	if(isset($_GET['tour_content_code']) && !isset($_POST['submit'])){
 		$tour_content_code = $_GET['tour_content_code'];
 		$tour = get_a_record('tour_content','tour_content_code',$tour_content_code);
-		$current_possition = array(array('name'=>'Danh sách các tour','link'=>'index.php?controller=tour'),
-									array('name'=>$tour['title'],'link'=>'index.php?controller=tour&amp;action=tour_detail&amp;tour_content_code='.$tour['tour_content_code']));
+		$current_possition = array(array('name'=>'Danh sách các tour','link'=>'index.php?lang='.$lang.'&controller=tour'),
+									array('name'=>$tour['title'],'link'=>'index.php?lang='.$lang.'&controller=tour&amp;action=tour_detail&amp;tour_content_code='.$tour['tour_content_code']));
 		require_once('view/tour/tour_edit.php');
 	}
 	else if(isset($_POST['submit']) && isset($_GET['tour_content_code'])){
 		$tour_content_code = $_GET['tour_content_code'];
 		$tour = get_a_record('tour_content','tour_content_code', $tour_content_code);
-		$current_possition = array(array('name'=>'Danh sách các tour','link'=>'index.php?controller=tour'),
-									array('name'=>$tour['title'],'link'=>'index.php?controller=tour&amp;action=tour_detail&amp;tour_content_code='.$tour['tour_content_code']));
+		$current_possition = array(array('name'=>'Danh sách các tour','link'=>'index.php?lang='.$lang.'&controller=tour'),
+									array('name'=>$tour['title'],'link'=>'index.php?lang='.$lang.'&controller=tour&amp;action=tour_detail&amp;tour_content_code='.$tour['tour_content_code']));
 		if($tour['tour_country_code'] == 1) $tour_country_name = 'incountry';
 		else if ($tour['tour_country_code'] == 2) $tour_country_name = 'outcountry';
 		$success = null;
@@ -39,7 +39,7 @@
 					$errors = 1;
 				}
 				else{
-					$image_new_path = ROOTPATH.'asset/image/tour/'.$tour_country_name.'/'.$image;
+					$image_new_path = ROOTPATH.'asset/image/tour/'.$lang.'/'.$tour_country_name.'/'.$image;
 
 					if(file_exists($image_new_path))
 					{
@@ -56,7 +56,7 @@
 						$image_error = "Có lỗi trong khi upload ảnh";
 					}
 					else
-						$image_path = 'asset/image/tour/'.$tour_country_name.'/'.$image;
+						$image_path = 'asset/image/tour/'.$lang.'/'.$tour_country_name.'/'.$image;
 						unlink(ROOTPATH.$tour['image']);
 					}
 				}
@@ -92,5 +92,5 @@
 
 }
 	else
-	header('location: index.php');	
+	header('location: index.php?lang='.$lang);	
  ?>	

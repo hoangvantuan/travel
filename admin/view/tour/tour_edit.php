@@ -7,7 +7,7 @@
 				<?php require_once('template/current_possition.php'); ?>
 			</div>
 			<div class="row">
-			<form action="index.php?controller=tour&amp;action=edit&amp;tour_content_code=<?php echo $tour['tour_content_code']; ?>" method="POST" role="form" enctype="multipart/form-data">
+			<form action="index.php?controller=tour&amp;action=edit&amp;tour_content_code=<?php echo $tour['tour_content_code']; ?>&amp;lang=<?php echo $lang ?>" method="POST" role="form" enctype="multipart/form-data">
 				<div class="form-group">
 					<label for="title">Tiêu đề</label>
 					<input type="text" name='title' class="form-control" id="title" value="<?php echo $tour['title'] ?>" />

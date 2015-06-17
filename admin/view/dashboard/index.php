@@ -28,7 +28,7 @@
                                 </div>
                             </div>
                         </div>
-                        <a href="index.php?controller=tour" />
+                        <a href="index.php?controller=tour&amp;lang=<?php echo $lang ?>" />
                             <div class="panel-footer">
                                 <span class="pull-left">Xem chi tiết</span>
                                 <span class="pull-right"><i class="fa fa-arrow-circle-right"></i></span>
@@ -50,7 +50,7 @@
                                 </div>
                             </div>
                         </div>
-                        <a href="index.php?controller=visa">
+                        <a href="index.php?controller=visa&amp;lang=<?php echo $lang ?>">
                             <div class="panel-footer">
                                 <span class="pull-left">Xem chi tiết</span>
                                 <span class="pull-right"><i class="fa fa-arrow-circle-right"></i></span>

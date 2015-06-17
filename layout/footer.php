@@ -4,24 +4,24 @@
 		<div class="row footer-top">
 			<div class="col-md-4 footer-left">
 				<div class="row">
-					<h4 class="footer-title-lt">ĐĂNG KÍ EMAIL</h4>
-					<p><i class="glyphicon glyphicon-bookmark"></i>&nbsp;Đừng bỏ lỡ bản tin hàng tuần của AD., Travil Tourist !</p>
+					<h4 class="footer-title-lt"><?php echo $lang == 'en'?  'EMAIL REGISTER' : 'ĐĂNG KÍ EMAIL' ?></h4>
+					<p><i class="glyphicon glyphicon-bookmark"></i>&nbsp; <?php if($lang == 'en') echo "Don't miss the weekly news of AD!.,"; else echo 'Đừng bỏ lỡ bản tin hàng tuần của AD., Travel Tourist !' ?></p>
 					<form>
 						<div class="form-group">
-							<input type="email" class="form-control form-mail" placeholder="Email của bạn">
+							<input type="email" class="form-control form-mail" placeholder="<?php echo $lang == 'en'? 'Your email' : 'Email của bạn'?>">
 						</div>
-						<button type="submit" class="btn btn-default btn-send-email pull-right"><i class="glyphicon glyphicon-envelope"></i>&nbsp;Đăng kí</button>
+						<button type="submit" class="btn btn-default btn-send-email pull-right"><i class="glyphicon glyphicon-envelope"></i>&nbsp;<?php if($lang=='en') echo 'Register'; else echo 'Đăng kí' ?></button>
 					</form>
 				</div>
 				<div class="row">
-					<h4 class="footer-title-lb">BẢN ĐỒ</h4>
+					<h4 class="footer-title-lb"><?php echo $lang == 'en' ? 'MAP' : 'BẢN ĐỒ' ?></h4>
 						<div class="widget-content">
 							<iframe class="google-map" height="150" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14898.666451596955!2d105.842974!3d21.005997!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x7030dea9a0b16d02!2zVHLGsOG7nW5nIMSQ4bqhaSBo4buNYyBCw6FjaCBraG9hIEjDoCBO4buZaQ!5e0!3m2!1svi!2s!4v1426309165584"  frameborder="0" style="border:0"></iframe>
 						</div><!-- widget content -->
 				</div>
 			</div>
 			<div class="col-md-4 footer-mid">
-				<h4 class="footer-title-mid">KẾT NỐI VỚI CHÚNG TÔI</h4>
+				<h4 class="footer-title-mid"><?php echo  $lang =='en'? 'CONNECT WITH US' : 'KẾT NỐI VỚI CHÚNG TÔI' ?></h4>
                      <div class="fb-like-box"
                         data-height="250" data-colorscheme="light" data-show-faces="true"
                         data-header="false" data-stream="false" data-show-border="false">
@@ -29,7 +29,7 @@
                      </div>
 			</div>
 			<div class="col-md-4 footer-right">
-				<H4 class="footer-title-right">CÔNG TY CP ĐT - TV - TM - DV - DU LỊCH AD., Tourist</H4>
+				<H4 class="footer-title-right"><?php echo $lang == 'en'? 'AD TOURIST COMPANY' : 'CÔNG TY CP ĐT - TV - TM - DV - DU LỊCH AD., Tourist' ?></H4>
            		<p><i class="fa fa-map-marker fa-fw"></i> Số 87 ngõ 12 Quang Trung, Văn Khê, Hà Đông, Hà Nội</p>
                 <p><i class="fa fa-phone fa-fw"></i> ĐT: 0462 60 48 38</p>
                 <p><i class="fa fa-mobile-phone fa-fw"></i> Hotline: 0987647504  </p>

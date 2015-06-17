@@ -1,9 +1,10 @@
 <?php
-	$active="visa"; 
+	$active="visa";
+	$lang = get_lang(); 
 	$visa_name=get_all('passport_visa');
 if (isset($_POST['submit'])) {
 	if($_FILES['fileToUpload']['name']!=null){
-	$target_dir=".././asset/image/visa/";
+	$target_dir=".././asset/image/visa/".$lang.'/'.;
 	$target_file = $target_dir . basename($_FILES["fileToUpload"]["name"]);
 	$uploadOk = 1;
 	$imageFileType = pathinfo($target_file,PATHINFO_EXTENSION);
@@ -44,7 +45,7 @@ if (isset($_POST['submit'])) {
 	    }
 	}
 	$image = basename($_FILES['fileToUpload']['name']);
-	$image = 'asset/image/visa/'.$image;
+	$image = 'asset/image/visa/'.$lang.'/'.$image;
 	$passport_visa_name=$_POST['passport_visa_name'];
 	$passport_visa_code=get_a_record('passport_visa','passport_visa_name',$passport_visa_name);
 	$title=$_POST['title'];

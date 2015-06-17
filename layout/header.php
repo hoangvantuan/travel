@@ -6,8 +6,8 @@
            		<div class="top-bar">
                 	<h1 class="top-bar-text"> Dich vu du lich gia tot, dich vu lam visa nhanh chong, dat ve may bay gia re, du hoc. Hotline 24/7 : <span><i class="glyphicon glyphicon-phone"></i>&nbsp;0987647504</span>
                 		<select class="pull-right language" onchange="window.location = this.value">
-                			<option value="index.php?controller=language&amp;lang=vi">Vietnamese</option>
-                			<option value="index.php?controller=language&amp;lang=en">English</option>
+                			<option <?php if(isset($_GET['lang']) && $_GET['lang'] == 'vi') echo 'selected' ?> value="index.php?controller=language&amp;lang=vi">Vietnamese</option>
+                			<option <?php if(isset($_GET['lang']) && $_GET['lang'] == 'en') echo 'selected' ?> value="index.php?controller=language&amp;lang=en">English</option>
                 		</select>
                 	</h1>
                </div>

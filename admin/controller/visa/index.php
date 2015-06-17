@@ -1,4 +1,5 @@
 <?php
+	$lang = get_lang();
 if (isset($_GET['delete'])) {
 	$image=get_a_record('passport_visa_offers','passport_visa_offer_code',$_GET['delete']);
 	$image='../'.$image['image'];

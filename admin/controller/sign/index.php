@@ -7,7 +7,7 @@ if (isset($_POST['submit'])){
 		{
 			$_SESSION['email'] = $email;
 			$_SESSION['password'] = $pass;
-			header('location:index.php?controller=dashboard');
+			header('location:index.php?lang='.$lang.'&controller=dashboard');
 		}
 		else 
 			$error = 'Sign in Failure ! Please try again.';

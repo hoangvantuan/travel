@@ -17,30 +17,30 @@
 
       	<!-- Trang chu -->
         <li>
-  			<a href="index.php">Trang chủ</a>
+  			<a href="index.php?lang=<?php echo $lang ?>"><?php echo $lang =='en'? 'Home' : 'Trang chủ' ?></a>
         </li>
         <!-- Du lich gia tot-->
         <li class="dropdown">
-          <a href="index.php?controller=tour" class="dropdown-toggle disabled" data-toggle="dropdown" role="button" aria-expanded="false">Du lịch giá tốt</a>
+          <a href="index.php?controller=tour&amp;lang=<?php echo $lang  ?>" class="dropdown-toggle disabled" data-toggle="dropdown" role="button" aria-expanded="false"><?php echo $lang =='en' ? 'Tourist good price' : 'Du lịch giá tốt' ?></a>
           <ul class="dropdown-menu" role="menu">
-            <li><a href="index.php?controller=tour&amp;action=country&amp;tour_country_code=1">Du lịch trong nước</a></li>
-            <li><a href="index.php?controller=tour&amp;action=country&amp;tour_country_code=2">Du lịch nước ngoài</a></li>
+            <li><a href="index.php?lang=<?php echo $lang ?>&amp;controller=tour&amp;action=country&amp;tour_country_code=1"><?php echo $lang =='en'? 'Domestic tourism' : 'Du lịch trong nước' ?></a></li>
+            <li><a href="index.php?lang=<?php echo $lang ?>&amp;controller=tour&amp;action=country&amp;tour_country_code=2"><?php echo $lang =='en'? 'Abroad tourism' : 'Du lịch nước ngoài' ?></a></li>
           </ul>
         </li>
 
         <!-- dich vu visa, ho chieu -->
         <li class="dropdown">
-          <a href="index.php?controller=visa&amp;action=servicevisa" class="dropdown-toggle disabled" data-toggle="dropdown" role="button" aria-expanded="false">Visa - hộ chiếu</a>
+          <a href="index.php?lang=<?php echo $lang ?>&amp;controller=visa&amp;action=servicevisa" class="dropdown-toggle disabled" data-toggle="dropdown" role="button" aria-expanded="false"><?php echo $lang =='en'? 'Visa - Passport': 'Visa - hộ chiếu' ?></a>
           <ul class="dropdown-menu" role="menu">
-            <li><a href="index.php?controller=visa&amp;action=servicevisa">Dịch vụ làm thẻ visa hộ chiếu</a></li>
-            <li><a href="index.php?controller=visa&amp;action=servicevisa&amp;passport_visa_code=2">Dịch vụ làm thẻ tạm trú - Cư trú</a></li>
-            <li><a href="index.php?controller=visa&amp;action=servicevisa&amp;passport_visa_code=3">Dịch vụ xin giấy phép lao động</a></li>
-            <li><a href="index.php?controller=visa&amp;action=servicevisa&amp;passport_visa_code=4">Dịch vụ xin gia hạn visa</a></li>
+            <li><a href="index.php?lang=<?php echo $lang ?>&amp;controller=visa&amp;action=servicevisa">Dịch vụ làm thẻ visa hộ chiếu</a></li>
+            <li><a href="index.php?lang=<?php echo $lang ?>&amp;controller=visa&amp;action=servicevisa&amp;passport_visa_code=2">Dịch vụ làm thẻ tạm trú - Cư trú</a></li>
+            <li><a href="index.php?lang=<?php echo $lang ?>&amp;controller=visa&amp;action=servicevisa&amp;passport_visa_code=3">Dịch vụ xin giấy phép lao động</a></li>
+            <li><a href="index.php?lang=<?php echo $lang ?>&amp;controller=visa&amp;action=servicevisa&amp;passport_visa_code=4">Dịch vụ xin gia hạn visa</a></li>
           </ul>
         </li>
         <!-- Du lich Xe-->
         <li>
-          <a href="#" >Dịch vụ Xe</a>
+          <a href="#" ><?php echo $lang =='en' ? 'Car service' : 'Dịch vụ Xe' ?></a>
         </li>
         <!-- Dich vi xuat khau lao dong -->
         <li>
@@ -71,7 +71,7 @@
 
        	<!-- Tin tuc - su kien -->
         <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Tin tức - sự kiện</a>
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><?php echo $lang =='en'? 'News - Events' : 'Tin tức, sự kiện' ?></a>
           <ul class="dropdown-menu" role="menu">
             <li><a href="#">Lễ hội</a></li>
             <li><a href="#">Văn hóa</a></li>
@@ -83,7 +83,7 @@
         </li>
         <!-- Lien he -->
         <li>
-  			<a href="#">Liên hệ</a>
+  			<a href="#"><?php echo $lang =='en'? 'Contact':  'Liên hệ' ?></a>
         </li>
 
 

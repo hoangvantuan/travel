@@ -1,6 +1,6 @@
 <?php
 	$active="visa"; 
-
+	$lang = get_lang();
 	if (isset($_GET['passport_visa_offer_code'])&&!isset($_POST['submit'])) {
 	$passport_visa_offer_code=$_GET['passport_visa_offer_code'];
 	$visa = get_a_record('passport_visa_offers','passport_visa_offer_code',$passport_visa_offer_code);
@@ -11,7 +11,7 @@
 	$passport_visa_offer_code=$_GET['passport_visa_offer_code'];
 	$visa = get_a_record('passport_visa_offers','passport_visa_offer_code',$passport_visa_offer_code);
 	if($_FILES['fileToUpload']['name']!=null){
-	$target_dir=".././asset/image/visa/";
+	$target_dir=".././asset/image/visa/".$lang.'/';
 	$target_file = $target_dir . basename($_FILES["fileToUpload"]["name"]);
 	$uploadOk = 1;
 	$imageFileType = pathinfo($target_file,PATHINFO_EXTENSION);
@@ -52,7 +52,7 @@
 	    }
 	}
 	$image = basename($_FILES['fileToUpload']['name']);
-	$image = 'asset/image/visa/'.$image;}else {
+	$image = 'asset/image/visa/'.$lang.'/'.$image;}else {
 		$image=$visa['image'];}
 	//$type = substr(strrchr($tmp, "."), 1);
 	//$masp = substr($tmp, 0 ,strlen($tmp)-strlen($type)-1);

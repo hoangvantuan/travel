@@ -1,7 +1,8 @@
 <?php 
 	$active = 'tour';
+	$lang = get_lang();
 	$title = "Thêm tour du lịch";
-	$current_possition = array(array('name'=>'Danh sách các tour','link'=>'index.php?controller=tour'));
+	$current_possition = array(array('name'=>'Danh sách các tour','link'=>'index.php?lang='.$lang.'&controller=tour'));
 	$tour_region = get_all('tour_region');
 	if(isset($_POST['submit']))
 	{
@@ -38,7 +39,7 @@
 					$errors = 1;
 				}
 				else{
-					$image_new_path = ROOTPATH.'asset/image/tour/'.$tour_country_name.'/'.$image;
+					$image_new_path = ROOTPATH.'asset/image/tour/'.$lang.'/'.$tour_country_name.'/'.$image;
 
 					if(file_exists($image_new_path))
 					{
@@ -54,7 +55,7 @@
 						$image_error = "Có lỗi trong khi upload ảnh";
 					}
 					else
-						$image_path = 'asset/image/tour/'.$tour_country_name.'/'.$image;
+						$image_path = 'asset/image/tour/'.$lang.'/'.$tour_country_name.'/'.$image;
 					}
 				}
 			}

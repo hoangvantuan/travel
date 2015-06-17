@@ -7,10 +7,10 @@
                     <h1 class="page-header">Visa - Hộ chiếu</h1>
                     <ol class="breadcrumb">
                         <li>
-                            <i class="fa fa-dashboard"></i>  <a href="index.php?controller=dashboard">Bảng điều khiển</a>
+                            <i class="fa fa-dashboard"></i>  <a href="index.php?controller=dashboard&amp;lang=<?php echo $lang ?>">Bảng điều khiển</a>
                         </li>
                         <li class="active">
-                            <i class="glyphicon glyphicon-refresh"></i>  <a href="index.php?controller=visa">Visa - Hộ chiếu</a>
+                            <i class="glyphicon glyphicon-refresh"></i>  <a href="index.php?controller=visa&amp;lang=<?php echo $lang ?>">Visa - Hộ chiếu</a>
                         </li>
                         <li>
                             <i class="fa fa-edit"></i>Thay đổi
@@ -47,7 +47,7 @@
             </script>
             <div class="row">
                 <div class="col-lg-8">
-                    <form enctype="multipart/form-data" role="form" action="index.php?controller=visa&amp;action=add_visapost" method="post">
+                    <form enctype="multipart/form-data" role="form" action="index.php?controller=visa&amp;action=add_visapost&amp;lang=<?php echo $lang ?>" method="post">
                         <div class="form-group">
                             <label>Danh mục các dịch vụ Visa</label><br />
                             <select name="passport_visa_name">

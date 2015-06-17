@@ -1,5 +1,6 @@
 <?php 
 	$title = "AD Tourist - Visa hộ chiếu ";
+	$lang = get_lang();
 	$passport_visa_name=get_all('passport_visa');
 	if (isset($_GET['passport_visa_code'])&&isset($_GET['pass_offer'])) {
 		$passport_visa_code=$_GET['passport_visa_code'];

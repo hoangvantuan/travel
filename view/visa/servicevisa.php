@@ -16,7 +16,7 @@
         <li class="active">
             <span >
             <?php
-                echo '<a itemprop="url" href="index.php?controller=visa&action=servicevisa&passport_visa_code='.$passport_visa_code.'"><i class="fa fa-hacker-news"></i><span itemprop="title"> '.$id['passport_visa_name'].'</span></a>';
+                echo '<a itemprop="url" href="index.php?lang='.$lang.'&amp;controller=visa&action=servicevisa&passport_visa_code='.$passport_visa_code.'"><i class="fa fa-hacker-news"></i><span itemprop="title"> '.$id['passport_visa_name'].'</span></a>';
                 ?>
             </span>
         </li>
@@ -35,7 +35,7 @@
                                 </div>
                                 <div class="col-md-9">
                                     <h4 class="list-group-item-heading"><i class="fa fa-cc-visa"></i>
-                                        <a href="index.php?controller=visa&action=servicevisa&passport_visa_code=<?php echo $value['passport_visa_code'];?>&pass_offer=<?php echo $value['passport_visa_offer_code'];?>"><?php echo $value['title'];?></a>
+                                        <a href="index.php?lang=<?php echo $lang ?>&amp;controller=visa&action=servicevisa&passport_visa_code=<?php echo $value['passport_visa_code'];?>&pass_offer=<?php echo $value['passport_visa_offer_code'];?>"><?php echo $value['title'];?></a>
                                     </h4>
                                     <p class="list-group-item-text decsrption-des-airrline"><i class="fa fa-angle-double-right"></i><?php echo $value['description'];?></p>
                                 </div>
@@ -61,7 +61,7 @@
                 <a href="#" class="list-group-item active"><span class="fa fa-cc-visa"></span> VISA</a>
                 <?php
                     foreach ($passport_visa_name as $key => $value) {
-                        echo '<a class="list-group-item" href="index.php?controller=visa&action=servicevisa&passport_visa_code='.$value['passport_visa_code'].'"><span class="fa fa-cc-visa"></span> '.$value['passport_visa_name'].'</a>';
+                        echo '<a class="list-group-item" href="index.php?lang=<?php echo $lang ?>&amp;controller=visa&action=servicevisa&passport_visa_code='.$value['passport_visa_code'].'"><span class="fa fa-cc-visa"></span> '.$value['passport_visa_name'].'</a>';
                     }
                     
                     ?>

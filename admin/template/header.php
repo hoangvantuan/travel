@@ -60,7 +60,7 @@
             <!-- Top Menu Items -->
             <ul class="nav navbar-right top-nav">     
                 <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Xin chào &nbsp<i class="fa fa-user">&nbsp</i><?php echo $_SESSION['email'] ;?> <b class="caret"></b></a>
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Xin chào &nbsp;<i class="fa fa-user">&nbsp;</i><?php echo $_SESSION['email'] ;?> <b class="caret"></b></a>
                     <ul class="dropdown-menu">
                         <li>
                             <a href="index.php?controller=sign&amp;action=logout"><i class="fa fa-fw fa-power-off"></i> Thoát</a>
@@ -68,17 +68,21 @@
                     </ul>
                 </li>
             </ul>
+            <select class="pull-right language" onchange="window.location = this.value">
+                    <option <?php if(isset($_GET['lang']) && $_GET['lang'] == 'vi') echo 'selected' ?> value="index.php?controller=language&amp;lang=vi">Vietnamese</option>
+                    <option <?php if(isset($_GET['lang']) && $_GET['lang'] == 'en') echo 'selected' ?> value="index.php?controller=language&amp;lang=en">English</option>
+                </select>
             <!-- Sidebar Menu Items - These collapse to the responsive navigation menu on small screens -->
             <div class="collapse navbar-collapse navbar-ex1-collapse">
                 <ul class="nav navbar-nav side-nav">
                     <li <?php if($active=='Dashboard') echo 'class="active"';?>>
-                        <a href="index.php?controller=dashboard"><i class="fa fa-fw fa-dashboard"></i> Bảng điều khiển</a>
+                        <a href="index.php?controller=dashboard&amp;lang=<?php echo $lang ?>"><i class="fa fa-fw fa-dashboard"></i> Bảng điều khiển</a>
                     </li>
                     <li  <?php if ($active=='tour') {echo 'class="active"';}?> >
-                        <a href="index.php?controller=tour"><i class="fa fa-fw fa-reddit"></i> Tour</a>
+                        <a href="index.php?controller=tour&amp;lang=<?php echo $lang ?>"><i class="fa fa-fw fa-reddit"></i> Tour</a>
                     </li>
                     <li <?php if ($active=='visa') {echo 'class="active"';}?>>
-                        <a href="index.php?controller=visa"><i class="fa fa-fw fa-list-ol"></i> Visa - Hộ chiếu</a>
+                        <a href="index.php?controller=visa&amp;lang=<?php echo $lang ?>"><i class="fa fa-fw fa-list-ol"></i> Visa - Hộ chiếu</a>
                     </li>
                     <li <?php if ($active=='car') {echo 'class="active"';}?>>
                         <a href="#"><i class="fa fa-fw fa-shopping-cart"></i> Dịch vụ xe</a>

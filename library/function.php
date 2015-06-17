@@ -8,5 +8,10 @@ function get_url(){
 	$url =  $path.'?'.$queryString;
 	return $url;
 }
-
+function get_lang(){
+	if(isset($_GET['lang']) &&  $_GET['lang'] == 'en'){
+		return 'en';
+	}
+	else return 'vi';
+}
 ?>

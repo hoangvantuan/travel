@@ -15,10 +15,10 @@
  ?>
 <div class="col-md-4 tour">
     <div class="thumbnail tour_detai2">
-      <a  href='index.php?controller=tour&amp;action=tour_detail&amp;tour_content_code=<?php echo $value["tour_content_code"] ?>'><img class="overimg"  src=<?php echo $value['image'] ?> alt="" class="responsive-img" /></a>
+      <a  href='index.php?lang=<?php echo $lang ?>&amp;controller=tour&amp;action=tour_detail&amp;tour_content_code=<?php echo $value["tour_content_code"] ?>'><img class="overimg"  src=<?php echo $value['image'] ?> alt="" class="responsive-img" /></a>
             <div class="caption">
                      <h4 class="text-center tour_title">
-                        <a href='index.php?controller=tour&amp;action=tour_detail&amp;tour_content_code=<?php echo $value["tour_content_code"] ?>'><?php echo $value['title'] ?></a>
+                        <a href='index.php?lang=<?php echo $lang ?>&amp;controller=tour&amp;action=tour_detail&amp;tour_content_code=<?php echo $value["tour_content_code"] ?>'><?php echo $value['title'] ?></a>
                      </h4>
                      <h4 class="text-center tour_time">
                           <?php echo $value['time'] ?>
