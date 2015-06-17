@@ -1,4 +1,5 @@
 <?php require_once('config.php'); ?>
+<?php require_once('library/function.php'); ?>
 <?php require_once('model/database.php'); ?>
 
 <?php

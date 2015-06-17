@@ -75,12 +75,15 @@ function get_number_recored($table)
     mysql_free_result($query);
     return $row['total'];
 }
-
+//detete a record
 function delete($table,$colum,$value){
-    $sql= "DELETE FROM `$table` WHERE $colum='$value'";
-    $query = mysql_query($sql) or die(mysql_error());
+    $sql= "DELETE FROM `$table` WHERE `$colum`='$value'";
+    $query = mysql_query($sql);
+
+    return $query;
 
 }
+
 
 
 function get_a_record_x($table, $colum, $value ,$colum1,$value1,$colum2,$value2, $select = '*') {
@@ -98,6 +101,7 @@ function get_a_record_x($table, $colum, $value ,$colum1,$value1,$colum2,$value2,
   
 }
 
+// insert data to table $data = array('key'=>'value');
 function save($table, $data = array()) {
     //xử lý dữ liệu $data
     $values = array();
@@ -109,8 +113,26 @@ function save($table, $data = array()) {
     //insert
   
      $sql = "INSERT INTO `$table` SET " . implode(',', $values);
-     mysql_query($sql) or die(mysql_error());
+     $check = mysql_query($sql);
+     return $check;
+
 }
+
+function update_record($table,$col, $id, $data =array()){
+
+	//processing data
+	$values = array();
+	foreach ($data as $key => $value) {
+		$value = escape($value);
+		$values[] = "`$key` = '$value'";
+	}
+	$values = implode(',', $values);
+	$sql = "UPDATE `$table` SET $values WHERE `$col` = '$id'";
+
+	$query = mysql_query($sql) or die (mysql_error());
+	return $query;
+}
+
 function update_x($table,$colum,$value,$colid,$id,$colid1,$id1){
     mysql_query("UPDATE `$table` SET `$colum` = '$value' WHERE `$colid`= '$id'&&`$colid1`= '$id1'");
 }

@@ -5,7 +5,7 @@
 <!--BEGIN: Content detail tour -->
 <div class="container">
 	<div class="row">
-		<?php require_once(BASEPATH.'view/tour/current_position.php'); ?>
+		<?php require_once(BASEPATH.'view/tour/current_position.php');?>
 	</div>
 	<div class="row">
 		<div class="col-md-8">

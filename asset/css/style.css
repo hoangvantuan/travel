@@ -188,7 +188,10 @@ footer{
 	padding-top: 20px;
 
 }
-.tour_detail .tour_detail2{
+.tour_detail > a > img, .tour_detai2 > a > img{
+	height: 124px;
+}
+.tour_detail .tour_detai2{
 	padding-top: 10px;
 	margin-left: 5px;
 	margin-right: 5px;

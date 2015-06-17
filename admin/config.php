@@ -2,6 +2,9 @@
 /** setting **/
 define('BASEURL' , 'travel.com');
 define('BASEPATH', dirname(__FILE__) . '/');
+define('ROOTPATH', '../');
+//max size image upload
+define('MAXSIZE', '4096');
 
 /** kết nối MySQL **/
 $db = mysql_connect('localhost', 'root', '') or die('Could not connect to Server');
