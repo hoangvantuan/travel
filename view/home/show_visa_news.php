@@ -9,7 +9,7 @@
 				<div class="thumbnail visa-wrap">
 					<a href="index.php?lang=<?php echo $lang ?>&amp;controller=visa&amp;action=servicevisa&amp;passport_visa_code=<?php echo $value['passport_visa_code']; ?>&amp;pass_offer=<?php echo $value['passport_visa_offer_code'] ?>"><img src=<?php echo $value['image'] ?> class="responsive-img overimg"></a>
 					<div class="caption">
-					<h3><a href="#"><?php echo $value['title'] ?></a></h3>
+					<h3><a href="index.php?lang=<?php echo $lang ?>&amp;controller=visa&amp;action=servicevisa&amp;passport_visa_code=<?php echo $value['passport_visa_code']; ?>&amp;pass_offer=<?php echo $value['passport_visa_offer_code'] ?>"><?php echo $value['title'] ?></a></h3>
 				</div>
 			</div>
 		</div>
