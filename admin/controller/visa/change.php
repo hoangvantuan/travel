@@ -61,14 +61,12 @@
 	$title=$_POST['title'];
 	$description=$_POST['description'];
 	$content=$_POST['noidung'];
-	$create_at=$_POST['create_at'];
-	$update_at=$_POST['update_at'];
+	$update_at=get_time();
 	update('passport_visa_offers','passport_visa_code',$passport_visa_code['passport_visa_code'],'passport_visa_offer_code',$passport_visa_offer_code);
 	update('passport_visa_offers','title',$title,'passport_visa_offer_code',$passport_visa_offer_code);
 	update('passport_visa_offers','description',$description,'passport_visa_offer_code',$passport_visa_offer_code);
 	update('passport_visa_offers','content',$content,'passport_visa_offer_code',$passport_visa_offer_code);
 	update('passport_visa_offers','image',$image,'passport_visa_offer_code',$passport_visa_offer_code);
-	update('passport_visa_offers','create_at',$create_at,'passport_visa_offer_code',$passport_visa_offer_code);
 	update('passport_visa_offers','update_at',$update_at,'passport_visa_offer_code',$passport_visa_offer_code);
 	//$passport_visa_offers=array('passport_visa_offer_code'=>$passport_visa_offer_code,'passport_visa_code'=>$passport_visa_code['passport_visa_code'],'title'=>$title,'description'=>$description,'content'=>$content,'image'=>$image,'create_at'=>$create_at,'update_at'=>$update_at);
 	$visa = get_a_record('passport_visa_offers','passport_visa_offer_code',$passport_visa_offer_code);

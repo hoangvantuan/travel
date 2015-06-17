@@ -50,10 +50,9 @@ if (isset($_POST['submit'])) {
 	$title=$_POST['title'];
 	$description=$_POST['description'];
 	$content=$_POST['noidung'];
-	$create_at=$_POST['create_at'];
-	$update_at=$_POST['update_at'];
+	$create_at = get_time();
 
-	$passport_visa_offers=array('passport_visa_code'=>$passport_visa_code['passport_visa_code'],'title'=>$title,'description'=>$description,'content'=>$content,'image'=>$image,'create_at'=>$create_at,'update_at'=>$update_at);
+	$passport_visa_offers=array('passport_visa_code'=>$passport_visa_code['passport_visa_code'],'title'=>$title,'description'=>$description,'content'=>$content,'image'=>$image,'create_at'=>$create_at);
 	save('passport_visa_offers',$passport_visa_offers);
 	$success="Thêm thành công !";
 	//var_dump($passport_visa_offers);

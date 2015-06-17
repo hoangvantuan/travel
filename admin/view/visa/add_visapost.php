@@ -49,7 +49,7 @@
                 <div class="col-lg-8">
                     <form enctype="multipart/form-data" role="form" action="index.php?controller=visa&amp;action=add_visapost" method="post">
                         <div class="form-group">
-                            <label>2/Danh mục các dịch vụ Visa : </label>
+                            <label>Danh mục các dịch vụ Visa</label><br />
                             <select name="passport_visa_name">
                                 <?php foreach ($visa_name as $key => $value):?>
                                 <option value="<?php echo $value['passport_visa_name'];?>"><?php echo $value['passport_visa_name'];?></option>
@@ -57,28 +57,20 @@
                             </select>
                         </div>
                         <div class="form-group">
-                            <label>3/Title : </label>
+                            <label>Title</label><br />
                             <input name="title" type="text" value="" required>
                         </div>
                         <div class="form-group">
-                            <label>4/Description : </label>
-                            <input name="description" type="text" value="" required>
+                            <label>Description</label>
+                            <textarea name="description" cols="100" rows="20"></textarea>
                         </div>
                         <div class="form-group">
-                            <label>5/Content : </label>
+                            <label>Content</label>
                             <textarea id="contents" name="noidung" cols="100" rows="20" ><script>img_find('contents');</script></textarea>
                             <br />
                         </div>
                         <div class="form-group">
-                            <label>6/Image : </label><input type="file" name="fileToUpload" id="fileToUpload" required>
-                        </div>
-                        <div class="form-group">
-                            <label>7/Create at : </label>
-                            <input type="datetime" name="create_at" >
-                        </div>
-                        <div class="form-group">
-                            <label>8/Update at : </label>
-                            <input type="datetime" name="update_at" >
+                            <label>Image</label><input type="file" name="fileToUpload" id="fileToUpload" required>
                         </div>
                         <button type="submit" name="submit" class="btn btn-default">Thêm </button>
                         <button type="reset" class="btn btn-default">Làm mới </button>

@@ -49,12 +49,8 @@
                 <div class="col-lg-8">
                     <form enctype="multipart/form-data" role="form" action="index.php?controller=visa&amp;action=change&amp;passport_visa_offer_code=<?php echo $visa['passport_visa_offer_code'];?>" method="post">
                         <div class="form-group">
-                            <label>1/STT : </label>
-                            <?php echo $visa['passport_visa_offer_code'];?>
-                        </div>
-                        <div class="form-group">
-                            <label>2/Danh mục các dịch vụ Visa : </label>
-                            <select name="passport_visa_name">
+                            <label for="category_visa">Danh mục các dịch vụ Visa</label><br />
+                            <select name="passport_visa_name" id="category_visa">
                                 <?php foreach ($visa_name as $key => $value):?>
                                 <option value="<?php echo $value['passport_visa_name'];?>"<?php if ($value['passport_visa_code']==$visa['passport_visa_code']) {
                                     echo 'selected';
@@ -63,28 +59,20 @@
                             </select>
                         </div>
                         <div class="form-group">
-                            <label>3/Title : </label>
-                            <input name="title" type="text" value="<?php echo $visa['title'];?>">
+                            <label for="title">Title</label><br />
+                            <input name="title" id="title" type="text" value="<?php echo $visa['title'];?>">
                         </div>
                         <div class="form-group">
-                            <label>4/Description : </label>
-                            <input name="description" type="text" value="<?php echo $visa['description'];?>">
+                            <label for="description">Description : </label>
+                            <textarea name="description" id="description" cols="100" rows="20"><?php echo $visa['description'];?></textarea>
                         </div>
                         <div class="form-group">
-                            <label>5/Content : </label>
+                            <label for="contents">Content : </label>
                             <textarea id="contents" name="noidung" cols="100" rows="20"><?php echo $visa['content'];?><script>img_find('contents');</script></textarea>
                             <br />
                         </div>
                         <div class="form-group">
-                            <label>6/Image : </label><input type="file" name="fileToUpload" id="fileToUpload" value ="<?php echo $visa['image'];?>"><img src="../<?php echo $visa['image'];?>" alt="" width="50" height="50"/>
-                        </div>
-                        <div class="form-group">
-                            <label>7/Create at : </label>
-                            <input type="datetime" name="create_at" value="<?php echo $visa['create_at'];?>">
-                        </div>
-                        <div class="form-group">
-                            <label>8/Update at : </label>
-                            <input type="datetime" name="update_at" value="<?php echo $visa['update_at'];?>">
+                            <label for="fileToUpload">Image : </label><input type="file" name="fileToUpload" id="fileToUpload" value ="<?php echo $visa['image'];?>"><img src="../<?php echo $visa['image'];?>" alt="" width="50" height="50"/>
                         </div>
                         <button type="submit" name="submit" class="btn btn-default">Sửa </button>
                         <button type="reset" class="btn btn-default">Làm mới </button>
