@@ -1,32 +1,32 @@
 <div class="col-md-12 contact">
    <div class="col-md-1"></div>
    <div class="col-md-6">
-      <form enctype="multipart/form-data" id="form0" method="post">
+      <form enctype="multipart/form-data" id="form0"  action="view/contact/thank.php" method="post" name="contact" onsubmit="return checkinput();">
          <div class="warning-area"></div>
          <div class="left_contact">
             <div class="message"></div>
             <div class="input-group">
                <span class="input-group-addon"><i class="fa fa-user"></i></span>
-               <input class="form-control" id="Hoten" name="name" placeholder="Họ tên (*)" type="text" value="" />
+               <input class="form-control" id="Hoten" name="name" placeholder="Họ tên" type="text" value="" />
             </div>
             <br />
             <div class="input-group">
                <span  class="input-group-addon"><i class="fa fa-phone"></i></span>
-               <input class="form-control" id="Sdt" name="phone" placeholder="Điện thoại (*)" type="text" value="" />
+               <input class="form-control" id="Sdt" name="phone" placeholder="Điện thoại" type="text" value="" />
             </div>
             <br />
             <div class="input-group">
                <span class="input-group-addon"><i class="fa fa-envelope"></i></span>
-               <input class="form-control" id="Email" name="email" placeholder="Email (*)" type="text" value="" />
+               <input class="form-control" id="Email" name="email" placeholder="Email" type="text" value="" />
             </div>
             <br />
             <div class="input-group">
                <span  class="input-group-addon"><i class="fa fa-comment"></i></span>
-               <input class="form-control" id="TieuDe" name="title" placeholder="Tiêu đề (*)" type="text" value="" />
+               <input class="form-control" id="TieuDe" name="title" placeholder="Tiêu đề" type="text" value="" />
             </div>
             <br />
             <div class="text">
-               <textarea class="form-control" cols="20" id="NoiDung" name="content" placeholder="Nội dung (*)" rows="4" style="margin: 0px; width: 100%; height: 200px;"></textarea>
+               <textarea class="form-control" cols="20" id="NoiDung" name="content" placeholder="Nội dung" rows="4" style="margin: 0px; width: 100%; height: 200px;"></textarea>
             </div>
             <br />
             <p class="button">
@@ -42,50 +42,57 @@
       </div><!-- widget content -->
    </div>
 </div>
+<script type="text/javascript" charset="utf-8">
+      function checkinput(){
+         // check name
+         if(document.contact.name.value==""){
+            alert("Họ và tên không được để trống");
+            document.contact.name.focus();
+            return false;
+         }
+         // check phone
+          if(document.contact.phone.value==""){
+            alert("SDT không được để trống");
+            document.contact.phone.focus();
+            return false;
+         }
+         // check email;
+          if(document.contact.email.value==""){
+            alert("Email không được để trống");
+            document.contact.email.focus();
+            return false;
+         }
+         // check title;
+          if(document.contact.title.value==""){
+            alert("Tiêu để không được để trống");
+            document.contact.title.focus();
+            return false;
+         }
+         // check content
+          if(document.contact.content.value==""){
+            alert("Nội dung không được để trống");
+            document.contact.content.focus();
+            return false;
+         }
+      }
+</script>
 <?php
-ob_start();
 if(isset($_POST["submit"])){
-   //ten
-   if($_POST["name"] == ""){
-      $error="error";
-   }
-   else{
+   if(isset($_POST["name"])){
       $name = $_POST["name"];
    }
-   // phone
-   if($_POST["phone"] == ""){
-      $error="error";
-   }
-   else{
+   if(isset($_POST["phone"])){
       $phone = $_POST["phone"];
    }
-   // email
-   if($_POST["email"] == ""){
-      $error="error";
-   }
-   else{
+   if(isset($_POST["email"])){
       $email = $_POST["email"];
    }
-   // title
-   if($_POST["title"] == ""){
-      $error="error";
-   }
-   else{
+   if(isset($_POST["title"])){
       $title = $_POST["title"];
    }
-   //content
-   if($_POST["content"] == ""){
-      $error="error";
-   }
-   else{
+   if(isset($_POST["content"])){
       $content = $_POST["content"];
    }
-   //check
-   if(isset($error)){
-      echo "Xin mời nhập đủ thông tin";
-   }
-   else{
-      
-   }
+   header("location:thank.php;");
 }
 ?>
