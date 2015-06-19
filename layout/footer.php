@@ -10,7 +10,7 @@
 						<div class="form-group">
 							<input type="email" class="form-control form-mail" placeholder="<?php echo $lang == 'en'? 'Your email' : 'Email của bạn'?>">
 						</div>
-						<button type="submit" class="btn btn-default btn-send-email pull-right"><i class="glyphicon glyphicon-envelope"></i>&nbsp;<?php if($lang=='en') echo 'Register'; else echo 'Đăng kí' ?></button>
+						<button id="email" type="submit" class="btn btn-default btn-send-email pull-right"><i class="glyphicon glyphicon-envelope"></i>&nbsp;<?php if($lang=='en') echo 'Register'; else echo 'Đăng kí' ?></button>
 					</form>
 				</div>
 				<div class="row">
@@ -25,11 +25,11 @@
                      <div class="fb-like-box"
                         data-height="250" data-colorscheme="light" data-show-faces="true"
                         data-header="false" data-stream="false" data-show-border="false">
-						<iframe class="facebook" src="http://www.facebook.com/plugins/likebox.php?href=https://www.facebook.com/vndesignerbybkteam&amp;width=245&amp;colorscheme=light&amp;show_faces=true&amp;connections=9&amp;stream=false&amp;header=false&amp;height=270" scrolling="no" frameborder="0" scrolling="no" style="border: medium none; overflow: hidden; height: 250px;background:#fff;"></iframe>
+						<iframe class="facebook" src="http://www.facebook.com/plugins/likebox.php?href=https://www.facebook.com/vndesignerbybkteam&amp;width=245&amp;colorscheme=light&amp;show_faces=true&amp;connections=15&amp;stream=false&amp;header=false&amp;height=320" scrolling="no" frameborder="0" scrolling="no" style="border: medium none; overflow: hidden; height: 320px;background:#fff;"></iframe>
                      </div>
 			</div>
 			<div class="col-md-4 footer-right">
-				<H4 class="footer-title-right"><?php echo $lang == 'en'? 'AD TOURIST COMPANY' : 'CÔNG TY CP ĐT - TV - TM - DV - DU LỊCH AD., Tourist' ?></H4>
+				<H4 class="footer-title-right"><?php echo $lang == 'en'? 'AD TOURIST COMPANY' : 'CÔNG TY TNHH MTV THƯƠNG MẠI VÀ DU LỊCH ANH DŨNG - AD TOURIST' ?></H4>
            		<p><i class="fa fa-map-marker fa-fw"></i> Số 87 ngõ 12 Quang Trung, Văn Khê, Hà Đông, Hà Nội</p>
                 <p><i class="fa fa-phone fa-fw"></i> ĐT: 0462 60 48 38</p>
                 <p><i class="fa fa-mobile-phone fa-fw"></i> Hotline: 0987647504  </p>
@@ -40,7 +40,7 @@
 		</div>
 		<div class="row footer-left">
 			<div class="col-md-8">
-				<p class="copyright">© 2015 Du Lịch AD Tourist CopyRight - All rights reserved. Template by <span>VNDesigner.</span></p>
+				<p class="copyright">2015 Bản quyền thuộc về AD tourist - Được thiế kế bởi <span><a href="http://vndesigner.info/">VNDesigner</a></span></p>
 			</div>
 			<div class="col-md-4">
 				<div class="pull-right soical">

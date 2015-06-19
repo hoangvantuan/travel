@@ -83,7 +83,7 @@
         </li>
         <!-- Lien he -->
         <li>
-  			<a href="#"><?php echo $lang =='en'? 'Contact':  'Liên hệ' ?></a>
+  			<a href="index.php?controller=contact&amp;lang=<?php echo $lang ?>"><?php echo $lang =='en'? 'Contact':  'Liên hệ' ?></a>
         </li>
 
 
