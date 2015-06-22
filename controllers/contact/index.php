@@ -7,4 +7,5 @@
 	else
 		$current_possition = array(array('name'=>"Liên hệ",'link'=>"index.php?controller=contact&amp;lang=".$lang));
 	require_once(BASEPATH.'view/contact/index.php');
+	// content site
 ?>;
