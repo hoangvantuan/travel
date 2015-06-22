@@ -1,5 +1,6 @@
 <?php
 	$title="AD Touris Liên hệ";
+	$tour_region = get_all('tour_region');
 	$lang = get_lang();
 	if($lang =='en')
 		$current_possition = array(array('name'=>"Contact",'link'=>"index.php?controller=contact&amp;lang=".$lang));

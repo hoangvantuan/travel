@@ -23,8 +23,10 @@
 					<textarea class="form-control" style="width:60%;" name='content' rows="20"><?php echo $tour['content'] ?></textarea>
 					<label for="content_cost">Bảng giá</label>
 					<textarea class="form-control" style="width:60%;" name='content_cost' rows="20"><?php echo $tour['content_cost'] ?></textarea>
-					<label for="policy">Chính sách</label>
-					<textarea class="form-control" name='policy' style="width:60%;" rows="20"><?php echo $tour['policy'] ?></textarea>
+					<label for="policy">Vị trí trên bản đồ</label>
+					<textarea class="form-control" name='possition' style="width:60%;" rows="20"><?php echo $tour['possition'] ?></textarea>
+					<label for="policy">Ảnh liên quan</label>
+					<textarea class="form-control" name='image_relate' style="width:60%;" rows="20"><?php echo $tour['image_relate'] ?></textarea>
 				</div>
 					<button  type="submit" name="submit" class="btn btn-primary">Chỉnh Sửa</button>
 			</form>

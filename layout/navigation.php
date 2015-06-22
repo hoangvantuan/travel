@@ -19,19 +19,37 @@
         <li>
   			<a href="index.php?lang=<?php echo $lang ?>"><?php echo $lang =='en'? 'Home' : 'Trang chủ' ?></a>
         </li>
+  
         <!-- Du lich gia tot-->
-        <li class="dropdown">
+        <li class="dropdown dropdown-parrent">
           <a href="index.php?controller=tour&amp;lang=<?php echo $lang  ?>" class="dropdown-toggle disabled" data-toggle="dropdown" role="button" aria-expanded="false"><?php echo $lang =='en' ? 'Tourist good price' : 'Du lịch giá tốt' ?></a>
-          <ul class="dropdown-menu" role="menu">
-            <li><a href="index.php?lang=<?php echo $lang ?>&amp;controller=tour&amp;action=country&amp;tour_country_code=1"><?php echo $lang =='en'? 'Domestic tourism' : 'Du lịch trong nước' ?></a></li>
-            <li><a href="index.php?lang=<?php echo $lang ?>&amp;controller=tour&amp;action=country&amp;tour_country_code=2"><?php echo $lang =='en'? 'Abroad tourism' : 'Du lịch nước ngoài' ?></a></li>
+          <ul class="dropdown-menu dropdown-menu-parrent" role="menu">
+            <li class="dropdown dropdown-child dropdown-submenu"><a href="index.php?lang=<?php echo $lang ?>&amp;controller=tour&amp;action=country&amp;tour_country_code=1" class="dropdown-toggle disabled" data-toggle="dropdown"><?php echo $lang =='en'? 'Domestic tourism' : 'Du lịch trong nước' ?></a>
+                <ul class="dropdown-menu dropdown-menu-child role='menu'">
+                <?php foreach($tour_region as $key):?>
+                <?php if($key['tour_country_code'] =='1') :?>
+                  <li><a href="index.php?lang=<?php echo $lang ?>&amp;controller=tour&amp;action=region&amp;tour_region_code=<?php echo $key['tour_region_code'] ?>"><?php echo $key['tour_region_name'] ?></a></li>
+                <?php endif ?>
+                <?php endforeach ?>
+                </ul>
+            </li>
+            <li class="dropdown dropdown-child dropdown-submenu">
+              <a href="index.php?lang=<?php echo $lang ?>&amp;controller=tour&amp;action=country&amp;tour_country_code=2"  class="dropdown-toggle disabled" data-toggle="dropdown"><?php echo $lang =='en'? 'Abroad tourism' : 'Du lịch nước ngoài' ?></a>
+                <ul class="dropdown-menu dropdown-menu-child role='menu'">
+                <?php foreach($tour_region as $key):?>
+                <?php if($key['tour_country_code'] =='2') :?>
+                  <li><a href="index.php?lang=<?php echo $lang ?>&amp;controller=tour&amp;action=region&amp;tour_region_code=<?php echo $key['tour_region_code'] ?>"><?php echo $key['tour_region_name'] ?></a></li>
+                <?php endif ?>
+                <?php endforeach ?>
+                </ul>
+            </li>
           </ul>
         </li>
 
         <!-- dich vu visa, ho chieu -->
-        <li class="dropdown">
+        <li class="dropdown dropdown-parrent">
           <a href="index.php?lang=<?php echo $lang ?>&amp;controller=visa&amp;action=servicevisa" class="dropdown-toggle disabled" data-toggle="dropdown" role="button" aria-expanded="false"><?php echo $lang =='en'? 'Visa - Passport': 'Visa - hộ chiếu' ?></a>
-          <ul class="dropdown-menu" role="menu">
+          <ul class="dropdown-menu dropdown-menu-parrent" role="menu">
             <li><a href="index.php?lang=<?php echo $lang ?>&amp;controller=visa&amp;action=servicevisa">Dịch vụ làm thẻ visa hộ chiếu</a></li>
             <li><a href="index.php?lang=<?php echo $lang ?>&amp;controller=visa&amp;action=servicevisa&amp;passport_visa_code=2">Dịch vụ làm thẻ tạm trú - Cư trú</a></li>
             <li><a href="index.php?lang=<?php echo $lang ?>&amp;controller=visa&amp;action=servicevisa&amp;passport_visa_code=3">Dịch vụ xin giấy phép lao động</a></li>
@@ -47,9 +65,9 @@
           <a href="#" >Dịch vụ xuất khẩu lao động</a>
         </li>          
         <!-- Tu van du hoc-->
-        <li class="dropdown">
+        <li class="dropdown dropdown-parrent">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Tư vấn du học</a>
-          <ul class="dropdown-menu" role="menu">
+          <ul class="dropdown-menu dropdown-menu-parrent" role="menu">
             <li><a href="#">Du học Úc</a></li>
             <li><a href="#">Du học Anh</a></li>
             <li><a href="#">Du học Canada</a></li>
@@ -59,9 +77,9 @@
         </li>
 
         <!-- Ve may bay -->
-        <li class="dropdown">
+        <li class="dropdown dropdown-parrent">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Vé máy bay</a>
-          <ul class="dropdown-menu" role="menu">
+          <ul class="dropdown-menu dropdown-menu-parrent" role="menu">
             <li><a href="#">Vé máy bay nội địa</a></li>
             <li><a href="#">Vé máy bay quốc tế</a></li>
             <li><a href="#">Vé theo hãng</a></li>
@@ -70,9 +88,9 @@
         </li>
 
        	<!-- Tin tuc - su kien -->
-        <li class="dropdown">
+        <li class="dropdown dropdown-parrent">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><?php echo $lang =='en'? 'News - Events' : 'Tin tức, sự kiện' ?></a>
-          <ul class="dropdown-menu" role="menu">
+          <ul class="dropdown-menu dropdown-menu-parrent" role="menu">
             <li><a href="#">Lễ hội</a></li>
             <li><a href="#">Văn hóa</a></li>
             <li><a href="#">Ẩm thực</a></li>

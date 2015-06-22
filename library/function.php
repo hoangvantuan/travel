@@ -14,4 +14,11 @@ function get_lang(){
 	}
 	else return 'vi';
 }
+function get_number_from_array($array, $i){
+	$data = array();
+	for($j=0; $j<$i ; $j++ ){
+		$data[] = $array[$j];
+	}
+	return $data;
+}
 ?>

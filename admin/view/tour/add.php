@@ -22,8 +22,9 @@
 					</select>
 					<textarea class="form-control" name='description' id="description" style="width:60%;" rows="20" >Miêu tả tour du lịch</textarea>
 					<textarea class="form-control" style="width:60%;" name='content' rows="20" >Nội dung tour du lịch</textarea>
-					<textarea class="form-control" style="width:60%;" name='content_cost' rows="20" >Chi tiết giá của tour di lịch</textarea>
-					<textarea class="form-control" name='policy' style="width:60%;" rows="20" >Các chính sách</textarea>
+					<textarea class="form-control" style="width:60%;" name='content_cost' rows="20" >Giá tour và dịch vụ</textarea>
+					<textarea class="form-control" name='possition' style="width:60%;" rows="20" >Địa chỉ bản đồ</textarea>
+					<textarea class="form-control" name='image_relate' style="width:60%;" rows="20" >Ảnh liên quan</textarea>
 				</div>
 					<button  type="submit" name="submit" class="btn btn-primary">Thêm</button>
 			</form>

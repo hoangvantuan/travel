@@ -1,5 +1,18 @@
 <div class="row">
 	<div class="col-md-12"><label><i class="fa fa-upload"></i> <a href="index.php?controller=tour&amp;action=add&amp;lang=<?php echo $lang ?>">Thêm Tour</a></label></div>
+	<div class="col-md-4"><h5>Lọc theo tour</h5></div>
+	<div class="col-md-8">
+		<form method="POST" action="index.php?controller=tour">
+			<select name="tour_region_code">
+				<option <?php echo isset($selected)? "" : "selected" ?> value="0">--|--</option>
+				<?php foreach( $tour_region as $key) : ?>
+				<option value="<?php echo $key['tour_region_code'] ?>" <?php if(isset($selected)){ echo $selected ==$key['tour_region_code']? "selected" : "" ;}?>><?php echo $key['tour_region_name'] ?></option>
+				<?php endforeach ?>
+			</select>
+			<input type="submit" value="Lọc" name="filler">
+		</form>
+		
+	</div>
 	<div class="col-md-12"><h3 text-center bg-info><?php if(isset($success)) echo $success; ?></h3></div>
 	<div class="col-md-12">
 		<h2>Bảng danh sách các tour</h2>

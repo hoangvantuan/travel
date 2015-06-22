@@ -2,6 +2,7 @@
 	$active = 'tour';
 	$lang = get_lang();
 	$title = 'Danh sách các tour';
+	$tour_region = get_all('tour_region');
 	if(isset($_GET['tour_content_code']))
 	{
 		

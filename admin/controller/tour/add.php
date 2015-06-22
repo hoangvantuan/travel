@@ -13,7 +13,8 @@
 		$total_cost = $_POST['total_cost'];
 		$content = $_POST['content'];
 		$content_cost = $_POST['content_cost'];
-		$policy = $_POST['policy'];
+		$possition = $_POST['possition'];
+		$image_relate = $_POST['image_relate'];
 
 		$tour_country_code = get_a_record('tour_region','tour_region_code',$tour_region_code);
 		$tour_country_code = $tour_country_code['tour_country_code'];
@@ -64,7 +65,7 @@
 		if($errors ==0 ){
 			$create_at = get_time();
 			$data = array('title'=>$title, 'image'=>$image_path, 'description'=>$description, 'time'=>$time,
-				'total_cost'=>$total_cost, 'content'=>$content, 'content_cost'=>$content_cost, 'policy'=>$policy, 'create_at'=>$create_at,'tour_country_code'=>$tour_country_code, 'tour_region_code'=>$tour_region_code);
+				'total_cost'=>$total_cost, 'content'=>$content, 'content_cost'=>$content_cost, 'possition'=>$possition, 'image_relate' => $image_relate, 'create_at'=>$create_at,'tour_country_code'=>$tour_country_code, 'tour_region_code'=>$tour_region_code);
 		
 
 			$check = save('tour_content',$data);

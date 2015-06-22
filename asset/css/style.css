@@ -44,12 +44,15 @@
 .dropdown-menu li:hover .sub-menu {
     visibility: visible;
 }
- 
-.dropdown:hover .dropdown-menu {
+
+.dropdown-parrent:hover .dropdown-menu-parrent {
+    display: block;
+}
+.dropdown-child:hover .dropdown-menu-child {
     display: block;
 }
  
-.nav-tabs .dropdown-menu, .nav-pills .dropdown-menu, .navbar .dropdown-menu {
+.dropdown-menu,.dropdown-menu, .navbar .dropdown-menu {
     margin-top: 0;
 }
  
@@ -310,3 +313,8 @@ a:hover{
 .language{
 	color: #8dc63f;
 }
+/*Child menu*/
+.dropdown-submenu{position:relative;}
+.dropdown-submenu>.dropdown-menu{top:0;left:100%;margin-top:-6px;margin-left:-1px;-webkit-border-radius:0 6px 6px 6px;-moz-border-radius:0 6px 6px 6px;border-radius:0 6px 6px 6px;}
+.dropdown-submenu:hover>a:after{border-left-color:#555;}
+.dropdown-submenu.pull-left{float:none;}.dropdown-submenu.pull-left>.dropdown-menu{left:-100%;margin-left:10px;-webkit-border-radius:6px 0 6px 6px;-moz-border-radius:6px 0 6px 6px;border-radius:6px 0 6px 6px;}

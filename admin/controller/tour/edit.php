@@ -70,14 +70,15 @@
 			$total_cost = $_POST['total_cost'];
 			$content = $_POST['content'];
 			$content_cost = $_POST['content_cost'];
-			$policy = $_POST['policy'];
+			$possition = $_POST['possition'];
+			$image_relate = $_POST['image_relate'];
 			$update_at = get_time();
 			if(!isset($image_path))
 			$data = array('title' => $title, 'description'=>$description, 'time' => $time, 'total_cost' =>$total_cost, 'content'=>$content, 
-						'content_cost'=>$content_cost, 'policy' => $policy, 'update_at' =>$update_at);
+						'content_cost'=>$content_cost, 'possition' => $possition, 'update_at' =>$update_at, 'image_relate'=>$image_relate);
 			else
 			$data = array('title' => $title,'image'=>$image_path, 'description'=>$description, 'time' => $time, 'total_cost' =>$total_cost, 'content'=>$content, 
-						'content_cost'=>$content_cost, 'policy' => $policy, 'update_at' =>$update_at);
+						'content_cost'=>$content_cost, 'possition' => $possition,'image_relate'=>$image_relate, 'update_at' =>$update_at);
 			$check = update_record('tour_content', 'tour_content_code',$tour_content_code, $data);
 				if($check){
 			$success = "Bạn đã cập nhật thành công";

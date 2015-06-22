@@ -20,8 +20,10 @@
             	<!-- Nav tabs -->
   				<ul class="nav nav-tabs" role="tablist" id="tourist_detail">
    					 <li role="presentation" class="active"><a href="#tourist" aria-controls="tourist" role="tab" data-toggle="tab" aria-expanded="false">Chương trình tour</a></li>
-   					 <li role="presentation"><a href="#cost_detail" aria-controls="cost_detail" role="tab" data-toggle="tab" aria-expanded="false">Bảng giá</a></li>
-   					 <li role="presentation"><a href="#policy_detail" aria-controls="policy_detail" role="tab" data-toggle="tab" aria-expanded="false">Chính sách</a></li>
+   					 <li role="presentation"><a href="#cost_detail" aria-controls="cost_detail" role="tab" data-toggle="tab" aria-expanded="false">Giá tour và Dịch vụ</a></li>
+   					 <li role="presentation"><a href="#possition" aria-controls="possition" role="tab" data-toggle="tab" aria-expanded="false">Vị trí điểm đến</a></li>
+             <li role="presentation"><a href="#image_relate" aria-controls="image_relate" role="tab" data-toggle="tab" aria-expanded="false">Ảnh liên quan</a></li>
+             <li role="presentation"><a href="#book_tour" aria-controls="book_tour" role="tab" data-toggle="tab" aria-expanded="false">Đặt Tour</a></li>
   				</ul>
 
  				 <!-- Tab panes -->
@@ -32,9 +34,15 @@
    					<div role="tabpanel" class="tab-pane" id="cost_detail">
    						<?php echo $tour['content_cost'] ?>
    					</div>
-    				<div role="tabpanel" class="tab-pane" id="policy_detail">
-    					<?php echo $tour['policy'] ?>
+    				<div role="tabpanel" class="tab-pane" id="possition">
+    					<?php echo $tour['possition'] ?>
     				</div>
+            <div role="tabpanel" class="tab-pane" id="image_relate">
+              <?php echo $tour['image_relate']; ?>
+            </div>
+            <div role="tabpanel" class="tab-pane" id="book_tour">
+              <!-- book tour-->
+            </div>
   				</div>
             </div>
             <div class="content_tab">
@@ -47,7 +55,14 @@
 			<?php require_once(BASEPATH.'view/tour/sidebar.php'); ?>
 		</div>
 	</div>
+  <hr />
+  <div class='row'>
+    <div class="col-md-8">
+      <h4>relate tour</h4>
+    </div>
+  </div>
 </div>
+  
 <!--END Content detail tour --> 
 
 <?php require_once('layout/footer.php'); ?>
