@@ -16,8 +16,11 @@ function get_lang(){
 }
 function get_number_from_array($array, $i){
 	$data = array();
-	for($j=0; $j<$i ; $j++ ){
-		$data[] = $array[$j];
+	$i = 0;
+	foreach ($array as $key) {
+		if($i==6)break;
+		$data[] = $key;
+		$i++;
 	}
 	return $data;
 }

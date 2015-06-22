@@ -43,17 +43,7 @@
 		<div class="row footer-left">
 			<div class="col-md-8">
 				<p class="copyright">2015 Bản quyền thuộc về AD tourist - Được thiết kế bởi <span><a href="http://vndesigner.info/">VNDesigner</a></span></p>
-			</div>
-			<div class="col-md-4">
-				<div class="pull-right soical">
-			   <a href="https://www.facebook.com/vndesignerbybkteam"><i class="fa fa-facebook fa-2x fa"></i></a>
-               <a href="skype:buithihanh64?chat"><i class="fa fa-skype fa-2x"></i></a>
-               <a href="ymsgr:sendim?thihanh_bui">
-					<img src="http://opi.yahoo.com/online?u=thihanh_bui&m=g&t=1" alt="Yahoo" border=0 />
-				</a>
-			</div>
-			</div>
-			
+			</div>	
 		</div>
 	</div>
 </footer>

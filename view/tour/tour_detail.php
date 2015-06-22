@@ -35,7 +35,9 @@
    						<?php echo $tour['content_cost'] ?>
    					</div>
     				<div role="tabpanel" class="tab-pane" id="possition">
-    					<?php echo $tour['possition'] ?>
+    					<div class="widget-content">
+                  <iframe class="google-map" height="300" src="<?php echo $tour['possition'] ?>"  frameborder="0" style="border:0"></iframe>
+              </div><!-- widget content -->
     				</div>
             <div role="tabpanel" class="tab-pane" id="image_relate">
               <?php echo $tour['image_relate']; ?>
