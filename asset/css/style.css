@@ -208,13 +208,13 @@ footer{
   top: 11px;
   right: 25px;
 }
-.tour_detail2::after{
+.tour_detai2::after{
   content: " ";
   background: url("../image/common/label.png") top center no-repeat;
   width: 35px;
   height: 44px;
   position: absolute;
-  top: -8px;
+  top: 12px;
   right: 15px;
 }
 

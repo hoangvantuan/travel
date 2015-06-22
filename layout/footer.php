@@ -33,21 +33,24 @@
            		<p><i class="fa fa-map-marker fa-fw"></i> Số 87 ngõ 12 Quang Trung, Văn Khê, Hà Đông, Hà Nội</p>
                 <p><i class="fa fa-phone fa-fw"></i> ĐT: 0462 60 48 38</p>
                 <p><i class="fa fa-mobile-phone fa-fw"></i> Hotline: 0987647504  </p>
-                <p><i class="fa fa-skype fa-fw"></i>buithihanh64<i class="fa fa-yahoo fa-fw"></i>thihanh_bui</p>
+                <p><i class="fa fa-skype fa-fw"></i><a href="skype:buithihanh64?chat">buithihanh64</a><i class="fa fa-yahoo fa-fw"></i><a href="ymsgr:sendim?thihanh_bui">
+					<img src="http://opi.yahoo.com/online?u=thihanh_bui&m=g&t=1" alt="Yahoo" border=0 />
+				</a></p>
                 <p><i class="fa fa-envelope fa-fw"></i><a href="mailto:hanh.adtourist@gmail.com">hanh.adtourist@gmail.com</a></p>
                 <p><i class="fa fa-map-marker fa-fw"></i>&nbsp;<i class="fa fa-hand-o-right"></i><a href="#">Tìm đường đến công ty chúng tôi</a></p>
 			</div>
 		</div>
 		<div class="row footer-left">
 			<div class="col-md-8">
-				<p class="copyright">2015 Bản quyền thuộc về AD tourist - Được thiế kế bởi <span><a href="http://vndesigner.info/">VNDesigner</a></span></p>
+				<p class="copyright">2015 Bản quyền thuộc về AD tourist - Được thiết kế bởi <span><a href="http://vndesigner.info/">VNDesigner</a></span></p>
 			</div>
 			<div class="col-md-4">
 				<div class="pull-right soical">
 			   <a href="https://www.facebook.com/vndesignerbybkteam"><i class="fa fa-facebook fa-2x fa"></i></a>
-               <a href="#"><i class="fa fa-dribbble fa-2x"></i></a>
-               <a href="#"><i class="fa fa-twitter fa-2x"></i></a>
-               <a href="#"><i class="fa fa-pinterest fa-2x"></i></a>
+               <a href="skype:buithihanh64?chat"><i class="fa fa-skype fa-2x"></i></a>
+               <a href="ymsgr:sendim?thihanh_bui">
+					<img src="http://opi.yahoo.com/online?u=thihanh_bui&m=g&t=1" alt="Yahoo" border=0 />
+				</a>
 			</div>
 			</div>
 			

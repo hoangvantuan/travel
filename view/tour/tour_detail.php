@@ -50,17 +50,36 @@
             	<div></div>
             	<div></div>
             </div>
+            <hr />
+            <div class="col-md-12">
+              <div class="title_relate_tour"><h3>Các Tour liên quan</h3></div>
+              <div class="row">
+              <?php foreach($tour_relate as $value): ?>
+                <div class="col-md-4">
+                  <div class="thumbnail"> 
+                   <a  href='index.php?lang=<?php echo $lang ?>&amp;controller=tour&amp;action=tour_detail&amp;tour_content_code=<?php echo $value["tour_content_code"] ?>'><img class="overimg"  src=<?php echo $value['image'] ?> alt="" class="responsive-img" /></a>
+                    <div class="caption">
+                       <h4 class="text-center tour_title">
+                        <a href='index.php?lang=<?php echo $lang ?>&amp;controller=tour&amp;action=tour_detail&amp;tour_content_code=<?php echo $value["tour_content_code"] ?>'><?php echo $value['title'] ?></a>
+                        </h4>
+                        <h4 class="text-center tour_time">
+                          <?php echo $value['time'] ?>
+                        </h4>
+                         <h4 class="text-center tour_cost">
+                          <?php echo $value['total_cost'] ?>
+                         </h4>
+                    </div>
+                  </div>
+                </div>
+              <?php endforeach ?>
+              </div>
+            </div>
         </div>
 		<div class="col-md-4">
 			<?php require_once(BASEPATH.'view/tour/sidebar.php'); ?>
 		</div>
 	</div>
   <hr />
-  <div class='row'>
-    <div class="col-md-8">
-      <h4>relate tour</h4>
-    </div>
-  </div>
 </div>
   
 <!--END Content detail tour --> 
