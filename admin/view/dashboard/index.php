@@ -136,12 +136,12 @@
                                     <i class="glyphicon glyphicon-th-large"></i>
                                 </div>
                                 <div class="col-xs-9 text-right">
-                                    <div class="huge"><?php echo '6'; ?></div>
+                                    <div class="huge"><?php echo $contact; ?></div>
                                     <div>Liên hệ</div>
                                 </div>
                             </div>
                         </div>
-                        <a href="#">
+                        <a href="index.php?controller=contact&amp;lang=<?php echo $lang ?>">
                             <div class="panel-footer">
                                 <span class="pull-left">Xem chi tiết</span>
                                 <span class="pull-right"><i class="fa fa-arrow-circle-right"></i></span>
