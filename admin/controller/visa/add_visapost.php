@@ -4,7 +4,7 @@
 	$visa_name=get_all('passport_visa');
 if (isset($_POST['submit'])) {
 	if($_FILES['fileToUpload']['name']!=null){
-	$target_dir=".././asset/image/visa/".$lang.'/'.;
+	$target_dir=".././asset/image/visa/".$lang.'/';
 	$target_file = $target_dir . basename($_FILES["fileToUpload"]["name"]);
 	$uploadOk = 1;
 	$imageFileType = pathinfo($target_file,PATHINFO_EXTENSION);

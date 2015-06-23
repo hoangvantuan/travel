@@ -1,5 +1,7 @@
 <?php
 	$title = "AD Tourist, Go Go Go";
+	$visa1 = get_all_record('passport_visa_offers','passport_visa_code','1');
+	$visa2 = get_all_record('passport_visa_offers','passport_visa_code','2');
 	$tour_region = get_all('tour_region');
 	$lang = get_lang();
 	if(isset($_GET['tour_country_code'])){
