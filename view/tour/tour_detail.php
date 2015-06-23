@@ -43,7 +43,94 @@
               <?php echo $tour['image_relate']; ?>
             </div>
             <div role="tabpanel" class="tab-pane" id="book_tour">
-              <!-- book tour-->
+              <div class="row">
+                  <form class="form-horizontal" method="POST" action="index.php?lang=<?php echo $lang ?>&amp;controller=tour&amp;action=book_tour&amp;tour_content_code=<?php echo $tour['tour_content_code'] ?>">
+                    <!-- dat tour-->
+                    <div class="form-group">
+                      <label for="title" class="col-md-2">Đặt Tour</label>
+                      <div class="col-md-10">
+                        <p class="form-control-static"><?php echo $tour['title'] ?></p>
+                      </div>
+                    </div>
+                    <!-- ngay khoi hanh-->
+                    <div class="form-group">
+                      <label for="start_day" class="col-md-2">Ngày khởi hành(*)</label>
+                      <div class="col-md-4">
+                        <input type="date" name="start_day" id="start_day" class="form-control" value="" required="required" title="">
+                      </div>
+                      <label for="end_day" class="col-md-2">Ngày kết thúc(*)</label>
+                      <div class="col-md-4">
+                        <input type="date" name="end_day" id="start_day" class="form-control" value="" required="required" title="">
+                      </div>
+                    </div>
+                    <!-- so luong nguoi-->
+                    <div class="form-group">
+                      <label for="number_people" class="col-md-2">Số người lớn</label>
+                      <div class="col-md-2">
+                        <input type="number" name="number_people" id="number_people" class="form-control" >
+                      </div>
+                      <label for="number_people_15" class="col-md-2">Số trẻ em 1-5</label>
+                      <div class="col-md-2">
+                        <input type="number" name="number_people_12" id="number_people_15" class="form-control" >
+                      </div>
+                      <label for="number_people_612" class="col-md-2">Số trẻ em 6-12</label>
+                      <div class="col-md-2">
+                        <input type="number"  name="number_people_612" id="number_people_612" class="form-control" >
+                      </div>
+                    </div>
+                    <!-- ho ten-->
+                    <div class="form-group">
+                      <label for="name" class="col-md-2">Họ tên(*)</label>
+                      <div class="col-md-2">
+                        <select name="before_name" class="form-control">
+                        <option value="Ông">Ông</option>
+                        <option value="Bà">Bà</option>
+                        <option value="Anh">Anh</option>
+                        <option value="Chị">Chị</option>
+                      </select>
+                      </div>
+                      <div class="col-md-8">
+                        <input type="text" id="name" required="required" class="form-control">
+                      </div>
+                    </div>
+                    <!-- dia chi lien he-->
+                    <div class="form-group">
+                      <label for="address" class="col-md-2">Địa chỉ liên hệ(*)</label>
+                      <div class="col-md-10">
+                        <input type="text" name="address" id="address" required="required" class="form-control">
+                      </div>
+                    </div>
+                    <!-- dien thoai co dinh-->
+                    <div class="form-group">
+                      <label for="static_phone" class="col-md-2">Điện thoại cố định</label>
+                      <div class="col-md-10">
+                        <input type="number" name="static_phone" id="static_phone" required="required" class="form-control">
+                      </div>
+                    </div>
+                    <!-- dien thoai di dong -->
+                    <div class="form-group">
+                      <label for="phone" class="col-md-2">Điện thoại di động(*)</label>
+                      <div class="col-md-10">
+                        <input type="number" name="phone" id="phone" required="required" class="form-control">
+                      </div>
+                    </div>
+                    <!-- email-->
+                    <div class="form-group">
+                      <label for="email" class="col-md-2">Email(*)</label>
+                      <div class="col-md-10">
+                        <input type="email" name="email" id="email" required="required" class="form-control">
+                      </div>
+                    </div>
+                    <!-- dia chi lien he-->
+                    <div class="form-group">
+                      <label for="note" class="col-md-2">Ghi chú thêm</label>
+                      <div class="col-md-10">
+                        <textarea class="form-control" id="note" name="note" cols="2"></textarea>
+                      </div>
+                    </div>
+                    <button type="submit" name="book_tour" class="btn btn-default pull-right">Đặt Tour</button>
+                  </form>
+              </div>
             </div>
   				</div>
             </div>

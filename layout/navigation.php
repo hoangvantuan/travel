@@ -53,14 +53,14 @@
             <li class="dropdown dropdown-child dropdown-submenu"><a href="index.php?lang=<?php echo $lang ?>&amp;controller=visa&amp;action=servicevisa&amp;passport_visa_code=1" class="dropdown-toggle disabled" data-toggle="dropdown"><?php echo $lang =='en'? 'Asia Visa' : 'Visa Châu Á' ?></a>
                 <ul class="dropdown-menu dropdown-menu-child role='menu'">
                 <?php foreach ($visa1 as $key => $value):?>
-                  <li><a href="index.php?lang=<?php echo $lang ?>&amp;controller=visa&amp;action=servicevisa&amp;passport_visa_code=1&amp;passport_visa_offer_code=<?php echo $value['passport_visa_offer_code'];?>"><?php echo $value['title']; ?></a></li>
+                  <li><a href="index.php?lang=<?php echo $lang ?>&amp;controller=visa&amp;action=servicevisa&amp;passport_visa_code=1&amp;pass_offer=<?php echo $value['passport_visa_offer_code'];?>"><?php echo $value['title']; ?></a></li>
                 <?php endforeach ?>
                 </ul>
             </li>
             <li class="dropdown dropdown-child dropdown-submenu"><a href="index.php?lang=<?php echo $lang ?>&amp;controller=visa&amp;action=servicevisa&amp;passport_visa_code=2" class="dropdown-toggle disabled" data-toggle="dropdown"><?php echo $lang =='en'? 'Europe Visa' : 'Visa Châu Âu' ?></a>
                 <ul class="dropdown-menu dropdown-menu-child role='menu'">
                 <?php foreach ($visa2 as $key => $value):?>
-                  <li><a href="index.php?lang=<?php echo $lang ?>&amp;controller=visa&amp;action=servicevisa&amp;passport_visa_code=1&amp;passport_visa_offer_code=<?php echo $value['passport_visa_offer_code'];?>"><?php echo $value['title']; ?></a></li>
+                  <li><a href="index.php?lang=<?php echo $lang ?>&amp;controller=visa&amp;action=servicevisa&amp;passport_visa_code=1&amp;pass_offer=<?php echo $value['passport_visa_offer_code'];?>"><?php echo $value['title']; ?></a></li>
                 <?php endforeach ?>
                 </ul>
             </li>
