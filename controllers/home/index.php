@@ -4,8 +4,11 @@
 	$tour = array_reverse($tour);
 	$tour = get_number_from_array($tour,6);
 	$tour_region = get_all('tour_region');
-	$visa = get_all('passport_visa_offers');
+	$visa1 = get_all_record('passport_visa_offers','passport_visa_code','1');
+	$visa2 = get_all_record('passport_visa_offers','passport_visa_code','2');
 	$partner = get_all('partners');
 	$lang = get_lang();
+	$visa = get_all('passport_visa_offers');
+	$visa_region = get_all('passport_visa');
 	require_once(BASEPATH.'view/home/index.php');
  ?>

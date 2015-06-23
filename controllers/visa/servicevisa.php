@@ -1,12 +1,16 @@
 <?php 
 	$title = "AD Tourist - Visa hộ chiếu ";
+	$visa1 = get_all_record('passport_visa_offers','passport_visa_code','1');
+	$visa2 = get_all_record('passport_visa_offers','passport_visa_code','2');
 	$lang = get_lang();
 	$tour_region = get_all('tour_region');
 	$passport_visa_name=get_all('passport_visa');
 	if (isset($_GET['passport_visa_code'])&&isset($_GET['pass_offer'])) {
 		$passport_visa_code=$_GET['passport_visa_code'];
 		$pass_offer=$_GET['pass_offer'];
-
+		$visa_offer=get_a_record('passport_visa_offers','passport_visa_offer_code',$pass_offer);
+		
+		
 	}
 	elseif (isset($_GET['passport_visa_code'])) {
 		$passport_visa_code=$_GET['passport_visa_code'];

@@ -20,6 +20,15 @@
                 ?>
             </span>
         </li>
+        <?php if (isset($visa_offer)):?>
+        <li>
+            <span>
+            <?php
+                echo '<a itemprop="url" href="index.php?lang='.$lang.'&amp;controller=visa&action=servicevisa&passport_visa_code='.$passport_visa_code.'&amp;pass_offer='.$pass_offer.'"><i class="fa fa-hacker-news"></i><span itemprop="title"> '.$visa_offer['title'].'</span></a>';
+                ?>
+            </span>
+        </li>
+        <?php endif?>
     </ol>
     <div class="clearfix" style="height:500px;">
         <?php if (!isset($pass_offer)): ?>
@@ -28,8 +37,9 @@
                 <div class="gridcontainer-price-today gridcontainer-list-airbyCate" id="gridcontainer-price-today">
                     <div class="panel-body">
                         <ul class="list-group">
+                            <?php foreach ($content as $key => $value):?>
                             <li class="list-group-item">
-                                <?php foreach ($content as $key => $value):?>
+                                
                                 <div class="col-md-3">
                                     <img class="img-responsive" src="<?php echo $value['image'];?>" />
                                 </div>
@@ -40,21 +50,34 @@
                                     <p class="list-group-item-text decsrption-des-airrline"><i class="fa fa-angle-double-right"></i><?php echo $value['description'];?></p>
                                 </div>
                                 <div class="clearfix"></div>
-                                <?php endforeach;?>
+                                
                             </li>
+                            <?php endforeach;?>
                         </ul>
                     </div>
                 </div>
             </div>
         </div>
         <?php else:?>
+        <div class="col-md-8">
+            <div class="tab-pane" id="tabsupdatecontent-4">
+                <div class="gridcontainer-price-today gridcontainer-list-airbyCate" id="gridcontainer-price-today">
+                    <div class="panel-body">
         <?php
             foreach ($content as $key => $value) {
                 if ($value['passport_visa_offer_code']==$pass_offer) {
-                    echo $value['content'];
+                    if ($value['content']!="<script>img_find('contents');</script>") {
+                        echo $value['content'];
+                    }
+                    else echo 'Chưa có nội dung !';
                 }
              } 
+             //echo $visa_offer['title'];
             ?> 
+                    </div>
+                </div>
+            </div>
+        </div>
         <?php endif;?>
         <div class="col-md-4">
             <div class="list-group">

@@ -4,7 +4,8 @@
 		<h2><i class="fa fa-cc-visa"></i><?php echo $lang =='en' ? 'Visa - Passport' : 'Visa - Hộ Chiếu' ?></h2>
 	</div>
 	<div class="row visa_content">
-		<?php foreach ($visa as $value):?>
+		<?php $i=0;?>
+		<?php foreach ($visa as $value): $i++;?>
 			<div class="col-md-4 col-sm-4 col-xs-6 visa-col">
 				<div class="thumbnail visa-wrap">
 					<a href="index.php?lang=<?php echo $lang ?>&amp;controller=visa&amp;action=servicevisa&amp;passport_visa_code=<?php echo $value['passport_visa_code']; ?>&amp;pass_offer=<?php echo $value['passport_visa_offer_code'] ?>"><img src=<?php echo $value['image'] ?> class="responsive-img overimg"></a>
@@ -13,7 +14,7 @@
 				</div>
 			</div>
 		</div>
-		<?php endforeach ?>
+		<?php if($i==6) break; endforeach ?>
 	</div>
 </div>
 <div class="col-md-4 news-wrap">
