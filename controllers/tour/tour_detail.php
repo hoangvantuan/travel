@@ -5,6 +5,11 @@
 	{
 		$visa1 = get_all_record('passport_visa_offers','passport_visa_code','1');
 		$visa2 = get_all_record('passport_visa_offers','passport_visa_code','2');
+		$visa5 = get_all_record('passport_visa_offers','passport_visa_code','5');
+		$visa6 = get_all_record('passport_visa_offers','passport_visa_code','6');
+		$visa7 = get_all_record('passport_visa_offers','passport_visa_code','7');
+		$visa8 = get_all_record('passport_visa_offers','passport_visa_code','8');
+		$visa9 = get_all_record('passport_visa_offers','passport_visa_code','9');
 		$tour_region = get_all('tour_region');
 		$tour_content_code = $_GET['tour_content_code'];
 		$tour =	get_a_record('tour_content','tour_content_code',$tour_content_code);

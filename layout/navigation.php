@@ -60,7 +60,42 @@
             <li class="dropdown dropdown-child dropdown-submenu"><a href="index.php?lang=<?php echo $lang ?>&amp;controller=visa&amp;action=servicevisa&amp;passport_visa_code=2" class="dropdown-toggle disabled" data-toggle="dropdown"><?php echo $lang =='en'? 'Europe Visa' : 'Visa Châu Âu' ?></a>
                 <ul class="dropdown-menu dropdown-menu-child role='menu'">
                 <?php foreach ($visa2 as $key => $value):?>
-                  <li><a href="index.php?lang=<?php echo $lang ?>&amp;controller=visa&amp;action=servicevisa&amp;passport_visa_code=1&amp;pass_offer=<?php echo $value['passport_visa_offer_code'];?>"><?php echo $value['title']; ?></a></li>
+                  <li><a href="index.php?lang=<?php echo $lang ?>&amp;controller=visa&amp;action=servicevisa&amp;passport_visa_code=2&amp;pass_offer=<?php echo $value['passport_visa_offer_code'];?>"><?php echo $value['title']; ?></a></li>
+                <?php endforeach ?>
+                </ul>
+            </li>
+            <li class="dropdown dropdown-child dropdown-submenu"><a href="index.php?lang=<?php echo $lang ?>&amp;controller=visa&amp;action=servicevisa&amp;passport_visa_code=5" class="dropdown-toggle disabled" data-toggle="dropdown"><?php echo $lang =='en'? 'Visa Châu Úc' : 'Visa Châu Úc' ?></a>
+                <ul class="dropdown-menu dropdown-menu-child role='menu'">
+                <?php foreach ($visa5 as $key => $value):?>
+                  <li><a href="index.php?lang=<?php echo $lang ?>&amp;controller=visa&amp;action=servicevisa&amp;passport_visa_code=5&amp;pass_offer=<?php echo $value['passport_visa_offer_code'];?>"><?php echo $value['title']; ?></a></li>
+                <?php endforeach ?>
+                </ul>
+            </li>
+            <li class="dropdown dropdown-child dropdown-submenu"><a href="index.php?lang=<?php echo $lang ?>&amp;controller=visa&amp;action=servicevisa&amp;passport_visa_code=6" class="dropdown-toggle disabled" data-toggle="dropdown"><?php echo $lang =='en'? 'Visa Châu Phi' : 'Visa Châu Phi' ?></a>
+                <ul class="dropdown-menu dropdown-menu-child role='menu'">
+                <?php foreach ($visa6 as $key => $value):?>
+                  <li><a href="index.php?lang=<?php echo $lang ?>&amp;controller=visa&amp;action=servicevisa&amp;passport_visa_code=6&amp;pass_offer=<?php echo $value['passport_visa_offer_code'];?>"><?php echo $value['title']; ?></a></li>
+                <?php endforeach ?>
+                </ul>
+            </li>
+            <li class="dropdown dropdown-child dropdown-submenu"><a href="index.php?lang=<?php echo $lang ?>&amp;controller=visa&amp;action=servicevisa&amp;passport_visa_code=7" class="dropdown-toggle disabled" data-toggle="dropdown"><?php echo $lang =='en'? 'Visa Châu Mĩ' : 'Visa Châu Mĩ' ?></a>
+                <ul class="dropdown-menu dropdown-menu-child role='menu'">
+                <?php foreach ($visa7 as $key => $value):?>
+                  <li><a href="index.php?lang=<?php echo $lang ?>&amp;controller=visa&amp;action=servicevisa&amp;passport_visa_code=7&amp;pass_offer=<?php echo $value['passport_visa_offer_code'];?>"><?php echo $value['title']; ?></a></li>
+                <?php endforeach ?>
+                </ul>
+            </li>
+            <li class="dropdown dropdown-child dropdown-submenu"><a href="index.php?lang=<?php echo $lang ?>&amp;controller=visa&amp;action=servicevisa&amp;passport_visa_code=8" class="dropdown-toggle disabled" data-toggle="dropdown"><?php echo $lang =='en'? 'Visa Trung Đông' : 'Visa Trung Đông' ?></a>
+                <ul class="dropdown-menu dropdown-menu-child role='menu'">
+                <?php foreach ($visa8 as $key => $value):?>
+                  <li><a href="index.php?lang=<?php echo $lang ?>&amp;controller=visa&amp;action=servicevisa&amp;passport_visa_code=8&amp;pass_offer=<?php echo $value['passport_visa_offer_code'];?>"><?php echo $value['title']; ?></a></li>
+                <?php endforeach ?>
+                </ul>
+            </li>
+            <li class="dropdown dropdown-child dropdown-submenu"><a href="index.php?lang=<?php echo $lang ?>&amp;controller=visa&amp;action=servicevisa&amp;passport_visa_code=9" class="dropdown-toggle disabled" data-toggle="dropdown"><?php echo $lang =='en'? 'Dịch vụ làm visa nhanh' : 'Dịch vụ làm visa nhanh' ?></a>
+                <ul class="dropdown-menu dropdown-menu-child role='menu'">
+                <?php foreach ($visa9 as $key => $value):?>
+                  <li><a href="index.php?lang=<?php echo $lang ?>&amp;controller=visa&amp;action=servicevisa&amp;passport_visa_code=9&amp;pass_offer=<?php echo $value['passport_visa_offer_code'];?>"><?php echo $value['title']; ?></a></li>
                 <?php endforeach ?>
                 </ul>
             </li>
@@ -99,7 +134,7 @@
 
        	<!-- Tin tuc - su kien -->
         <li class="dropdown dropdown-parrent">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><?php echo $lang =='en'? 'News - Events' : 'Tin tức, sự kiện' ?></a>
+          <a href="index.php?lang=<?php echo $lang ?>&amp;controller=news&amp;" class="dropdown-toggle disabled" data-toggle="dropdown" role="button" aria-expanded="false"><?php echo $lang =='en'? 'News - Events' : 'Tin tức, sự kiện' ?></a>
           <ul class="dropdown-menu dropdown-menu-parrent" role="menu">
             <li><a href="#">Lễ hội</a></li>
             <li><a href="#">Văn hóa</a></li>
