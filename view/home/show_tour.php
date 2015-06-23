@@ -1,5 +1,4 @@
 <!-- BEGIN: Show All Tour -->
-
 <?php 
   foreach($tour as $value):
  ?>

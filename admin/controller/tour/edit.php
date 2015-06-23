@@ -49,7 +49,6 @@
 					else
 					{
 					$upload = move_uploaded_file($_FILES['upload_image']['tmp_name'], $image_new_path);
-					echo $_FILES['upload_image']['tmp_name'];
 					if(!$upload)
 					{
 						$errors = 1;

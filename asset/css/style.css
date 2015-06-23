@@ -186,6 +186,7 @@ footer{
 }
 .thumbnail{
 	border-radius: 0px;
+	height: 320px;
 }
 .tour{
 	padding-top: 20px;
