@@ -1,5 +1,14 @@
 <?php
 	$title="AD Touris Liên hệ";
+	if (isset($_POST['submit'])) {
+		$name=$_POST['name'];
+		$phone=$_POST['phone'];
+		$email=$_POST['email'];
+		$title=$_POST['title'];
+		$content=$_POST['content'];
+		$contact=array('name'=>$name,'tel'=>$phone,'email'=>$email,'title'=>$title,'content'=>$content);
+		save('contact',$contact);
+	}
 	$tour_region = get_all('tour_region');
 	$visa1 = get_all_record('passport_visa_offers','passport_visa_code','1');
 	$visa2 = get_all_record('passport_visa_offers','passport_visa_code','2');

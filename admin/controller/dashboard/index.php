@@ -1,6 +1,7 @@
 <?php 
 	$visa=get_number_recored('passport_visa_offers');
 	$tour =get_number_recored('tour_content');
+	$contact =get_number_recored('contact');
 	$lang = get_lang();
 	if(isset($_SESSION['email']) && isset($_SESSION['password'])){
 		$email = $_SESSION['email'];

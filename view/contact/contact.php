@@ -1,7 +1,7 @@
 <div class="col-md-12 contact">
    <div class="col-md-1"></div>
    <div class="col-md-6">
-      <form enctype="multipart/form-data" id="form0"  action="view/contact/thank.php" method="post" name="contact" onsubmit="return checkinput();">
+      <form enctype="multipart/form-data" id="form0"  action="index.php?controller=contact&amp;lang=<?php echo $lang;?>" method="post" name="contact" onsubmit="return checkinput();">
          <div class="warning-area"></div>
          <div class="left_contact">
             <div class="message"></div>
@@ -12,12 +12,12 @@
             <br />
             <div class="input-group">
                <span  class="input-group-addon"><i class="fa fa-phone"></i></span>
-               <input class="form-control" id="Sdt" name="phone" placeholder="Điện thoại" type="text" value="" />
+               <input class="form-control" id="Sdt" name="phone" placeholder="Số điện thoại. Ví dụ :0988666999" type="text" pattern ="[0-9]{10,11}" value="" />
             </div>
             <br />
             <div class="input-group">
                <span class="input-group-addon"><i class="fa fa-envelope"></i></span>
-               <input class="form-control" id="Email" name="email" placeholder="Email" type="text" value="" />
+               <input class="form-control" id="Email" name="email" placeholder="Email. Ví dụ : adtourist@gmail.com" type="email" value="" />
             </div>
             <br />
             <div class="input-group">
@@ -76,23 +76,3 @@
          }
       }
 </script>
-<?php
-if(isset($_POST["submit"])){
-   if(isset($_POST["name"])){
-      $name = $_POST["name"];
-   }
-   if(isset($_POST["phone"])){
-      $phone = $_POST["phone"];
-   }
-   if(isset($_POST["email"])){
-      $email = $_POST["email"];
-   }
-   if(isset($_POST["title"])){
-      $title = $_POST["title"];
-   }
-   if(isset($_POST["content"])){
-      $content = $_POST["content"];
-   }
-   header("location:thank.php;");
-}
-?>

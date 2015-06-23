@@ -47,5 +47,20 @@ function get_all_record($table, $colum, $value, $select = '*'){
 
 
 }
+function save($table, $data = array()) {
+    //xử lý dữ liệu $data
+    $values = array();
+    foreach ($data as $key => $value) {
+       // $value = escape($value);
+        $values[] = "`$key`='$value'";
+    }
+
+    //insert
+  
+     $sql = "INSERT INTO `$table` SET " . implode(',', $values);
+     $check = mysql_query($sql);
+     return $check;
+
+}
 ?>
 
