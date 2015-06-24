@@ -21,9 +21,14 @@
                  	</a>
                  </div>
 			</div>
-			<div class="col-md-9 ">
+			<div class="col-md-6 ">
 				<img class="img-responsive" src="asset/image/common/banner.png" width="600" alt="banner" />
 			</div>
+      <div class="col-md-3 text-center hotline-top">
+          <h1>Liên Hệ</h1>
+          <p>0462 60 48 38</p>
+          <p>0987647504</p>
+      </div>
 		</div>
 	</div>
 </header>
