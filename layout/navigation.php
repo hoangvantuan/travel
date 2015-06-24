@@ -134,14 +134,11 @@
 
        	<!-- Tin tuc - su kien -->
         <li class="dropdown dropdown-parrent">
-          <a href="index.php?lang=<?php echo $lang ?>&amp;controller=news&amp;" class="dropdown-toggle disabled" data-toggle="dropdown" role="button" aria-expanded="false"><?php echo $lang =='en'? 'News - Events' : 'Tin tức, sự kiện' ?></a>
+          <a href="index.php?lang=<?php echo $lang ?>&amp;controller=news" class="dropdown-toggle disabled" data-toggle="dropdown" role="button" aria-expanded="false"><?php echo $lang =='en'? 'News - Events' : 'Tin tức, sự kiện' ?></a>
           <ul class="dropdown-menu dropdown-menu-parrent" role="menu">
-            <li><a href="#">Lễ hội</a></li>
-            <li><a href="#">Văn hóa</a></li>
-            <li><a href="#">Ẩm thực</a></li>
-            <li><a href="#">Khám phá</a></li>
-            <li><a href="#">Kinh nghiệm</a></li>
-            <li><a href="#">Địa danh</a></li>
+              <?php foreach($news as $value): ?>
+                <li><a href="index.php?lang=<?php echo $lang ?>&amp;controller=news&amp;news_event_code=<?php echo $value['news_event_code'] ?>"><?php echo $value['new_event_name'] ?></a></li>
+              <?php endforeach ?>
           </ul>
         </li>
         <!-- Lien he -->

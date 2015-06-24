@@ -1,6 +1,7 @@
 <?php 
 	$title = "Tourist Details";
 	$lang = get_lang();
+	$news = get_all('news_event');
 	if(isset($_GET['tour_content_code']))
 	{
 		$visa1 = get_all_record('passport_visa_offers','passport_visa_code','1');

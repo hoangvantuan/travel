@@ -114,12 +114,12 @@
                                     <i class="glyphicon glyphicon-star"></i>
                                 </div>
                                 <div class="col-xs-9 text-right">
-                                    <div class="huge"><?php echo '5'; ?></div>
+                                    <div class="huge"><?php echo $news; ?></div>
                                     <div>Tin tức - Sự kiện</div>
                                 </div>
                             </div>
                         </div>
-                        <a href="#">
+                        <a href="index.php?controller=news">
                             <div class="panel-footer">
                                 <span class="pull-left">Xem chi tiết</span>
                                 <span class="pull-right"><i class="fa fa-arrow-circle-right"></i></span>

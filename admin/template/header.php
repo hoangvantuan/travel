@@ -91,7 +91,7 @@
                         <a href="#"><i class="glyphicon glyphicon-refresh"></i> Lao động</a>
                     </li>
                     <li <?php if ($active=='news') {echo 'class="active"';}?>>
-                        <a href="#"><i class="glyphicon glyphicon-star"></i> Tin tức - sự kiện</a>
+                        <a href="index.php?controller=news&amp;lang=<?php echo $lang ?>"><i class="glyphicon glyphicon-star"></i> Tin tức - sự kiện</a>
                     </li>
                     <li <?php if ($active=='contact') {echo 'class="active"';}?>>
                         <a href="index.php?controller=contact&amp;lang=<?php echo $lang ?>"><i class="glyphicon glyphicon-star"></i> Liên hệ</a>

@@ -41,7 +41,7 @@
                             <li class="list-group-item">
                                 
                                 <div class="col-md-3">
-                                    <img class="img-responsive" src="<?php echo $value['image'];?>" />
+                                    <img class="img-responsive"  src="<?php echo $value['image'];?>" />
                                 </div>
                                 <div class="col-md-9">
                                     <h4 class="list-group-item-heading"><i class="fa fa-cc-visa"></i>

@@ -16,8 +16,21 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-lg-12"><label><i class="fa fa-upload"></i> <a href="index.php?controller=visa&amp;action=add_visapost&amp;lang=<?php echo $lang ?>">Thêm bài</a></label></div>
-                <div class="col-lg-12">
+                <div class="col-md-12"><label><i class="fa fa-upload"></i> <a href="index.php?controller=visa&amp;action=add_visapost&amp;lang=<?php echo $lang ?>">Thêm bài</a></label></div>
+                <div class="col-md-4"><h5>Lọc theo Category</h5></div>
+                                    <div class="col-md-8">
+                                        <form method="POST" action="index.php?controller=visa">
+                                            <select name="passport_visa_code">
+                                                <option <?php echo isset($selected)? "" : "selected" ?> value="0">--|--</option>
+                                                <?php foreach( $passport_visa as $key) : ?>
+                                                <option value="<?php echo $key['passport_visa_code'] ?>" <?php if(isset($selected)){ echo $selected ==$key['passport_visa_code']? "selected" : "" ;}?>><?php echo $key['passport_visa_name'] ?></option>
+                                            <?php endforeach ?>
+                                            </select>
+                                        <input type="submit" value="Lọc" name="filler">
+                                        </form>
+        
+                                </div>
+                <div class="col-md-12">
                     <h2>Bảng nội dung dịch vụ Visa</h2>
                     <div class="table-responsive">
                         <table class="table table-bordered table-hover">

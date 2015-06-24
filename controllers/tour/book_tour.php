@@ -1,6 +1,7 @@
 <?php 
 	$title = "Đặt tour du lịch";
 	$lang = get_lang();
+	$news = get_all('news_eventt');
 	if(isset($_POST['book_tour'])){
 		if(isset($_POST['tour_content_code'])){
 			$tour_content_code = $_POST['tour_content_code'];

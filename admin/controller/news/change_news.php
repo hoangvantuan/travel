@@ -1,10 +1,7 @@
 ﻿<?php
-if (isset($_SESSION['email']) && isset($_SESSION['password'])) {
-    $email    = $_SESSION['email'];
-    $password = $_SESSION['password'];
-    $check = check_admin($email, $password);
-    if ($check) {
+
         $active = "News";
+        $lang = get_lang();
         if (isset($_GET['code']) && !isset($_POST['submit'])) {
             $news_code  = $_GET['code'];
             $news       = get_a_record('news_event_content', 'news_event_code', $news_code);
@@ -76,9 +73,5 @@ if (isset($_SESSION['email']) && isset($_SESSION['password'])) {
             $news    = get_a_record('news_event_content', 'news_event_code', $news_code);
             $success = "Thay đổi thành công!";
             require('view/news/change_news.php');
-        }
-    } else
-        header('location: index.php?controller=sign');
-} else
-    header('location: index.php?controller=sign');
+
 ?>

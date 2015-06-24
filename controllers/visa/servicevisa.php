@@ -8,6 +8,7 @@
 	$visa8 = get_all_record('passport_visa_offers','passport_visa_code','8');
 	$visa9 = get_all_record('passport_visa_offers','passport_visa_code','9');
 	$lang = get_lang();
+	$news = get_all('news_event');
 	$tour_region = get_all('tour_region');
 	$passport_visa_name=get_all('passport_visa');
 	if (isset($_GET['passport_visa_code'])&&isset($_GET['pass_offer'])) {

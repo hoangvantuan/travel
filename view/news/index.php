@@ -19,7 +19,7 @@
                </li>
                <li class="active">
                   <span itemscope itemtype="http://data-vocabulary.org/Breadcrumb">
-                  <a href="#" itemprop="url">
+                  <a href="index.php?lang=<?php echo $lang ?>&amp;controller=news" itemprop="url">
                   <i class="fa fa-hacker-news"></i>&nbsp;
                   <span itemprop="title">Tin tức</span>
                   </a>
@@ -31,8 +31,8 @@
                   <div class="tab-pane" id="tabsupdatecontent-0">
                      <div class="gridcontainer-price-today gridcontainer-list-airbyCate" id="gridcontainer-price-today">
 						 <div class='panel-body'>
-							 <?php if(isset($news) && isset($data_news)){
-								 foreach($data_news as $value)
+							 <?php 
+								 foreach($news_event_content as $value)
 									 echo "
 										   <div class='row'>
 											  <div class='col-md-4'>
@@ -41,7 +41,7 @@
 											  <div class='col-md-8'>
 												 <h4 class='list-group-item-heading heading-news'>
 													<i class='fa fa-newspaper-o'></i>&nbsp;
-													<a href='index.php?controller=news&action=detail_news&news_code=".$value['news_event_code']."' title='".$value['title']."'>".$value['title']."</a>
+													<a href='index.php?lang=".$lang."&controller=news&action=detail_news&news_event_content_code=".$value['news_event_content_code']."' title='".$value['title']."'>".$value['title']."</a>
 												 </h4>
 												 <p class='list-group-item-text decsrption-des-airrline'><i class='fa fa-angle-double-right'></i>&nbsp;".$value['description'].".</p>
 											  </div>
@@ -50,24 +50,8 @@
 										   </div>
 										
 										"; 
-								}?>
+								?>
 							</div>
-                        <div class="panel-footer">
-                           <div class="row">
-                              <div class="col-md-6">
-                              </div>
-                              <div class="col-md-6">
-                                 <div class="pull-right">
-                                    <ul class="pagination" style="margin:0">
-                                       <li class="disabled"><a data-ajax="true" data-ajax-loading="#loading-infoAirOnCate-today" data-ajax-mode="replace" data-ajax-update="#tabsupdatecontent-0" href="#">&laquo;</a></li>
-                                       <li class="active"><a data-ajax="true" data-ajax-loading="#loading-infoAirOnCate-today" data-ajax-mode="replace" data-ajax-update="#tabsupdatecontent-0" href="#">1</a></li>
-                                       <li><a data-ajax="true" data-ajax-loading="#loading-infoAirOnCate-today" data-ajax-mode="replace" data-ajax-update="#tabsupdatecontent-0" href="#">2</a></li>
-                                       <li><a data-ajax="true" data-ajax-loading="#loading-infoAirOnCate-today" data-ajax-mode="replace" data-ajax-update="#tabsupdatecontent-0" href="#">&raquo;</a></li>
-                                    </ul>
-                                 </div>
-                              </div>
-                           </div>
-                        </div>
                      </div>
                   </div>
                </div>

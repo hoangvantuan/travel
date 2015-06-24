@@ -1,12 +1,8 @@
 ﻿<?php
-if (isset($_SESSION['email']) && isset($_SESSION['password'])) {
-    $email    = $_SESSION['email'];
-    $password = $_SESSION['password'];
     
-    $check = check_admin($email, $password);
-    if ($check) {
         $active = 'Tin tức';
         $title  = 'Danh sách tin tức';
+        $lang = get_lang();
         if (isset($_GET['code'])) {
             $current_possition = array(
                 array(
@@ -26,12 +22,8 @@ if (isset($_SESSION['email']) && isset($_SESSION['password'])) {
             } else
                 $success = 'Xóa thành công';
             
-            $code = get_all('news_event_content');
-            require_once('view/news/index.php');
-        } else
+
+        } 
             header('location: index.php?controller=news');
-    } else
-        header('location: index.php?controller=sign');
-} else
-    header('location: index.php?controller=sign');
+
 ?>

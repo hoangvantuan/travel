@@ -3,7 +3,10 @@
 	$tour = get_all('tour_content');
 	$tour = array_reverse($tour);
 	$tour = get_number_from_array($tour,8);
+	
+	
 	$tour_region = get_all('tour_region');
+	$news = get_all('news_event');
 	$visa1 = get_all_record('passport_visa_offers','passport_visa_code','1');
 	$visa2 = get_all_record('passport_visa_offers','passport_visa_code','2');
 	$visa5 = get_all_record('passport_visa_offers','passport_visa_code','5');
@@ -14,6 +17,12 @@
 	$partner = get_all('partners');
 	$lang = get_lang();
 	$visa = get_all('passport_visa_offers');
-	$visa_region = get_all('passport_visa');
+	$visa = array_reverse($visa);
+
+	$news_event_content = get_all('news_event_content');
+	$news_event_content = array_reverse($news_event_content);
+	$news_event_content = get_number_from_array($news_event_content,10);
+
+	$passport_visa = get_all('passport_visa');
 	require_once(BASEPATH.'view/home/index.php');
  ?>

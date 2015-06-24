@@ -1,14 +1,13 @@
 ﻿<?php
-if (isset($_SESSION['email']) && isset($_SESSION['password'])) {
-    $email    = $_SESSION['email'];
-    $password = $_SESSION['password'];
-    $check    = check_admin($email, $password);
-    if ($check) {
+    $lang = get_lang();
+    $title = "Thêm Tin tức";
         $active = "Tin tức - Sự kiện";
-        $news   = get_all('news_event_content');
+        $news_event_content   = get_all('news_event_content');
+        $news = get_all('news_event');
+
         if (isset($_POST['submit'])) {
             if ($_FILES['fileToUpload']['name'] != null) {
-                $target_dir    = ".././asset/image/vi_news/";
+                $target_dir    = "../asset/image/news/".$lang.'/';
                 $target_file   = $target_dir . basename($_FILES["fileToUpload"]["name"]);
                 $uploadOk      = 1;
                 $imageFileType = pathinfo($target_file, PATHINFO_EXTENSION);
@@ -48,11 +47,11 @@ if (isset($_SESSION['email']) && isset($_SESSION['password'])) {
                     }
                 }
                 $image           = basename($_FILES['fileToUpload']['name']);
-                $image           = 'asset/image/vi_news/' . $image;
+                $image           = 'asset/image/news/'.$lang.'/' . $image;
+                $news_event_code = $_POST['category'];
                 $title           = $_POST['title'];
                 $description     = $_POST['description'];
                 $content         = $_POST['noidung'];
-                $news_event_code = sha1($_POST['title']);
                 $news_add        = array(
                     'news_event_code' => $news_event_code,
                     'title' => $title,
@@ -68,8 +67,5 @@ if (isset($_SESSION['email']) && isset($_SESSION['password'])) {
             }
         }
         require('view/news/add_news.php');
-    } else
-        header('location: index.php?controller=sign');
-} else
-    header('location: index.php?controller=sign');
+    
 ?>

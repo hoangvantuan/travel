@@ -15,7 +15,7 @@
                </li>
                <li>
                   <span itemscope itemtype="http://data-vocabulary.org/Breadcrumb">
-                  <a href="#" itemprop="url">
+                  <a href="index.php?lang=<?php echo $lang ?>&amp;controller=news" itemprop="url">
                   <i class="fa fa-hacker-news"></i>&nbsp;
                   <span itemprop="title">Tin tức</span>
                   </a>
@@ -23,8 +23,8 @@
                </li>
                <li class="active">
                   <span itemscope itemtype="http://data-vocabulary.org/Breadcrumb">
-                  <a href="#" itemprop="url">
-                  <i class="fa fa-hacker-news"></i>&nbsp;<span itemprop="title"><?php echo $title_news;?></span>
+                  <a href="index.php?lang=<?php echo $lang ?>&amp;controller=news&amp;news_event_code=<?php echo $news_event['news_event_code'] ?>" itemprop="url">
+                  <i class="fa fa-hacker-news"></i>&nbsp;<span itemprop="title"><?php echo $news_event['new_event_name']?></span>
                   </a>
                   </span>
                </li>
@@ -32,12 +32,13 @@
             <div class="clearfix">
                <div class="col-md-8">
                   <h2>
-                     <?php echo $title_news;?>
+                     <?php echo $news_event_content['title'];?>
                   </h2>
+                  <p><?php echo $news_event_content['description'] ?></p>
                   <div class="contentDetails">
                     <p>
 						<?php
-							echo $content_news;
+							echo $news_event_content['content'];
 						?>
 						
 					</p>

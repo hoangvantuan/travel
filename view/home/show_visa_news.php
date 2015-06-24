@@ -8,9 +8,9 @@
 		<?php foreach ($visa as $value): $i++;?>
 			<div class="col-md-4 col-sm-4 col-xs-6 visa-col">
 				<div class="thumbnail visa-wrap">
-					<a href="index.php?lang=<?php echo $lang ?>&amp;controller=visa&amp;action=servicevisa&amp;passport_visa_code=<?php echo $value['passport_visa_code']; ?>&amp;pass_offer=<?php echo $value['passport_visa_offer_code'] ?>"><img src=<?php echo $value['image'] ?> class="responsive-img overimg"></a>
+					<a href="index.php?lang=<?php echo $lang ?>&amp;controller=visa&amp;action=servicevisa&amp;passport_visa_code=<?php echo $value['passport_visa_code']; ?>&amp;pass_offer=<?php echo $value['passport_visa_offer_code'] ?>"><img src=<?php echo $value['image'] ?>  class="responsive-img  img-visa overimg"></a>
 					<div class="caption">
-					<h3><a href="index.php?lang=<?php echo $lang ?>&amp;controller=visa&amp;action=servicevisa&amp;passport_visa_code=<?php echo $value['passport_visa_code']; ?>&amp;pass_offer=<?php echo $value['passport_visa_offer_code'] ?>"><?php echo $value['title'] ?></a></h3>
+					<h3 class="text-center"><a href="index.php?lang=<?php echo $lang ?>&amp;controller=visa&amp;action=servicevisa&amp;passport_visa_code=<?php echo $value['passport_visa_code']; ?>&amp;pass_offer=<?php echo $value['passport_visa_offer_code'] ?>"><?php echo $value['title'] ?></a></h3>
 				</div>
 			</div>
 		</div>
@@ -23,12 +23,9 @@
 	</div>
 	<div class="row news_content" >
 	<ul class="list-group">
-		<li class="list-group-item"><a href="#"><i class="fa fa-book">&nbsp;</i>Đăng ký đặt mua vé máy bay Tết</a></li>
-		<li class="list-group-item"><a href="#"><i class="fa fa-book">&nbsp;</i>Đăng ký đặt mua vé máy bay Tết</a></li>
-		<li class="list-group-item"><a href="#"><i class="fa fa-book">&nbsp;</i>Đăng ký đặt mua vé máy bay Tết</a></li>
-		<li class="list-group-item"><a href="#"><i class="fa fa-book">&nbsp;</i>Đăng ký đặt mua vé máy bay Tết</a></li>
-		<li class="list-group-item"><a href="#"><i class="fa fa-book">&nbsp;</i>Đăng ký đặt mua vé máy bay Tết</a></li>
-		<li class="list-group-item"><a href="#"><i class="fa fa-book">&nbsp;</i>Đăng ký đặt mua vé máy bay Tết</a></li>
+		<?php foreach($news_event_content as $key) :?>
+		<li class="list-group-item"><a href="index.php?lang=<?php echo $lang ?>&amp;controller=news&amp;action=detail_news&amp;news_event_content_code=<?php echo $key['news_event_content_code'] ?>"><i class="fa fa-book">&nbsp;</i><?php echo $key['title'] ?></a></li>
+		<?php endforeach ?>
 	</ul>
 	</div>
 </div>
