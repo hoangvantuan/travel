@@ -16,7 +16,7 @@
 				<div class="row">
 					<h4 class="footer-title-lb"><?php echo $lang == 'en' ? 'MAP' : 'BẢN ĐỒ' ?></h4>
 						<div class="widget-content">
-							<iframe class="google-map" height="150" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14898.666451596955!2d105.842974!3d21.005997!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x7030dea9a0b16d02!2zVHLGsOG7nW5nIMSQ4bqhaSBo4buNYyBCw6FjaCBraG9hIEjDoCBO4buZaQ!5e0!3m2!1svi!2s!4v1426309165584"  frameborder="0" style="border:0"></iframe>
+							<iframe class="google-map" height="150" src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d59594.055515844426!2d105.8212688185515!3d21.00752500060969!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1zbmfDtSAxMiBRdWFuZyBUcnVuZywgVsSDbiBLaMOqLCBIw6AgxJDDtG5nLCBIw6AgTuG7mWk!5e0!3m2!1svi!2s!4v1435237516505"  frameborder="0" style="border:0"></iframe>
 						</div><!-- widget content -->
 				</div>
 			</div>
@@ -25,7 +25,7 @@
                      <div class="fb-like-box"
                         data-height="250" data-colorscheme="light" data-show-faces="true"
                         data-header="false" data-stream="false" data-show-border="false">
-						<iframe class="facebook" src="http://www.facebook.com/plugins/likebox.php?href=https://www.facebook.com/vndesignerbybkteam&amp;width=245&amp;colorscheme=light&amp;show_faces=true&amp;connections=15&amp;stream=false&amp;header=false&amp;height=320" scrolling="no" frameborder="0" scrolling="no" style="border: medium none; overflow: hidden; height: 320px;background:#fff;"></iframe>
+						<iframe class="facebook" src="http://www.facebook.com/plugins/likebox.php?href=https://www.facebook.com/pages/C%C3%B4ng-Ty-Du-L%E1%BB%8Bch-Anh-D%C5%A9ng/406754662843313?ref=ts&fref=&amp;width=245&amp;colorscheme=light&amp;show_faces=true&amp;connections=15&amp;stream=false&amp;header=false&amp;height=320" scrolling="no" frameborder="0" scrolling="no" style="border: medium none; overflow: hidden; height: 320px;background:#fff;"></iframe>
                      </div>
 			</div>
 			<div class="col-md-4 footer-right">

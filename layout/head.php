@@ -14,7 +14,6 @@
 	<link rel="stylesheet" type="text/css" href="asset/css/style.css" />
 	<link rel="stylesheet" type="text/css" href="asset/css/contact.css" />
 	<link rel="stylesheet" type="text/css" href="asset/css/footer.css" />
-	<link rel="stylesheet" type="text/css" href="asset/css/lightbox.css" />
 
 </head>
 <body>
