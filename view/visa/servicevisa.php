@@ -91,7 +91,8 @@
             </div>
         </div>
     </div>
-    <!--clearfix content - Visa --> 
+    <!--clearfix content - Visa -->
+    <!-- VnDesigner--> 
 </div>
 <!--END Contain - Visa --> 
 <?php require_once('layout/footer.php'); ?>
