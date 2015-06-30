@@ -116,7 +116,7 @@
                 <ul class="dropdown-menu dropdown-menu-child role='menu'">
                 <?php $labor2=get_all_record('labor_content','labor_id',$key['labor_id']); ?>
                 <?php foreach($labor2 as $key2):?>
-                  <li><a href="index.php?lang=<?php echo $lang ?>&amp;controller=labor&amp;labor_content_id=<?php echo $key2['labor_content_id'] ?>"><?php echo $key2['title'] ?></a></li>
+                  <li><a href="index.php?lang=<?php echo $lang ?>&amp;controller=labor&amp;labor_id=<?php echo $key2['labor_id']?>&amp;labor_content_id=<?php echo $key2['labor_content_id'] ?>"><?php echo $key2['title'] ?></a></li>
                 <?php endforeach ;?>
                 </ul>
             </li>

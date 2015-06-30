@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: 127.0.0.1
--- Generation Time: Jun 24, 2015 at 07:07 AM
+-- Generation Time: Jun 30, 2015 at 01:38 PM
 -- Server version: 5.6.24
 -- PHP Version: 5.6.8
 
@@ -27,9 +27,19 @@ SET time_zone = "+00:00";
 --
 
 CREATE TABLE IF NOT EXISTS `labor` (
-  `labor_name` varchar(25) COLLATE utf8_unicode_ci NOT NULL,
+  `labor_name` varchar(50) COLLATE utf8_unicode_ci NOT NULL,
   `labor_id` int(11) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+--
+-- Dumping data for table `labor`
+--
+
+INSERT INTO `labor` (`labor_name`, `labor_id`) VALUES
+('Xuất khẩu lao động Nhật Bản', 1),
+('Xuất khẩu lao động Đài Loan', 2),
+('Xuất khẩu lao động MACAU', 3),
+('Xuất khẩu lao động Trung Quốc', 4);
 
 --
 -- Indexes for dumped tables
@@ -49,7 +59,7 @@ ALTER TABLE `labor`
 -- AUTO_INCREMENT for table `labor`
 --
 ALTER TABLE `labor`
-  MODIFY `labor_id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `labor_id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=5;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
