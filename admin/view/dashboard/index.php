@@ -92,12 +92,12 @@
                                     <i class="glyphicon glyphicon-refresh"></i>
                                 </div>
                                 <div class="col-xs-9 text-right">
-                                    <div class="huge"><?php echo '4'; ?></div>
+                                    <div class="huge"><?php echo $labor; ?></div>
                                     <div>Xuất khẩu lao động</div>
                                 </div>
                             </div>
                         </div>
-                        <a href="#">
+                        <a href="index.php?controller=labor&amp;lang=<?php echo $lang ?>">
                             <div class="panel-footer">
                                 <span class="pull-left">Xem chi tiết</span>
                                 <span class="pull-right"><i class="fa fa-arrow-circle-right"></i></span>

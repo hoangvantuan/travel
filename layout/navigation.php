@@ -106,8 +106,22 @@
           <a href="#" ><?php echo $lang =='en' ? 'Car service' : 'Dịch vụ Xe' ?></a>
         </li>
         <!-- Dich vi xuat khau lao dong -->
-        <li>
-          <a href="#" >Dịch vụ xuất khẩu lao động</a>
+        
+        <li class="dropdown dropdown-parrent">
+          <a href="index.php?controller=labor&amp;lang=<?php echo $lang  ?>" class="dropdown-toggle disabled" data-toggle="dropdown" role="button" aria-expanded="false"><?php echo $lang =='en' ? 'Labor' : 'Dịch vụ xuất khẩu lao động' ?></a>
+          <ul class="dropdown-menu dropdown-menu-parrent" role="menu">
+            <?php $labor1=get_all('labor');?>
+            <?php foreach($labor1 as $key):?>
+            <li class="dropdown dropdown-child dropdown-submenu"><a href="index.php?lang=<?php echo $lang ?>&amp;controller=labor&amp;labor_id=<?php echo $key['labor_id']?>" class="dropdown-toggle disabled" data-toggle="dropdown"><?php echo $key['labor_name'] ?></a>
+                <ul class="dropdown-menu dropdown-menu-child role='menu'">
+                <?php $labor2=get_all_record('labor_content','labor_id',$key['labor_id']); ?>
+                <?php foreach($labor2 as $key2):?>
+                  <li><a href="index.php?lang=<?php echo $lang ?>&amp;controller=labor&amp;labor_content_id=<?php echo $key2['labor_content_id'] ?>"><?php echo $key2['title'] ?></a></li>
+                <?php endforeach ;?>
+                </ul>
+            </li>
+            <?php endforeach;?>
+          </ul>
         </li>          
         <!-- Tu van du hoc-->
         <li class="dropdown dropdown-parrent">

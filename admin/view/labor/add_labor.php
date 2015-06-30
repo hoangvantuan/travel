@@ -23,28 +23,6 @@
                 <div class="page-header"><?php echo '<em>'.$success.'</em>' ; $success=null;?></div>
             </div>
             <?php endif?>
-            <script>
-                function img_find(id) {
-                
-                  var dom = document.getElementById(id);
-                
-                  var e = document.createElement('div');
-                
-                  e.innerHTML = _.unescape(dom.innerHTML); // Or use regex to replace &lt; to < and &gt; to >
-                
-                  var imgs = e.querySelectorAll('img');
-                
-                  var srcCollection = [];
-                
-                  for (var i = 0; i < imgs.length; i++) {
-                    srcCollection.push(imgs[i].src);
-                  }
-                
-                  return srcCollection;
-                }
-                
-                //img_find('content'); // ["myimage1.jpg", "myimage2.jpg"]
-            </script>
             <div class="row">
                 <div class="col-lg-8">
                     <form enctype="multipart/form-data" role="form" action="index.php?controller=labor&amp;action=add_labor&amp;lang=<?php echo $lang ?>" method="post">

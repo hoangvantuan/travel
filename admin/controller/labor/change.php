@@ -9,7 +9,7 @@
 	require('view/labor/change.php');
 }elseif (isset($_GET['labor_content_id'])&&isset($_POST['submit'])) {
 	$labor_content_id=$_GET['labor_content_id'];
-	$labor_name=$_POST['name'];
+	$labor_name=$_POST['labor_name'];
 	$title=$_POST['title'];
 	$content=$_POST['content'];
 	$labor_id=get_a_record('labor','labor_name',$labor_name);

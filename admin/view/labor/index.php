@@ -18,6 +18,19 @@
             <div class="row">
                 <div class="col-lg-12"><label><i class="fa fa-upload"></i> <a href="index.php?controller=labor&amp;action=add_labor&amp;lang=<?php echo $lang ?>">Thêm bài</a></label></div>
                 <div class="col-lg-12"><label><i class="fa fa-upload"></i> <a href="index.php?controller=labor&amp;action=add_labor_name&amp;lang=<?php echo $lang ?>">Thêm danh mục dịch vụ xuất khẩu lao động</a></label></div>
+                <div class="col-md-4"><h5>Lọc theo Category</h5></div>
+                <div class="col-md-8">
+                                        <form method="POST" action="index.php?controller=labor">
+                                            <select name="labor_id">
+                                                <option <?php echo isset($selected)? "" : "selected" ?> value="0">--|--</option>
+                                                <?php foreach( $labor as $key) : ?>
+                                                <option value="<?php echo $key['labor_id'] ?>" <?php if(isset($selected)){ echo $selected ==$key['labor_id']? "selected" : "" ;}?>><?php echo $key['labor_name'] ?></option>
+                                            <?php endforeach ?>
+                                            </select>
+                                        <input type="submit" value="Lọc" name="filler">
+                                        </form>
+        
+                                </div>
                 <div class="col-lg-12">
                     <h2>Bảng nội dung dịch vụ xuất khẩu lao động</h2>
                     <div class="table-responsive">
