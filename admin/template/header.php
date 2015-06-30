@@ -88,7 +88,7 @@
                         <a href="#"><i class="fa fa-fw fa-shopping-cart"></i> Dịch vụ xe</a>
                     </li>
                     <li <?php if ($active=='labor') {echo 'class="active"';}?>>
-                        <a href="#"><i class="glyphicon glyphicon-refresh"></i> Lao động</a>
+                        <a href="index.php?controller=labor&amp;lang=<?php echo $lang ?>"><i class="glyphicon glyphicon-refresh"></i> Lao động</a>
                     </li>
                     <li <?php if ($active=='news') {echo 'class="active"';}?>>
                         <a href="index.php?controller=news&amp;lang=<?php echo $lang ?>"><i class="glyphicon glyphicon-star"></i> Tin tức - sự kiện</a>
