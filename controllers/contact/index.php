@@ -26,4 +26,5 @@
 	require_once(BASEPATH.'view/contact/index.php');
 	// content site
 	// end - thank site is not compete
+	// add
 ?>;
