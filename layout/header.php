@@ -26,8 +26,9 @@
 			</div>
       <div class="col-md-3 text-center hotline-top">
           <h1>Liên Hệ</h1>
-          <p>0462 60 48 38</p>
-          <p>0987647504</p>
+          <p>Ms Nhã Trúc 01647267747</p>
+          <p>Mr Dương 0986 151 386</p>
+          <p>Mrs Hanh 0987647504</p>
       </div>
 		</div>
 	</div>

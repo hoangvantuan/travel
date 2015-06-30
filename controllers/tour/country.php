@@ -9,6 +9,7 @@
 	$visa9 = get_all_record('passport_visa_offers','passport_visa_code','9');
 	$tour_region = get_all('tour_region');
 	$news = get_all('news_event');
+	$area = get_all('car_area');
 	$lang = get_lang();
 	if(isset($_GET['tour_country_code'])){
 		$tour_country_code = $_GET['tour_country_code'];

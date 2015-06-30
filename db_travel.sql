@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: 127.0.0.1
--- Generation Time: Jun 24, 2015 at 06:41 PM
+-- Generation Time: Jun 30, 2015 at 06:45 PM
 -- Server version: 5.6.16
 -- PHP Version: 5.5.11
 
@@ -72,17 +72,52 @@ INSERT INTO `account` (`email`, `password`) VALUES
 -- --------------------------------------------------------
 
 --
+-- Table structure for table `car_area`
+--
+
+CREATE TABLE IF NOT EXISTS `car_area` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `msdd` text NOT NULL,
+  `tendiadiem` varchar(100) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=13 ;
+
+--
+-- Dumping data for table `car_area`
+--
+
+INSERT INTO `car_area` (`id`, `msdd`, `tendiadiem`) VALUES
+(3, 'HP01', 'Hải phòng'),
+(4, 'HD01', 'Hải Dương'),
+(10, 'HN01', 'Hà Nội'),
+(11, 'QN01', 'Quảng Ninh'),
+(12, 'BG01', 'Bắc Giang');
+
+-- --------------------------------------------------------
+
+--
 -- Table structure for table `car_service`
 --
 
 CREATE TABLE IF NOT EXISTS `car_service` (
-  `car_service_code` int(11) NOT NULL AUTO_INCREMENT,
-  `title` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
-  `content` text COLLATE utf8_unicode_ci NOT NULL,
-  `create_at` datetime NOT NULL,
-  `update_at` datetime NOT NULL,
-  PRIMARY KEY (`car_service_code`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci AUTO_INCREMENT=1 ;
+  `msdd` text COLLATE utf8_unicode_ci NOT NULL,
+  `mshx` varchar(10) COLLATE utf8_unicode_ci NOT NULL,
+  `tenhangxe` varchar(50) COLLATE utf8_unicode_ci NOT NULL,
+  `diemden` varchar(100) COLLATE utf8_unicode_ci NOT NULL,
+  `diemdi` varchar(100) COLLATE utf8_unicode_ci NOT NULL,
+  `soghe` int(4) NOT NULL,
+  `gia` int(11) NOT NULL,
+  `lienhe` varchar(200) COLLATE utf8_unicode_ci NOT NULL,
+  PRIMARY KEY (`tenhangxe`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+--
+-- Dumping data for table `car_service`
+--
+
+INSERT INTO `car_service` (`msdd`, `mshx`, `tenhangxe`, `diemden`, `diemdi`, `soghe`, `gia`, `lienhe`) VALUES
+('HP01', 'HP011', 'Hoa phượng đỏ', 'Hải phòng', 'Hải phòng', 5, 16, '0989278582'),
+('HD01', 'HD011', 'Mê linh', 'Hải Dương', 'Hải Hương', 5, 9, '0123456789');
 
 -- --------------------------------------------------------
 
@@ -114,10 +149,20 @@ INSERT INTO `contact` (`name`, `tel`, `email`, `title`, `content`) VALUES
 --
 
 CREATE TABLE IF NOT EXISTS `labor` (
-  `labor_name` varchar(25) COLLATE utf8_unicode_ci NOT NULL,
+  `labor_name` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
   `labor_id` int(11) NOT NULL AUTO_INCREMENT,
   PRIMARY KEY (`labor_id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci AUTO_INCREMENT=1 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci AUTO_INCREMENT=7 ;
+
+--
+-- Dumping data for table `labor`
+--
+
+INSERT INTO `labor` (`labor_name`, `labor_id`) VALUES
+('Xuất khẩu lao động Nhật Bản', 1),
+('Xuất khẩu lao động Đài Loan', 2),
+('Xuất khẩu lao động MACAU', 3),
+('Xuất khẩu lao động Trung ', 4);
 
 -- --------------------------------------------------------
 
@@ -131,7 +176,30 @@ CREATE TABLE IF NOT EXISTS `labor_content` (
   `title` text COLLATE utf8_unicode_ci NOT NULL,
   `content` text COLLATE utf8_unicode_ci NOT NULL,
   PRIMARY KEY (`labor_content_id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci AUTO_INCREMENT=1 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci AUTO_INCREMENT=20 ;
+
+--
+-- Dumping data for table `labor_content`
+--
+
+INSERT INTO `labor_content` (`labor_content_id`, `labor_id`, `title`, `content`) VALUES
+(1, 1, 'Lao động cơ khí', '<script>img_find(''contents'');</script>'),
+(2, 1, 'Lao động nông nghiệp', '<script>img_find(''contents'');</script>'),
+(3, 1, 'Lao động điện tử', '<script>img_find(''contents'');</script>'),
+(4, 1, 'Lao động dệt may', '<script>img_find(''contents'');</script>'),
+(5, 1, 'Lao động xây dựng', '<script>img_find(''contents'');</script>'),
+(6, 1, 'Lao động kỹ sư - kỹ thuật viên', '<script>img_find(''contents'');</script>'),
+(7, 2, 'Lao động cơ khí', '<script>img_find(''contents'');</script>'),
+(8, 2, 'Lao động dệt may', '<script>img_find(''contents'');</script>'),
+(9, 2, 'Lao động nông nghiệp', '<script>img_find(''contents'');</script>'),
+(10, 2, 'Lao động kỹ sư - kỹ thuật viên', '<script>img_find(''contents'');</script>'),
+(11, 2, 'Lao động xây dựng', '<script>img_find(''contents'');</script>'),
+(12, 2, 'Lao động điện tử', '<script>img_find(''contents'');</script>'),
+(13, 3, 'Lao động làm việc tại khách sạn MACAU', '<script>img_find(''contents'');</script>'),
+(14, 3, 'Lao động giúp việc gia đình', '<script>img_find(''contents'');</script>'),
+(15, 4, 'Lao động cơ khí', '<script>img_find(''contents'');</script>'),
+(18, 1, 'werwe', 'rwer<script>img_find(''contents'');</script>'),
+(19, 1, 'werwerwe', 'werwer<script>img_find(''contents'');</script>');
 
 -- --------------------------------------------------------
 

@@ -8,6 +8,7 @@
 	$visa8 = get_all_record('passport_visa_offers','passport_visa_code','8');
 	$visa9 = get_all_record('passport_visa_offers','passport_visa_code','9');
 	$lang = get_lang();
+	$area = get_all('car_area');
 	$news = get_all('news_event');
 	$tour_region = get_all('tour_region');
 	$passport_visa_name=get_all('passport_visa');

@@ -102,8 +102,17 @@
           </ul>
         </li>
         <!-- Du lich Xe-->
-        <li>
-          <a href="#" ><?php echo $lang =='en' ? 'Car service' : 'Dịch vụ Xe' ?></a>
+        <li class="dropdown dropdown-parrent">
+          <a href="index.php?controller=service_car" ><?php echo $lang =='en' ? 'Car service' : 'Dịch vụ Xe' ?></a>
+      <ul class="dropdown-menu dropdown-menu-parrent" role="menu">
+        <?php if(isset($area)){?>
+          <?php 
+           foreach($area as $value):
+          ?>
+          <?php echo "<li><a href='index.php?controller=service_car&action=detail_service&code=".$value['msdd']."'>".$value['tendiadiem']."</a></li>";?>
+          <?php endforeach ?>
+        <?php }?>
+          </ul>
         </li>
         <!-- Dich vi xuat khau lao dong -->
         

@@ -4,7 +4,7 @@
 	$tour = array_reverse($tour);
 	$tour = get_number_from_array($tour,8);
 	
-	
+	$area = get_all('car_area');
 	$tour_region = get_all('tour_region');
 	$news = get_all('news_event');
 	$visa1 = get_all_record('passport_visa_offers','passport_visa_code','1');

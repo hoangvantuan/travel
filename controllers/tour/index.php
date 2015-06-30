@@ -10,6 +10,7 @@
 	$tour_region = get_all('tour_region');
 	$tour = get_all('tour_content');
 	$news = get_all('news_event');
+	$area = get_all('car_area');
 	$lang = get_lang();
 	if($lang =='en')
 		$current_possition = array(array('name'=>"Tourist good price",'link'=>"index.php?controller=tour&amp;lang=".$lang));

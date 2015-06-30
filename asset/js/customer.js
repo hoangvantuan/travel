@@ -27,8 +27,6 @@ $(function() {
 	);
 });
 
-
-
    	$(document).ready(function () {
        $('.incountry').click(function () {
            $('.incountry-list').toggleClass('hidden-xs');

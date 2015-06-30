@@ -10,6 +10,7 @@
 	$tour_region = get_all('tour_region');
 	$news = get_all('news_event');
 	$lang = get_lang();
+	$area = get_all('car_area');
 	if(isset($_GET['tour_region_code'])){
 		$tour_region_code = $_GET['tour_region_code'];
 		$tour_region_name = get_a_record('tour_region','tour_region_code',$tour_region_code);

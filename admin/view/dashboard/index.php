@@ -67,12 +67,12 @@
                                     <i class="fa fa-shopping-cart fa-5x"></i>
                                 </div>
                                 <div class="col-xs-9 text-right">
-                                    <div class="huge"><?php echo '3'; ?></div>
+                                    <div class="huge"><?php echo $car_service; ?></div>
                                     <div>Dịch vụ xe</div>
                                 </div>
                             </div>
                         </div>
-                        <a href="#">
+                        <a href="index.php?controller=service_car&amp;lang=<?php echo $lang ?>">
                             <div class="panel-footer">
                                 <span class="pull-left">Xem chi tiết</span>
                                 <span class="pull-right"><i class="fa fa-arrow-circle-right"></i></span>

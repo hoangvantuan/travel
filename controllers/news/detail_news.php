@@ -4,6 +4,7 @@
 	$news = get_all('news_event');
 	$news_event_content = get_all('news_event_content');
 	$tour_region = get_all('tour_region');
+	$area = get_all('car_area');
 	$visa1 = get_all_record('passport_visa_offers','passport_visa_code','1');
 	$visa2 = get_all_record('passport_visa_offers','passport_visa_code','2');
 	$visa5 = get_all_record('passport_visa_offers','passport_visa_code','5');

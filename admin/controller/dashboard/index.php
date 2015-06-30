@@ -4,6 +4,7 @@
 	$contact =get_number_recored('contact');
 	$news = get_number_recored('news_event_content');
 	$labor = get_number_recored('labor_content');
+	$car_service = get_number_recored('car_service');
 	$lang = get_lang();
 	if(isset($_SESSION['email']) && isset($_SESSION['password'])){
 		$email = $_SESSION['email'];

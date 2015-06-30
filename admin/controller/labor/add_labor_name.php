@@ -8,6 +8,7 @@ if (isset($_POST['submit'])) {
 }
 if (isset($_GET['del'])) {
 	delete('labor','labor_id',$_GET['del']);
+	delete('labor_content','labor_id',$_GET['del']);
 }
 	$labor=get_all('labor');
 require('view/labor/add_labor_name.php');
