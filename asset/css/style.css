@@ -323,3 +323,15 @@ a:hover{
 .img-visa{
 	width: 235px;
 }
+
+
+.hotline-top h1{
+	color: #8DC63F;
+}
+.hotline-top p{
+	color: red;
+	font-size: 25px;
+}
+#image_relate img{
+	width: 150px;
+}

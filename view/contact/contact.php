@@ -26,7 +26,7 @@
             </div>
             <br />
             <div class="text">
-               <textarea class="form-control" cols="20" id="NoiDung" name="content" placeholder="Nội dung" rows="4" style="margin: 0px; width: 100%; height: 200px;"></textarea>
+               <textarea class="form-control" cols="20" id="NoiDung" name="content" placeholder="Nội dung nhận xét" rows="4" style="margin: 0px; width: 100%; height: 200px;"></textarea>
             </div>
             <br />
             <p class="button">

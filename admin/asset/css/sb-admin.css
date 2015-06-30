@@ -16,7 +16,9 @@ body {
         margin-top: 50px;
     }
 }
-
+#image_relate img{
+  width: 150px;
+}
 #wrapper {
     padding-left: 0;
 }
