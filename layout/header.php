@@ -14,17 +14,17 @@
             </div>
         </div>
 		<div class="row row-logo">
-			<div  class="col-md-3" >
+			<div  class="col-md-2" >
 				<div class="logo">
 					<a href="index.php">
                     	<img class="img-responsive" src="asset/image/common/logo.png" alt="Logo" />
                  	</a>
                  </div>
 			</div>
-			<div class="col-md-6 ">
-				<img class="img-responsive" src="asset/image/common/banner.png" width="600" alt="banner" />
+			<div class="col-md-7 ">
+				<img class="img-responsive" src="asset/image/common/banner.png" alt="banner" />
 			</div>
-      <div class="col-md-3 text-center hotline-top">
+      <div class="col-md-3 text-left hotline-top">
           <h1>Liên Hệ</h1>
           <p>Ms Nhã Trúc 01647267747</p>
           <p>Mr Dương 0986 151 386</p>

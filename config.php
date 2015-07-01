@@ -1,6 +1,6 @@
 <?php
 /** setting **/
-define('BASEURL' , 'travel.com');
+define('BASEURL' , 'adtourist.com');
 define('BASEPATH', dirname(__FILE__) . '/');
 
 /** kết nối MySQL **/
