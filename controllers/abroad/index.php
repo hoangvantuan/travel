@@ -1,5 +1,5 @@
 <?php 
-	$title = "AD Tourist - Dịch vụ xuất khẩu lao động ";
+	$title = "AD Tourist - Dịch vụ Du học";
 	$visa1 = get_all_record('passport_visa_offers','passport_visa_code','1');
 	$visa2 = get_all_record('passport_visa_offers','passport_visa_code','2');
 	$visa5 = get_all_record('passport_visa_offers','passport_visa_code','5');
@@ -11,18 +11,18 @@
 	$lang = get_lang();
 	$news = get_all('news_event');
 	$tour_region = get_all('tour_region');
-	$labor_name=get_all('labor');
-	if (isset($_GET['labor_id'])&&isset($_GET['labor_content_id'])) {
-		$labor_id=$_GET['labor_id'];
-		$labor_content_id=$_GET['labor_content_id'];
-		$labor_content=get_a_record('labor_content','labor_content_id',$labor_content_id);
+	$abroad_name=get_all('abroads');
+	if (isset($_GET['abroad_id'])&&isset($_GET['abroad_offer_id'])) {
+		$abroad_id=$_GET['abroad_id'];
+		$abroad_offer_id=$_GET['abroad_offer_id'];
+		$abroad_offers=get_a_record('abroad_offers','abroad_offer_id',$abroad_offer_id);
 		
 		
 	}
-	elseif (isset($_GET['labor_id'])) {
-		$labor_id=$_GET['labor_id'];
-	}else $labor_id=$labor_name[0]['labor_id'];
-	$id= get_a_record('labor','labor_id',$labor_id);
-	$content=get_all_record('labor_content','labor_id',$id['labor_id']);
-	require_once(BASEPATH.'view/labor/index.php');
+	elseif (isset($_GET['abroad_id'])) {
+		$abroad_id=$_GET['abroad_id'];
+	}else $abroad_id=$abroad_name[0]['abroad_id'];
+	$id= get_a_record('abroads','abroad_id',$abroad_id);
+	$content=get_all_record('abroad_offers','abroad_id',$id['abroad_id']);
+	require_once(BASEPATH.'view/abroad/index.php');
  ?>

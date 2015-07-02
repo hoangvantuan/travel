@@ -13,9 +13,10 @@
 	$title=$_POST['title'];
 	$content=$_POST['content'];
 	$labor_id=get_a_record('labor','labor_name',$labor_name);
-	update('labor_content','labor_id',$labor_id['labor_id'],'labor_content_id',$labor_content_id);
-	update('labor_content','title',$title,'labor_content_id',$labor_content_id);
-	update('labor_content','content',$content,'labor_content_id',$labor_content_id);
+
+	$data = array('labor_id'=>$labor_id['labor_id'], 'title'=>$title, 'content'=>$content);
+	
+	update_record('labor_content','labor_content_id',$labor_content_id,$data);
 
 	$labor = get_a_record('labor_content','labor_content_id',$labor_content_id);
 	$labor_name1=get_a_record('labor','labor_id',$labor['labor_id']);

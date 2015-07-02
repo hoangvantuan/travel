@@ -50,6 +50,14 @@
         <li class="dropdown dropdown-parrent">
           <a href="index.php?controller=visa&amp;action=servicevisa&amp;lang=<?php echo $lang  ?>" class="dropdown-toggle disabled" data-toggle="dropdown" role="button" aria-expanded="false"><?php echo $lang =='en' ? 'Visa - Passport': 'Visa - hộ chiếu' ?></a>
           <ul class="dropdown-menu dropdown-menu-parrent" role="menu">
+            <li class="dropdown dropdown-child dropdown-submenu"><a href="index.php?lang=<?php echo $lang ?>&amp;controller=visa&amp;action=servicevisa&amp;passport_visa_code=10" class="dropdown-toggle disabled" data-toggle="dropdown"><?php echo $lang =='en'? 'Viet Name Visa' : 'Visa Việt Nam' ?></a>
+                <ul class="dropdown-menu dropdown-menu-child role='menu'">
+                <?php $visa = get_all_record('passport_visa_offers','passport_visa_code','10'); ?>
+                <?php foreach ($visa as $key => $value):?>
+                  <li><a href="index.php?lang=<?php echo $lang ?>&amp;controller=visa&amp;action=servicevisa&amp;passport_visa_code=10&amp;pass_offer=<?php echo $value['passport_visa_offer_code'];?>"><?php echo $value['title']; ?></a></li>
+                <?php endforeach ?>
+                </ul>
+            </li>
             <li class="dropdown dropdown-child dropdown-submenu"><a href="index.php?lang=<?php echo $lang ?>&amp;controller=visa&amp;action=servicevisa&amp;passport_visa_code=1" class="dropdown-toggle disabled" data-toggle="dropdown"><?php echo $lang =='en'? 'Asia Visa' : 'Visa Châu Á' ?></a>
                 <ul class="dropdown-menu dropdown-menu-child role='menu'">
                 <?php foreach ($visa1 as $key => $value):?>
@@ -134,26 +142,39 @@
         </li>          
         <!-- Tu van du hoc-->
         <li class="dropdown dropdown-parrent">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Tư vấn du học</a>
+          <a href="index.php?controller=abroad&amp;lang=<?php echo $lang  ?>" class="dropdown-toggle disabled" data-toggle="dropdown" role="button" aria-expanded="false"><?php echo $lang =='en' ? 'Abroad' : 'Tư vấn Du Học' ?></a>
           <ul class="dropdown-menu dropdown-menu-parrent" role="menu">
-            <li><a href="#">Du học Úc</a></li>
-            <li><a href="#">Du học Anh</a></li>
-            <li><a href="#">Du học Canada</a></li>
-            <li><a href="#">Du học Nhật bản</a></li>
-            <li><a href="#">Du học Singapore</a></li>
+            <?php $abroad1=get_all('abroads');?>
+            <?php foreach($abroad1 as $key):?>
+            <li class="dropdown dropdown-child dropdown-submenu"><a href="index.php?lang=<?php echo $lang ?>&amp;controller=abroad&amp;abroad_id=<?php echo $key['abroad_id']?>" class="dropdown-toggle disabled" data-toggle="dropdown"><?php echo $key['abroad_name'] ?></a>
+                <ul class="dropdown-menu dropdown-menu-child role='menu'">
+                <?php $abroad2=get_all_record('abroad_offers','abroad_id',$key['abroad_id']); ?>
+                <?php foreach($abroad2 as $key2):?>
+                  <li><a href="index.php?lang=<?php echo $lang ?>&amp;controller=abroad&amp;abroad_id=<?php echo $key2['abroad_id']?>&amp;abroad_offer_id=<?php echo $key2['abroad_offer_id'] ?>"><?php echo $key2['title'] ?></a></li>
+                <?php endforeach ;?>
+                </ul>
+            </li>
+            <?php endforeach;?>
           </ul>
-        </li>
+        </li> 
 
         <!-- Ve may bay -->
         <li class="dropdown dropdown-parrent">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Vé máy bay</a>
+          <a href="index.php?controller=ticket_plane&amp;lang=<?php echo $lang  ?>" class="dropdown-toggle disabled" data-toggle="dropdown" role="button" aria-expanded="false"><?php echo $lang =='en' ? 'Ticket Plane' : 'Vé máy bay' ?></a>
           <ul class="dropdown-menu dropdown-menu-parrent" role="menu">
-            <li><a href="#">Vé máy bay nội địa</a></li>
-            <li><a href="#">Vé máy bay quốc tế</a></li>
-            <li><a href="#">Vé theo hãng</a></li>
-            <li><a href="#">Vé máy bay theo loại</a></li>
+            <?php $ticket_plane1=get_all('ticket_plane');?>
+            <?php foreach($ticket_plane1 as $key):?>
+            <li class="dropdown dropdown-child dropdown-submenu"><a href="index.php?lang=<?php echo $lang ?>&amp;controller=ticket_plane&amp;ticket_plane_id=<?php echo $key['ticket_plane_id']?>" class="dropdown-toggle disabled" data-toggle="dropdown"><?php echo $key['ticket_plane_name'] ?></a>
+                <ul class="dropdown-menu dropdown-menu-child role='menu'">
+                <?php $ticket_plane2=get_all_record('ticket_plane_content','ticket_plane_id',$key['ticket_plane_id']); ?>
+                <?php foreach($ticket_plane2 as $key2):?>
+                  <li><a href="index.php?lang=<?php echo $lang ?>&amp;controller=ticket_plane&amp;ticket_plane_id=<?php echo $key2['ticket_plane_id']?>&amp;ticket_plane_content_id=<?php echo $key2['ticket_plane_content_id'] ?>"><?php echo $key2['ticket_plane_title'] ?></a></li>
+                <?php endforeach ;?>
+                </ul>
+            </li>
+            <?php endforeach;?>
           </ul>
-        </li>
+        </li> 
 
        	<!-- Tin tuc - su kien -->
         <li class="dropdown dropdown-parrent">

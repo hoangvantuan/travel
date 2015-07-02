@@ -5,6 +5,8 @@
 	$news = get_number_recored('news_event_content');
 	$labor = get_number_recored('labor_content');
 	$car_service = get_number_recored('car_service');
+	$ticket_plane = get_number_recored('ticket_plane_content');
+	$abroad = get_number_recored('abroad_offers');
 	$lang = get_lang();
 	if(isset($_SESSION['email']) && isset($_SESSION['password'])){
 		$email = $_SESSION['email'];

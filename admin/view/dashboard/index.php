@@ -107,6 +107,52 @@
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6">
+                    <div class="panel panel-green">
+                        <div class="panel-heading">
+                            <div class="row">
+                                <div class="col-xs-3">
+                                    <i class="glyphicon glyphicon-refresh"></i>
+                                </div>
+                                <div class="col-xs-9 text-right">
+                                    <div class="huge"><?php echo $abroad; ?></div>
+                                    <div>Du học</div>
+                                </div>
+                            </div>
+                        </div>
+                        <a href="index.php?controller=abroad&amp;lang=<?php echo $lang ?>">
+                            <div class="panel-footer">
+                                <span class="pull-left">Xem chi tiết</span>
+                                <span class="pull-right"><i class="fa fa-arrow-circle-right"></i></span>
+                                <div class="clearfix"></div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="panel panel-white">
+                        <div class="panel-heading">
+                            <div class="row">
+                                <div class="col-xs-3">
+                                    <i class="glyphicon glyphicon-refresh"></i>
+                                </div>
+                                <div class="col-xs-9 text-right">
+                                    <div class="huge"><?php echo $ticket_plane; ?></div>
+                                    <div>Vé máy bay</div>
+                                </div>
+                            </div>
+                        </div>
+                        <a href="index.php?controller=ticket_plane&amp;lang=<?php echo $lang ?>">
+                            <div class="panel-footer">
+                                <span class="pull-left">Xem chi tiết</span>
+                                <span class="pull-right"><i class="fa fa-arrow-circle-right"></i></span>
+                                <div class="clearfix"></div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-3 col-md-6">
                     <div class="panel panel-info">
                         <div class="panel-heading">
                             <div class="row">

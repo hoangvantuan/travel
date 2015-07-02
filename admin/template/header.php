@@ -90,6 +90,12 @@
                     <li <?php if ($active=='labor') {echo 'class="active"';}?>>
                         <a href="index.php?controller=labor&amp;lang=<?php echo $lang ?>"><i class="glyphicon glyphicon-refresh"></i> Lao động</a>
                     </li>
+                    <li <?php if ($active=='abroad') {echo 'class="active"';}?>>
+                        <a href="index.php?controller=abroad&amp;lang=<?php echo $lang ?>"><i class="glyphicon glyphicon-refresh"></i> Du học</a>
+                    </li>
+                    <li <?php if ($active=='ticket_plane') {echo 'class="active"';}?>>
+                        <a href="index.php?controller=ticket_plane&amp;lang=<?php echo $lang ?>"><i class="glyphicon glyphicon-refresh"></i>Vé máy bay</a>
+                    </li>
                     <li <?php if ($active=='news') {echo 'class="active"';}?>>
                         <a href="index.php?controller=news&amp;lang=<?php echo $lang ?>"><i class="glyphicon glyphicon-star"></i> Tin tức - sự kiện</a>
                     </li>
