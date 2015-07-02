@@ -27,6 +27,8 @@ $(function() {
 	);
 });
 
+
+
    	$(document).ready(function () {
        $('.incountry').click(function () {
            $('.incountry-list').toggleClass('hidden-xs');
@@ -41,5 +43,8 @@ $(function() {
     	animation: "fade",
   			});
 		});
-
+   	//Tour details menu tab
+   	$('#tourist_detail a').click(function (e) {
+  		e.preventDefault();
+  		$(this).tab('show');
 });
