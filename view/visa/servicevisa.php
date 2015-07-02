@@ -84,15 +84,14 @@
                 <a href="#" class="list-group-item active"><span class="fa fa-cc-visa"></span> VISA</a>
                 <?php
                     foreach ($passport_visa_name as $key => $value) {
-                        echo '<a class="list-group-item" href="index.php?lang=<?php echo $lang ?>&amp;controller=visa&action=servicevisa&passport_visa_code='.$value['passport_visa_code'].'"><span class="fa fa-cc-visa"></span> '.$value['passport_visa_name'].'</a>';
+                        echo '<a class="list-group-item" href="index.php?lang='.$lang.'&controller=visa&action=servicevisa&passport_visa_code='.$value['passport_visa_code'].'"><span class="fa fa-cc-visa"></span> '.$value['passport_visa_name'].'</a>';
                     }
                     
                     ?>
             </div>
         </div>
     </div>
-    <!--clearfix content - Visa -->
-    <!-- VnDesigner--> 
+    <!--clearfix content - Visa --> 
 </div>
 <!--END Contain - Visa --> 
 <?php require_once('layout/footer.php'); ?>
